@@ -57,7 +57,7 @@ namespace LED_Handheld_Project
                 {
                     IconButton btn = (IconButton)btns;
                     btn.Size = new System.Drawing.Size(220, 60);
-                    //btn.BackColor = Color.FromArgb(172, 126, 241);
+                    btn.BackColor = Color.White;
                     //btn.ForeColor = Color.White;
                     //btn.FlatAppearance.BorderColor = Color.FromArgb(172, 126, 241);
                 }
@@ -73,7 +73,7 @@ namespace LED_Handheld_Project
             btnLoadData.Size = new System.Drawing.Size(220, 60);
             btnProductionTest.Size = new System.Drawing.Size(220, 60);
             btnRealTime.Size = new System.Drawing.Size(220, 60);
-            btnHome.Size = new System.Drawing.Size(169, 64);
+            btnHome.Size = new System.Drawing.Size(200, 64);
             iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
             panelShadow.Size = new System.Drawing.Size(1162, 9);
 
@@ -162,6 +162,7 @@ namespace LED_Handheld_Project
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            //currentChildForm.Close();
             panelDesktop.Controls.Clear();
             Reset();
         }
@@ -187,9 +188,5 @@ namespace LED_Handheld_Project
             lblTitleChildForm.Text = childForm.Text;
         }
 
-        private void MainMenu_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

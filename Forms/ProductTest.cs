@@ -64,20 +64,20 @@ namespace LED_Handheld_Project.Forms
                 contents[5] = "" + "," + "Volts" +  "," + "Results";
                 for (int i = 0; i < 14; i++)
                     contents[i + 6] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
-                contents[6] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
-                contents[7] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
-                contents[8] = "V3" + "," + text_V3.Text + "," + text_ResultV3.Text;
-                contents[9] = "V4" + "," + text_V4.Text + "," + text_ResultV4.Text;
-                contents[10] = "V5" + "," + text_V5.Text + "," + text_ResultV5.Text;
-                contents[11] = "V6" + "," + text_V6.Text + "," + text_ResultV6.Text;
-                contents[12] = "V7" + "," + text_V7.Text + "," + text_ResultV7.Text;
-                contents[13] = "V8" + "," + text_V8.Text + "," + text_ResultV8.Text;
-                contents[14] = "V9" + "," + text_V9.Text + "," + text_ResultV9.Text;
-                contents[15] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
-                contents[16] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
-                contents[17] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
-                contents[18] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
-                contents[19] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
+                //contents[6] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
+                //contents[7] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
+                //contents[8] = "V3" + "," + text_V3.Text + "," + text_ResultV3.Text;
+                //contents[9] = "V4" + "," + text_V4.Text + "," + text_ResultV4.Text;
+                //contents[10] = "V5" + "," + text_V5.Text + "," + text_ResultV5.Text;
+                //contents[11] = "V6" + "," + text_V6.Text + "," + text_ResultV6.Text;
+                //contents[12] = "V7" + "," + text_V7.Text + "," + text_ResultV7.Text;
+                //contents[13] = "V8" + "," + text_V8.Text + "," + text_ResultV8.Text;
+                //contents[14] = "V9" + "," + text_V9.Text + "," + text_ResultV9.Text;
+                //contents[15] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
+                //contents[16] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
+                //contents[17] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
+                //contents[18] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
+                //contents[19] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
                 contents[20] = "Test Result" + "," + text_TestResult.Text;
                 string location = saveFileDialog1.FileName;
                 //string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
@@ -141,8 +141,8 @@ namespace LED_Handheld_Project.Forms
                     index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
 
                 //pembacaan nilai
-                Temp = in_data.Substring(0, indexOfA);
-                Humid = in_data.Substring(indexOfA + 1, (indexOfB - indexOfA) - 1);
+                Temp = in_data.Substring(0, index_sep[0]);
+                Humid = in_data.Substring(index_sep[0] + 1, (index_sep[2] - index_sep[1]) - 1);
                 for (int i = 0; i < 14; i++)
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
 
