@@ -16,11 +16,9 @@ namespace LED_Handheld_Project.Forms
     public partial class FormReal : Form
     {
         //Fields
-        int test;
         string in_data;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
-
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
 
@@ -138,12 +136,10 @@ namespace LED_Handheld_Project.Forms
 
                 //pembacaan nilai
                 Temperature = in_data.Substring(0, index_sep[0]);
-                Humidity = in_data.Substring(indexOfA + 1, (index_sep[2] - index_sep[1]) - 1);
+                Humidity = in_data.Substring(index_sep[0] + 1, (index_sep[2] - index_sep[1]) - 1);
 
                 for (int i = 0; i < 14; i++)
-                {
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
-                }
 
                 //Display text
                 tbDate.Text = DateTime.Now.ToString("G");
@@ -176,9 +172,9 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessGraph()
         {
-            double data_V;
             for (int i = 0; i < 14; i++)
             {
+                double data_V;
                 bool result_V = double.TryParse(voltages[i], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V);
                 if(result_V && cek_V[i].Checked == true)
                 {
@@ -206,7 +202,6 @@ namespace LED_Handheld_Project.Forms
             }
             catch (Exception error)
             {
-                ProcessData(sender, e);
                 MessageBox.Show(error.Message);
             }
         }
@@ -222,14 +217,22 @@ namespace LED_Handheld_Project.Forms
             btnStart.Enabled = true;
             btnHold.Enabled = false;
             try
-            {
-                serialPort1.Close();
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }
+                {
+                    serialPort1.Close();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
         }
+
+        /*private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach(var series in chartData.Series)
+            {
+                series.Points.Clear();
+            }
+        }*/
 
         private void btnSave_Click(object sender, EventArgs e)
         {
