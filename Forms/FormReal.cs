@@ -83,9 +83,10 @@ namespace LED_Handheld_Project.Forms
                 if (btns.GetType() == typeof(Button))
                 {
                     Button btn = (Button)btns;
-                    btn.BackColor = Color.FromArgb(172, 126, 241);
+                    btn.BackColor = Color.FromArgb(253, 138, 114);
                     btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = Color.FromArgb(172, 126, 241);
+                    btn.FlatAppearance.BorderColor = Color.FromArgb(253, 138, 114);
+                    //btn.Size= new System.Drawing.Size(100, 40);
                 }
             }
             foreach (Control labs in this.Controls)
@@ -103,12 +104,12 @@ namespace LED_Handheld_Project.Forms
                 {
                     TextBox tbox = (TextBox)tboxs;
                     tbox.BackColor = Color.FromArgb(34, 33, 74);
-                    tbox.ForeColor = Color.FromArgb(172, 126, 241);//FromArgb(172, 126, 241);
+                    tbox.ForeColor = Color.FromArgb(253, 138, 114); ;//FromArgb(172, 126, 241);
                 }
             }
-            tbOperator.BackColor= Color.FromArgb(172, 126, 241);
+            tbOperator.BackColor= Color.FromArgb(253, 138, 114);
             tbOperator.ForeColor = Color.White;
-            tbModule.BackColor = Color.FromArgb(172, 126, 241);
+            tbModule.BackColor = Color.FromArgb(253, 138, 114);
             tbModule.ForeColor = Color.White;
             //lbPort.ForeColor = Color.White;
         }
