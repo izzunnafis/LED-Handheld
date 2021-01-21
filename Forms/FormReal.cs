@@ -131,21 +131,17 @@ namespace LED_Handheld_Project.Forms
         {
             try
             {
-                in_data = "19A1B1C2D3E4F7G7H8I9J19K8L2M3N2O3P2";
                 //convert nilai index
                 for (int i = 0; i < 16; i++)
                     index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
 
                 //pembacaan nilai
                 Temperature = in_data.Substring(0, index_sep[0]);
-                MessageBox.Show(indexOfA.ToString());
                 Humidity = in_data.Substring(indexOfA + 1, (index_sep[2] - index_sep[1]) - 1);
 
                 for (int i = 0; i < 14; i++)
                 {
-                    MessageBox.Show((index_sep[i + 2] - index_sep[i + 1]).ToString());
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
-                    MessageBox.Show(voltages[i].ToString());
                 }
 
                 //Display text

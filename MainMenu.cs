@@ -187,5 +187,9 @@ namespace LED_Handheld_Project
             lblTitleChildForm.Text = childForm.Text;
         }
 
+        private void MainMenu_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
