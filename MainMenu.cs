@@ -24,6 +24,7 @@ namespace LED_Handheld_Project
         Form form_production_test = new Forms.FormProductionTest();
         Form form_real_time = new Forms.FormRealTime();
         Form form_product_test = new Forms.ProductTest();
+        Form form_load_data = new Forms.FormLoadData();
         
 
         //Constructor
@@ -146,7 +147,7 @@ namespace LED_Handheld_Project
         private void btnLoadData_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color3);
-            OpenChildForm(form_real_time);
+            OpenChildForm(form_load_data);
         }
 
         private void BtnDevice_Click(object sender, EventArgs e)
