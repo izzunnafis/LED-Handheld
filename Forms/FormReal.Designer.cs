@@ -349,7 +349,7 @@ namespace LED_Handheld_Project.Forms
             this.chartData.Series.Add(series12);
             this.chartData.Series.Add(series13);
             this.chartData.Series.Add(series14);
-            this.chartData.Size = new System.Drawing.Size(1075, 352);
+            this.chartData.Size = new System.Drawing.Size(1141, 352);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
             // 
