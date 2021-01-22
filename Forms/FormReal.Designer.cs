@@ -51,8 +51,6 @@ namespace LED_Handheld_Project.Forms
             this.lbHumidity = new System.Windows.Forms.Label();
             this.lbTemperature = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
-            this.tbOperator = new System.Windows.Forms.TextBox();
-            this.tbModule = new System.Windows.Forms.TextBox();
             this.tbDate = new System.Windows.Forms.TextBox();
             this.lbOperator = new System.Windows.Forms.Label();
             this.lbModule = new System.Windows.Forms.Label();
@@ -93,6 +91,8 @@ namespace LED_Handheld_Project.Forms
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.tbModule = new System.Windows.Forms.TextBox();
+            this.tbOperator = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +100,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(234, 156);
+            this.tbHumidity.Location = new System.Drawing.Point(260, 156);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHumidity.Multiline = true;
             this.tbHumidity.Name = "tbHumidity";
@@ -111,7 +111,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTemperature.Location = new System.Drawing.Point(234, 122);
+            this.tbTemperature.Location = new System.Drawing.Point(260, 122);
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTemperature.Multiline = true;
             this.tbTemperature.Name = "tbTemperature";
@@ -126,9 +126,9 @@ namespace LED_Handheld_Project.Forms
             this.lbHumidity.ForeColor = System.Drawing.Color.Black;
             this.lbHumidity.Location = new System.Drawing.Point(45, 156);
             this.lbHumidity.Name = "lbHumidity";
-            this.lbHumidity.Size = new System.Drawing.Size(108, 27);
+            this.lbHumidity.Size = new System.Drawing.Size(113, 27);
             this.lbHumidity.TabIndex = 37;
-            this.lbHumidity.Text = "Humidity";
+            this.lbHumidity.Text = "Humidity ";
             // 
             // lbTemperature
             // 
@@ -138,16 +138,16 @@ namespace LED_Handheld_Project.Forms
             this.lbTemperature.ForeColor = System.Drawing.Color.Black;
             this.lbTemperature.Location = new System.Drawing.Point(45, 122);
             this.lbTemperature.Name = "lbTemperature";
-            this.lbTemperature.Size = new System.Drawing.Size(144, 27);
+            this.lbTemperature.Size = new System.Drawing.Size(149, 27);
             this.lbTemperature.TabIndex = 36;
-            this.lbTemperature.Text = "Temperature";
+            this.lbTemperature.Text = "Temperature ";
             // 
             // btnStart
             // 
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(402, 181);
+            this.btnStart.Location = new System.Drawing.Point(428, 181);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(100, 45);
@@ -155,34 +155,6 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // tbOperator
-            // 
-            this.tbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbOperator.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOperator.Location = new System.Drawing.Point(939, 92);
-            this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbOperator.Multiline = true;
-            this.tbOperator.Name = "tbOperator";
-            this.tbOperator.Size = new System.Drawing.Size(189, 27);
-            this.tbOperator.TabIndex = 32;
-            this.tbOperator.Text = " ";
-            this.tbOperator.UseWaitCursor = true;
-            // 
-            // tbModule
-            // 
-            this.tbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbModule.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbModule.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbModule.Location = new System.Drawing.Point(939, 57);
-            this.tbModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbModule.Multiline = true;
-            this.tbModule.Name = "tbModule";
-            this.tbModule.Size = new System.Drawing.Size(189, 27);
-            this.tbModule.TabIndex = 31;
-            this.tbModule.Text = " ";
-            this.tbModule.UseWaitCursor = true;
             // 
             // tbDate
             // 
@@ -203,11 +175,11 @@ namespace LED_Handheld_Project.Forms
             this.lbOperator.BackColor = System.Drawing.SystemColors.Control;
             this.lbOperator.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOperator.ForeColor = System.Drawing.Color.Black;
-            this.lbOperator.Location = new System.Drawing.Point(747, 92);
+            this.lbOperator.Location = new System.Drawing.Point(727, 92);
             this.lbOperator.Name = "lbOperator";
-            this.lbOperator.Size = new System.Drawing.Size(132, 27);
+            this.lbOperator.Size = new System.Drawing.Size(137, 27);
             this.lbOperator.TabIndex = 29;
-            this.lbOperator.Text = "Operator ID";
+            this.lbOperator.Text = "Operator ID ";
             this.lbOperator.Click += new System.EventHandler(this.lbOperator_Click);
             // 
             // lbModule
@@ -217,11 +189,11 @@ namespace LED_Handheld_Project.Forms
             this.lbModule.BackColor = System.Drawing.SystemColors.Control;
             this.lbModule.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbModule.ForeColor = System.Drawing.Color.Black;
-            this.lbModule.Location = new System.Drawing.Point(747, 57);
+            this.lbModule.Location = new System.Drawing.Point(727, 57);
             this.lbModule.Name = "lbModule";
-            this.lbModule.Size = new System.Drawing.Size(118, 27);
+            this.lbModule.Size = new System.Drawing.Size(123, 27);
             this.lbModule.TabIndex = 28;
-            this.lbModule.Text = "Module ID";
+            this.lbModule.Text = "Module ID ";
             // 
             // lbDate
             // 
@@ -230,11 +202,11 @@ namespace LED_Handheld_Project.Forms
             this.lbDate.BackColor = System.Drawing.SystemColors.Control;
             this.lbDate.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(747, 22);
+            this.lbDate.Location = new System.Drawing.Point(727, 22);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(61, 27);
+            this.lbDate.Size = new System.Drawing.Size(66, 27);
             this.lbDate.TabIndex = 27;
-            this.lbDate.Text = "Date";
+            this.lbDate.Text = "Date ";
             // 
             // rtbSerialData
             // 
@@ -357,7 +329,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cbPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbPort.FormattingEnabled = true;
-            this.cbPort.Location = new System.Drawing.Point(245, 190);
+            this.cbPort.Location = new System.Drawing.Point(271, 190);
             this.cbPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPort.Name = "cbPort";
             this.cbPort.Size = new System.Drawing.Size(132, 24);
@@ -371,9 +343,9 @@ namespace LED_Handheld_Project.Forms
             this.lbPort.ForeColor = System.Drawing.Color.Black;
             this.lbPort.Location = new System.Drawing.Point(45, 189);
             this.lbPort.Name = "lbPort";
-            this.lbPort.Size = new System.Drawing.Size(121, 27);
+            this.lbPort.Size = new System.Drawing.Size(126, 27);
             this.lbPort.TabIndex = 22;
-            this.lbPort.Text = "Port Name";
+            this.lbPort.Text = "Port Name ";
             // 
             // serialPort1
             // 
@@ -399,7 +371,7 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.FlatAppearance.BorderSize = 0;
             this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHold.Location = new System.Drawing.Point(508, 181);
+            this.btnHold.Location = new System.Drawing.Point(534, 181);
             this.btnHold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHold.Name = "btnHold";
             this.btnHold.Size = new System.Drawing.Size(100, 45);
@@ -814,6 +786,30 @@ namespace LED_Handheld_Project.Forms
             this.label14.Text = "VRef1 ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tbModule
+            // 
+            this.tbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbModule.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbModule.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbModule.Location = new System.Drawing.Point(939, 57);
+            this.tbModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbModule.Multiline = true;
+            this.tbModule.Name = "tbModule";
+            this.tbModule.Size = new System.Drawing.Size(189, 27);
+            this.tbModule.TabIndex = 100;
+            // 
+            // tbOperator
+            // 
+            this.tbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbOperator.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOperator.Location = new System.Drawing.Point(939, 92);
+            this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbOperator.Multiline = true;
+            this.tbOperator.Name = "tbOperator";
+            this.tbOperator.Size = new System.Drawing.Size(189, 27);
+            this.tbOperator.TabIndex = 101;
+            // 
             // FormReal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -821,6 +817,8 @@ namespace LED_Handheld_Project.Forms
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1160, 813);
+            this.Controls.Add(this.tbOperator);
+            this.Controls.Add(this.tbModule);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
@@ -856,8 +854,6 @@ namespace LED_Handheld_Project.Forms
             this.Controls.Add(this.lbHumidity);
             this.Controls.Add(this.lbTemperature);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.tbOperator);
-            this.Controls.Add(this.tbModule);
             this.Controls.Add(this.tbDate);
             this.Controls.Add(this.lbOperator);
             this.Controls.Add(this.lbModule);
@@ -884,8 +880,6 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Label lbHumidity;
         private System.Windows.Forms.Label lbTemperature;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.TextBox tbOperator;
-        private System.Windows.Forms.TextBox tbModule;
         private System.Windows.Forms.TextBox tbDate;
         private System.Windows.Forms.Label lbOperator;
         private System.Windows.Forms.Label lbModule;
@@ -926,5 +920,7 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tbModule;
+        private System.Windows.Forms.TextBox tbOperator;
     }
 }
