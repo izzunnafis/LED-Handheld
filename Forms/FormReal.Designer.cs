@@ -86,33 +86,33 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(165, 161);
+            this.tbHumidity.Location = new System.Drawing.Point(206, 156);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHumidity.Multiline = true;
             this.tbHumidity.Name = "tbHumidity";
-            this.tbHumidity.Size = new System.Drawing.Size(91, 22);
+            this.tbHumidity.Size = new System.Drawing.Size(132, 27);
             this.tbHumidity.TabIndex = 39;
             // 
             // tbTemperature
             // 
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTemperature.Location = new System.Drawing.Point(165, 133);
+            this.tbTemperature.Location = new System.Drawing.Point(206, 122);
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTemperature.Multiline = true;
             this.tbTemperature.Name = "tbTemperature";
-            this.tbTemperature.Size = new System.Drawing.Size(91, 22);
+            this.tbTemperature.Size = new System.Drawing.Size(132, 27);
             this.tbTemperature.TabIndex = 38;
             // 
             // lbHumidity
             // 
             this.lbHumidity.AutoSize = true;
             this.lbHumidity.BackColor = System.Drawing.SystemColors.Control;
-            this.lbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHumidity.ForeColor = System.Drawing.Color.Black;
-            this.lbHumidity.Location = new System.Drawing.Point(45, 160);
+            this.lbHumidity.Location = new System.Drawing.Point(45, 156);
             this.lbHumidity.Name = "lbHumidity";
-            this.lbHumidity.Size = new System.Drawing.Size(75, 20);
+            this.lbHumidity.Size = new System.Drawing.Size(108, 27);
             this.lbHumidity.TabIndex = 37;
             this.lbHumidity.Text = "Humidity";
             // 
@@ -120,11 +120,11 @@ namespace LED_Handheld_Project.Forms
             // 
             this.lbTemperature.AutoSize = true;
             this.lbTemperature.BackColor = System.Drawing.SystemColors.Control;
-            this.lbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemperature.ForeColor = System.Drawing.Color.Black;
-            this.lbTemperature.Location = new System.Drawing.Point(45, 132);
+            this.lbTemperature.Location = new System.Drawing.Point(45, 122);
             this.lbTemperature.Name = "lbTemperature";
-            this.lbTemperature.Size = new System.Drawing.Size(104, 20);
+            this.lbTemperature.Size = new System.Drawing.Size(144, 27);
             this.lbTemperature.TabIndex = 36;
             this.lbTemperature.Text = "Temperature";
             // 
@@ -133,7 +133,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(316, 181);
+            this.btnStart.Location = new System.Drawing.Point(363, 181);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(120, 50);
@@ -146,12 +146,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOperator.Location = new System.Drawing.Point(940, 92);
+            this.tbOperator.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOperator.Location = new System.Drawing.Point(939, 92);
             this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOperator.Multiline = true;
             this.tbOperator.Name = "tbOperator";
-            this.tbOperator.Size = new System.Drawing.Size(155, 22);
+            this.tbOperator.Size = new System.Drawing.Size(189, 27);
             this.tbOperator.TabIndex = 32;
             this.tbOperator.Text = " ";
             this.tbOperator.UseWaitCursor = true;
@@ -160,12 +160,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbModule.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbModule.Location = new System.Drawing.Point(940, 57);
+            this.tbModule.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbModule.Location = new System.Drawing.Point(939, 57);
             this.tbModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbModule.Multiline = true;
             this.tbModule.Name = "tbModule";
-            this.tbModule.Size = new System.Drawing.Size(155, 22);
+            this.tbModule.Size = new System.Drawing.Size(189, 27);
             this.tbModule.TabIndex = 31;
             this.tbModule.Text = " ";
             this.tbModule.UseWaitCursor = true;
@@ -174,12 +174,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDate.Location = new System.Drawing.Point(940, 22);
+            this.tbDate.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDate.Location = new System.Drawing.Point(939, 22);
             this.tbDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDate.Multiline = true;
             this.tbDate.Name = "tbDate";
-            this.tbDate.Size = new System.Drawing.Size(155, 22);
+            this.tbDate.Size = new System.Drawing.Size(189, 27);
             this.tbDate.TabIndex = 30;
             // 
             // lbOperator
@@ -187,11 +187,11 @@ namespace LED_Handheld_Project.Forms
             this.lbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbOperator.AutoSize = true;
             this.lbOperator.BackColor = System.Drawing.SystemColors.Control;
-            this.lbOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOperator.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOperator.ForeColor = System.Drawing.Color.Black;
-            this.lbOperator.Location = new System.Drawing.Point(822, 92);
+            this.lbOperator.Location = new System.Drawing.Point(800, 92);
             this.lbOperator.Name = "lbOperator";
-            this.lbOperator.Size = new System.Drawing.Size(97, 20);
+            this.lbOperator.Size = new System.Drawing.Size(132, 27);
             this.lbOperator.TabIndex = 29;
             this.lbOperator.Text = "Operator ID";
             this.lbOperator.Click += new System.EventHandler(this.lbOperator_Click);
@@ -201,11 +201,11 @@ namespace LED_Handheld_Project.Forms
             this.lbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbModule.AutoSize = true;
             this.lbModule.BackColor = System.Drawing.SystemColors.Control;
-            this.lbModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbModule.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbModule.ForeColor = System.Drawing.Color.Black;
-            this.lbModule.Location = new System.Drawing.Point(822, 57);
+            this.lbModule.Location = new System.Drawing.Point(800, 57);
             this.lbModule.Name = "lbModule";
-            this.lbModule.Size = new System.Drawing.Size(85, 20);
+            this.lbModule.Size = new System.Drawing.Size(118, 27);
             this.lbModule.TabIndex = 28;
             this.lbModule.Text = "Module ID";
             // 
@@ -214,18 +214,18 @@ namespace LED_Handheld_Project.Forms
             this.lbDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.SystemColors.Control;
-            this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(822, 22);
+            this.lbDate.Location = new System.Drawing.Point(800, 22);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(45, 20);
+            this.lbDate.Size = new System.Drawing.Size(61, 27);
             this.lbDate.TabIndex = 27;
             this.lbDate.Text = "Date";
             // 
             // rtbSerialData
             // 
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbSerialData.Location = new System.Drawing.Point(450, 618);
+            this.rtbSerialData.Location = new System.Drawing.Point(450, 594);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbSerialData.Name = "rtbSerialData";
             this.rtbSerialData.Size = new System.Drawing.Size(645, 34);
@@ -239,7 +239,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(975, 719);
+            this.btnSave.Location = new System.Drawing.Point(1008, 740);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 50);
@@ -335,7 +335,7 @@ namespace LED_Handheld_Project.Forms
             this.chartData.Series.Add(series12);
             this.chartData.Series.Add(series13);
             this.chartData.Series.Add(series14);
-            this.chartData.Size = new System.Drawing.Size(1046, 363);
+            this.chartData.Size = new System.Drawing.Size(1079, 382);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
             // 
@@ -343,21 +343,21 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cbPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbPort.FormattingEnabled = true;
-            this.cbPort.Location = new System.Drawing.Point(165, 192);
+            this.cbPort.Location = new System.Drawing.Point(206, 190);
             this.cbPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPort.Name = "cbPort";
-            this.cbPort.Size = new System.Drawing.Size(121, 24);
+            this.cbPort.Size = new System.Drawing.Size(132, 24);
             this.cbPort.TabIndex = 23;
             // 
             // lbPort
             // 
             this.lbPort.AutoSize = true;
             this.lbPort.BackColor = System.Drawing.SystemColors.Control;
-            this.lbPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPort.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPort.ForeColor = System.Drawing.Color.Black;
-            this.lbPort.Location = new System.Drawing.Point(45, 196);
+            this.lbPort.Location = new System.Drawing.Point(45, 189);
             this.lbPort.Name = "lbPort";
-            this.lbPort.Size = new System.Drawing.Size(89, 20);
+            this.lbPort.Size = new System.Drawing.Size(121, 27);
             this.lbPort.TabIndex = 22;
             this.lbPort.Text = "Port Name";
             // 
@@ -371,7 +371,7 @@ namespace LED_Handheld_Project.Forms
             this.btnGridTable.FlatAppearance.BorderSize = 0;
             this.btnGridTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGridTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGridTable.Location = new System.Drawing.Point(1009, 181);
+            this.btnGridTable.Location = new System.Drawing.Point(1042, 181);
             this.btnGridTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGridTable.Name = "btnGridTable";
             this.btnGridTable.Size = new System.Drawing.Size(86, 50);
@@ -385,7 +385,7 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.FlatAppearance.BorderSize = 0;
             this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHold.Location = new System.Drawing.Point(442, 181);
+            this.btnHold.Location = new System.Drawing.Point(495, 181);
             this.btnHold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHold.Name = "btnHold";
             this.btnHold.Size = new System.Drawing.Size(120, 50);
@@ -397,16 +397,14 @@ namespace LED_Handheld_Project.Forms
             // cekV1
             // 
             this.cekV1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV1.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV1.AutoSize = true;
-            this.cekV1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV1.ForeColor = System.Drawing.Color.White;
-            this.cekV1.Location = new System.Drawing.Point(49, 625);
+            this.cekV1.Location = new System.Drawing.Point(49, 650);
             this.cekV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV1.Name = "cekV1";
-            this.cekV1.Size = new System.Drawing.Size(35, 27);
+            this.cekV1.Size = new System.Drawing.Size(43, 21);
             this.cekV1.TabIndex = 72;
             this.cekV1.Text = "V1";
             this.cekV1.UseVisualStyleBackColor = true;
@@ -414,16 +412,14 @@ namespace LED_Handheld_Project.Forms
             // cekV2
             // 
             this.cekV2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV2.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV2.AutoSize = true;
-            this.cekV2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV2.ForeColor = System.Drawing.Color.White;
-            this.cekV2.Location = new System.Drawing.Point(49, 678);
+            this.cekV2.Location = new System.Drawing.Point(49, 703);
             this.cekV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV2.Name = "cekV2";
-            this.cekV2.Size = new System.Drawing.Size(35, 27);
+            this.cekV2.Size = new System.Drawing.Size(43, 21);
             this.cekV2.TabIndex = 73;
             this.cekV2.Text = "V2";
             this.cekV2.UseVisualStyleBackColor = true;
@@ -431,16 +427,14 @@ namespace LED_Handheld_Project.Forms
             // cekV3
             // 
             this.cekV3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV3.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV3.AutoSize = true;
-            this.cekV3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV3.ForeColor = System.Drawing.Color.White;
-            this.cekV3.Location = new System.Drawing.Point(49, 731);
+            this.cekV3.Location = new System.Drawing.Point(49, 756);
             this.cekV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV3.Name = "cekV3";
-            this.cekV3.Size = new System.Drawing.Size(35, 27);
+            this.cekV3.Size = new System.Drawing.Size(43, 21);
             this.cekV3.TabIndex = 74;
             this.cekV3.Text = "V3";
             this.cekV3.UseVisualStyleBackColor = true;
@@ -448,16 +442,14 @@ namespace LED_Handheld_Project.Forms
             // cekV6
             // 
             this.cekV6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV6.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV6.AutoSize = true;
-            this.cekV6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV6.ForeColor = System.Drawing.Color.White;
-            this.cekV6.Location = new System.Drawing.Point(153, 731);
+            this.cekV6.Location = new System.Drawing.Point(153, 756);
             this.cekV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV6.Name = "cekV6";
-            this.cekV6.Size = new System.Drawing.Size(35, 27);
+            this.cekV6.Size = new System.Drawing.Size(43, 21);
             this.cekV6.TabIndex = 77;
             this.cekV6.Text = "V6";
             this.cekV6.UseVisualStyleBackColor = true;
@@ -465,16 +457,14 @@ namespace LED_Handheld_Project.Forms
             // cekV5
             // 
             this.cekV5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV5.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV5.AutoSize = true;
-            this.cekV5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV5.ForeColor = System.Drawing.Color.White;
-            this.cekV5.Location = new System.Drawing.Point(153, 678);
+            this.cekV5.Location = new System.Drawing.Point(153, 703);
             this.cekV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV5.Name = "cekV5";
-            this.cekV5.Size = new System.Drawing.Size(35, 27);
+            this.cekV5.Size = new System.Drawing.Size(43, 21);
             this.cekV5.TabIndex = 76;
             this.cekV5.Text = "V5";
             this.cekV5.UseVisualStyleBackColor = true;
@@ -482,16 +472,14 @@ namespace LED_Handheld_Project.Forms
             // cekV4
             // 
             this.cekV4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV4.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV4.AutoSize = true;
-            this.cekV4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV4.ForeColor = System.Drawing.Color.White;
-            this.cekV4.Location = new System.Drawing.Point(153, 625);
+            this.cekV4.Location = new System.Drawing.Point(153, 650);
             this.cekV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV4.Name = "cekV4";
-            this.cekV4.Size = new System.Drawing.Size(35, 27);
+            this.cekV4.Size = new System.Drawing.Size(43, 21);
             this.cekV4.TabIndex = 75;
             this.cekV4.Text = "V4";
             this.cekV4.UseVisualStyleBackColor = true;
@@ -499,16 +487,14 @@ namespace LED_Handheld_Project.Forms
             // cekV9
             // 
             this.cekV9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV9.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV9.AutoSize = true;
-            this.cekV9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV9.ForeColor = System.Drawing.Color.White;
-            this.cekV9.Location = new System.Drawing.Point(257, 731);
+            this.cekV9.Location = new System.Drawing.Point(257, 756);
             this.cekV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV9.Name = "cekV9";
-            this.cekV9.Size = new System.Drawing.Size(35, 27);
+            this.cekV9.Size = new System.Drawing.Size(43, 21);
             this.cekV9.TabIndex = 80;
             this.cekV9.Text = "V9";
             this.cekV9.UseVisualStyleBackColor = true;
@@ -516,16 +502,14 @@ namespace LED_Handheld_Project.Forms
             // cekV8
             // 
             this.cekV8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV8.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV8.AutoSize = true;
-            this.cekV8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV8.ForeColor = System.Drawing.Color.White;
-            this.cekV8.Location = new System.Drawing.Point(257, 678);
+            this.cekV8.Location = new System.Drawing.Point(257, 703);
             this.cekV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV8.Name = "cekV8";
-            this.cekV8.Size = new System.Drawing.Size(35, 27);
+            this.cekV8.Size = new System.Drawing.Size(43, 21);
             this.cekV8.TabIndex = 79;
             this.cekV8.Text = "V8";
             this.cekV8.UseVisualStyleBackColor = true;
@@ -533,16 +517,14 @@ namespace LED_Handheld_Project.Forms
             // cekV7
             // 
             this.cekV7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekV7.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekV7.AutoSize = true;
-            this.cekV7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekV7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekV7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV7.ForeColor = System.Drawing.Color.White;
-            this.cekV7.Location = new System.Drawing.Point(257, 625);
+            this.cekV7.Location = new System.Drawing.Point(257, 650);
             this.cekV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV7.Name = "cekV7";
-            this.cekV7.Size = new System.Drawing.Size(35, 27);
+            this.cekV7.Size = new System.Drawing.Size(43, 21);
             this.cekV7.TabIndex = 78;
             this.cekV7.Text = "V7";
             this.cekV7.UseVisualStyleBackColor = true;
@@ -550,16 +532,14 @@ namespace LED_Handheld_Project.Forms
             // cekVOut3
             // 
             this.cekVOut3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekVOut3.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekVOut3.AutoSize = true;
-            this.cekVOut3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekVOut3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekVOut3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut3.ForeColor = System.Drawing.Color.White;
-            this.cekVOut3.Location = new System.Drawing.Point(370, 731);
+            this.cekVOut3.Location = new System.Drawing.Point(370, 756);
             this.cekVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut3.Name = "cekVOut3";
-            this.cekVOut3.Size = new System.Drawing.Size(58, 27);
+            this.cekVOut3.Size = new System.Drawing.Size(66, 21);
             this.cekVOut3.TabIndex = 83;
             this.cekVOut3.Text = "VOut3";
             this.cekVOut3.UseVisualStyleBackColor = true;
@@ -567,16 +547,14 @@ namespace LED_Handheld_Project.Forms
             // cekVOut2
             // 
             this.cekVOut2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekVOut2.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekVOut2.AutoSize = true;
-            this.cekVOut2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekVOut2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekVOut2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut2.ForeColor = System.Drawing.Color.White;
-            this.cekVOut2.Location = new System.Drawing.Point(370, 678);
+            this.cekVOut2.Location = new System.Drawing.Point(370, 703);
             this.cekVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut2.Name = "cekVOut2";
-            this.cekVOut2.Size = new System.Drawing.Size(58, 27);
+            this.cekVOut2.Size = new System.Drawing.Size(66, 21);
             this.cekVOut2.TabIndex = 82;
             this.cekVOut2.Text = "VOut2";
             this.cekVOut2.UseVisualStyleBackColor = true;
@@ -584,16 +562,14 @@ namespace LED_Handheld_Project.Forms
             // cekVOut1
             // 
             this.cekVOut1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekVOut1.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekVOut1.AutoSize = true;
-            this.cekVOut1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekVOut1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekVOut1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut1.ForeColor = System.Drawing.Color.White;
-            this.cekVOut1.Location = new System.Drawing.Point(370, 625);
+            this.cekVOut1.Location = new System.Drawing.Point(370, 650);
             this.cekVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut1.Name = "cekVOut1";
-            this.cekVOut1.Size = new System.Drawing.Size(58, 27);
+            this.cekVOut1.Size = new System.Drawing.Size(66, 21);
             this.cekVOut1.TabIndex = 81;
             this.cekVOut1.Text = "VOut1";
             this.cekVOut1.UseVisualStyleBackColor = true;
@@ -601,16 +577,14 @@ namespace LED_Handheld_Project.Forms
             // cekVRef2
             // 
             this.cekVRef2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekVRef2.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekVRef2.AutoSize = true;
-            this.cekVRef2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekVRef2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekVRef2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVRef2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVRef2.ForeColor = System.Drawing.Color.White;
-            this.cekVRef2.Location = new System.Drawing.Point(505, 678);
+            this.cekVRef2.Location = new System.Drawing.Point(505, 703);
             this.cekVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVRef2.Name = "cekVRef2";
-            this.cekVRef2.Size = new System.Drawing.Size(57, 27);
+            this.cekVRef2.Size = new System.Drawing.Size(65, 21);
             this.cekVRef2.TabIndex = 85;
             this.cekVRef2.Text = "VRef2";
             this.cekVRef2.UseVisualStyleBackColor = true;
@@ -618,16 +592,14 @@ namespace LED_Handheld_Project.Forms
             // cekVRef1
             // 
             this.cekVRef1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cekVRef1.Appearance = System.Windows.Forms.Appearance.Button;
             this.cekVRef1.AutoSize = true;
-            this.cekVRef1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
-            this.cekVRef1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.cekVRef1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVRef1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVRef1.ForeColor = System.Drawing.Color.White;
-            this.cekVRef1.Location = new System.Drawing.Point(505, 625);
+            this.cekVRef1.Location = new System.Drawing.Point(505, 650);
             this.cekVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVRef1.Name = "cekVRef1";
-            this.cekVRef1.Size = new System.Drawing.Size(57, 27);
+            this.cekVRef1.Size = new System.Drawing.Size(65, 21);
             this.cekVRef1.TabIndex = 84;
             this.cekVRef1.Text = "VRef1";
             this.cekVRef1.UseVisualStyleBackColor = true;
@@ -638,7 +610,7 @@ namespace LED_Handheld_Project.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1162, 784);
+            this.ClientSize = new System.Drawing.Size(1160, 803);
             this.Controls.Add(this.cekVRef2);
             this.Controls.Add(this.cekVRef1);
             this.Controls.Add(this.cekVOut3);
