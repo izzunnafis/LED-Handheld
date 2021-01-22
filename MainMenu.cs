@@ -75,7 +75,7 @@ namespace LED_Handheld_Project
             btnProductionTest.Size = new System.Drawing.Size(220, 60);
             btnRealTime.Size = new System.Drawing.Size(220, 60);
             btnHome.Size = new System.Drawing.Size(200, 64);
-            iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
+            iconCurrentChildForm.Size = new System.Drawing.Size(50,50);
             panelShadow.Size = new System.Drawing.Size(1162, 9);
 
 
