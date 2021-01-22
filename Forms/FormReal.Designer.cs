@@ -30,22 +30,22 @@ namespace LED_Handheld_Project.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series59 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series60 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series61 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series62 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series63 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series64 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series65 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series66 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series67 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series68 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series69 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series70 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbHumidity = new System.Windows.Forms.TextBox();
             this.tbTemperature = new System.Windows.Forms.TextBox();
             this.lbHumidity = new System.Windows.Forms.Label();
@@ -79,14 +79,28 @@ namespace LED_Handheld_Project.Forms
             this.cekVOut1 = new System.Windows.Forms.CheckBox();
             this.cekVRef2 = new System.Windows.Forms.CheckBox();
             this.cekVRef1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).BeginInit();
             this.SuspendLayout();
             // 
             // tbHumidity
             // 
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(206, 156);
+            this.tbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHumidity.Location = new System.Drawing.Point(217, 156);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHumidity.Multiline = true;
             this.tbHumidity.Name = "tbHumidity";
@@ -96,8 +110,8 @@ namespace LED_Handheld_Project.Forms
             // tbTemperature
             // 
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTemperature.Location = new System.Drawing.Point(206, 122);
+            this.tbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTemperature.Location = new System.Drawing.Point(217, 122);
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTemperature.Multiline = true;
             this.tbTemperature.Name = "tbTemperature";
@@ -133,10 +147,10 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(363, 181);
+            this.btnStart.Location = new System.Drawing.Point(385, 181);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(120, 50);
+            this.btnStart.Size = new System.Drawing.Size(100, 45);
             this.btnStart.TabIndex = 34;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -189,7 +203,7 @@ namespace LED_Handheld_Project.Forms
             this.lbOperator.BackColor = System.Drawing.SystemColors.Control;
             this.lbOperator.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOperator.ForeColor = System.Drawing.Color.Black;
-            this.lbOperator.Location = new System.Drawing.Point(800, 92);
+            this.lbOperator.Location = new System.Drawing.Point(767, 92);
             this.lbOperator.Name = "lbOperator";
             this.lbOperator.Size = new System.Drawing.Size(132, 27);
             this.lbOperator.TabIndex = 29;
@@ -203,7 +217,7 @@ namespace LED_Handheld_Project.Forms
             this.lbModule.BackColor = System.Drawing.SystemColors.Control;
             this.lbModule.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbModule.ForeColor = System.Drawing.Color.Black;
-            this.lbModule.Location = new System.Drawing.Point(800, 57);
+            this.lbModule.Location = new System.Drawing.Point(767, 57);
             this.lbModule.Name = "lbModule";
             this.lbModule.Size = new System.Drawing.Size(118, 27);
             this.lbModule.TabIndex = 28;
@@ -216,7 +230,7 @@ namespace LED_Handheld_Project.Forms
             this.lbDate.BackColor = System.Drawing.SystemColors.Control;
             this.lbDate.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(800, 22);
+            this.lbDate.Location = new System.Drawing.Point(767, 22);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(61, 27);
             this.lbDate.TabIndex = 27;
@@ -225,7 +239,7 @@ namespace LED_Handheld_Project.Forms
             // rtbSerialData
             // 
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbSerialData.Location = new System.Drawing.Point(450, 594);
+            this.rtbSerialData.Location = new System.Drawing.Point(483, 563);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbSerialData.Name = "rtbSerialData";
             this.rtbSerialData.Size = new System.Drawing.Size(645, 34);
@@ -239,7 +253,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(1008, 740);
+            this.btnSave.Location = new System.Drawing.Point(1008, 750);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 50);
@@ -253,89 +267,89 @@ namespace LED_Handheld_Project.Forms
             this.chartData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX2.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.Name = "ChartArea1";
-            this.chartData.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartData.Legends.Add(legend1);
+            chartArea5.AxisX.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisX.MajorGrid.Enabled = false;
+            chartArea5.AxisX2.MajorGrid.Enabled = false;
+            chartArea5.AxisY.MajorGrid.Enabled = false;
+            chartArea5.Name = "ChartArea1";
+            this.chartData.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartData.Legends.Add(legend5);
             this.chartData.Location = new System.Drawing.Point(49, 246);
             this.chartData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartData.Name = "chartData";
             this.chartData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "V1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "V2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "V3";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "V4";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Legend = "Legend1";
-            series5.Name = "V5";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Legend = "Legend1";
-            series6.Name = "V6";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "Legend1";
-            series7.Name = "V7";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Legend = "Legend1";
-            series8.Name = "V8";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series9.Legend = "Legend1";
-            series9.Name = "V9";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series10.Legend = "Legend1";
-            series10.Name = "VRef1";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Legend = "Legend1";
-            series11.Name = "VRef2";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series12.Legend = "Legend1";
-            series12.Name = "VOut1";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series13.Legend = "Legend1";
-            series13.Name = "VOut2";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series14.Legend = "Legend1";
-            series14.Name = "VOut3";
-            this.chartData.Series.Add(series1);
-            this.chartData.Series.Add(series2);
-            this.chartData.Series.Add(series3);
-            this.chartData.Series.Add(series4);
-            this.chartData.Series.Add(series5);
-            this.chartData.Series.Add(series6);
-            this.chartData.Series.Add(series7);
-            this.chartData.Series.Add(series8);
-            this.chartData.Series.Add(series9);
-            this.chartData.Series.Add(series10);
-            this.chartData.Series.Add(series11);
-            this.chartData.Series.Add(series12);
-            this.chartData.Series.Add(series13);
-            this.chartData.Series.Add(series14);
-            this.chartData.Size = new System.Drawing.Size(1079, 382);
+            series57.ChartArea = "ChartArea1";
+            series57.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series57.Legend = "Legend1";
+            series57.Name = "V1";
+            series58.ChartArea = "ChartArea1";
+            series58.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series58.Legend = "Legend1";
+            series58.Name = "V2";
+            series59.ChartArea = "ChartArea1";
+            series59.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series59.Legend = "Legend1";
+            series59.Name = "V3";
+            series60.ChartArea = "ChartArea1";
+            series60.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series60.Legend = "Legend1";
+            series60.Name = "V4";
+            series61.ChartArea = "ChartArea1";
+            series61.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series61.Legend = "Legend1";
+            series61.Name = "V5";
+            series62.ChartArea = "ChartArea1";
+            series62.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series62.Legend = "Legend1";
+            series62.Name = "V6";
+            series63.ChartArea = "ChartArea1";
+            series63.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series63.Legend = "Legend1";
+            series63.Name = "V7";
+            series64.ChartArea = "ChartArea1";
+            series64.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series64.Legend = "Legend1";
+            series64.Name = "V8";
+            series65.ChartArea = "ChartArea1";
+            series65.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series65.Legend = "Legend1";
+            series65.Name = "V9";
+            series66.ChartArea = "ChartArea1";
+            series66.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series66.Legend = "Legend1";
+            series66.Name = "VRef1";
+            series67.ChartArea = "ChartArea1";
+            series67.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series67.Legend = "Legend1";
+            series67.Name = "VRef2";
+            series68.ChartArea = "ChartArea1";
+            series68.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series68.Legend = "Legend1";
+            series68.Name = "VOut1";
+            series69.ChartArea = "ChartArea1";
+            series69.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series69.Legend = "Legend1";
+            series69.Name = "VOut2";
+            series70.ChartArea = "ChartArea1";
+            series70.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series70.Legend = "Legend1";
+            series70.Name = "VOut3";
+            this.chartData.Series.Add(series57);
+            this.chartData.Series.Add(series58);
+            this.chartData.Series.Add(series59);
+            this.chartData.Series.Add(series60);
+            this.chartData.Series.Add(series61);
+            this.chartData.Series.Add(series62);
+            this.chartData.Series.Add(series63);
+            this.chartData.Series.Add(series64);
+            this.chartData.Series.Add(series65);
+            this.chartData.Series.Add(series66);
+            this.chartData.Series.Add(series67);
+            this.chartData.Series.Add(series68);
+            this.chartData.Series.Add(series69);
+            this.chartData.Series.Add(series70);
+            this.chartData.Size = new System.Drawing.Size(1079, 352);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
             // 
@@ -343,7 +357,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cbPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbPort.FormattingEnabled = true;
-            this.cbPort.Location = new System.Drawing.Point(206, 190);
+            this.cbPort.Location = new System.Drawing.Point(228, 190);
             this.cbPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPort.Name = "cbPort";
             this.cbPort.Size = new System.Drawing.Size(132, 24);
@@ -371,10 +385,10 @@ namespace LED_Handheld_Project.Forms
             this.btnGridTable.FlatAppearance.BorderSize = 0;
             this.btnGridTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGridTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGridTable.Location = new System.Drawing.Point(1042, 181);
+            this.btnGridTable.Location = new System.Drawing.Point(1043, 202);
             this.btnGridTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGridTable.Name = "btnGridTable";
-            this.btnGridTable.Size = new System.Drawing.Size(86, 50);
+            this.btnGridTable.Size = new System.Drawing.Size(85, 40);
             this.btnGridTable.TabIndex = 69;
             this.btnGridTable.Text = "Grid OFF";
             this.btnGridTable.UseVisualStyleBackColor = true;
@@ -385,10 +399,10 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.FlatAppearance.BorderSize = 0;
             this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHold.Location = new System.Drawing.Point(495, 181);
+            this.btnHold.Location = new System.Drawing.Point(491, 181);
             this.btnHold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHold.Name = "btnHold";
-            this.btnHold.Size = new System.Drawing.Size(120, 50);
+            this.btnHold.Size = new System.Drawing.Size(100, 45);
             this.btnHold.TabIndex = 70;
             this.btnHold.Text = "Hold";
             this.btnHold.UseVisualStyleBackColor = true;
@@ -401,7 +415,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV1.ForeColor = System.Drawing.Color.White;
-            this.cekV1.Location = new System.Drawing.Point(49, 650);
+            this.cekV1.Location = new System.Drawing.Point(49, 635);
             this.cekV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV1.Name = "cekV1";
             this.cekV1.Size = new System.Drawing.Size(43, 21);
@@ -416,7 +430,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV2.ForeColor = System.Drawing.Color.White;
-            this.cekV2.Location = new System.Drawing.Point(49, 703);
+            this.cekV2.Location = new System.Drawing.Point(49, 697);
             this.cekV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV2.Name = "cekV2";
             this.cekV2.Size = new System.Drawing.Size(43, 21);
@@ -431,7 +445,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV3.ForeColor = System.Drawing.Color.White;
-            this.cekV3.Location = new System.Drawing.Point(49, 756);
+            this.cekV3.Location = new System.Drawing.Point(49, 759);
             this.cekV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV3.Name = "cekV3";
             this.cekV3.Size = new System.Drawing.Size(43, 21);
@@ -446,7 +460,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV6.ForeColor = System.Drawing.Color.White;
-            this.cekV6.Location = new System.Drawing.Point(153, 756);
+            this.cekV6.Location = new System.Drawing.Point(216, 759);
             this.cekV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV6.Name = "cekV6";
             this.cekV6.Size = new System.Drawing.Size(43, 21);
@@ -461,7 +475,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV5.ForeColor = System.Drawing.Color.White;
-            this.cekV5.Location = new System.Drawing.Point(153, 703);
+            this.cekV5.Location = new System.Drawing.Point(216, 697);
             this.cekV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV5.Name = "cekV5";
             this.cekV5.Size = new System.Drawing.Size(43, 21);
@@ -476,7 +490,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV4.ForeColor = System.Drawing.Color.White;
-            this.cekV4.Location = new System.Drawing.Point(153, 650);
+            this.cekV4.Location = new System.Drawing.Point(216, 635);
             this.cekV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV4.Name = "cekV4";
             this.cekV4.Size = new System.Drawing.Size(43, 21);
@@ -491,7 +505,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV9.ForeColor = System.Drawing.Color.White;
-            this.cekV9.Location = new System.Drawing.Point(257, 756);
+            this.cekV9.Location = new System.Drawing.Point(411, 759);
             this.cekV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV9.Name = "cekV9";
             this.cekV9.Size = new System.Drawing.Size(43, 21);
@@ -506,7 +520,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV8.ForeColor = System.Drawing.Color.White;
-            this.cekV8.Location = new System.Drawing.Point(257, 703);
+            this.cekV8.Location = new System.Drawing.Point(411, 697);
             this.cekV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV8.Name = "cekV8";
             this.cekV8.Size = new System.Drawing.Size(43, 21);
@@ -521,7 +535,7 @@ namespace LED_Handheld_Project.Forms
             this.cekV7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV7.ForeColor = System.Drawing.Color.White;
-            this.cekV7.Location = new System.Drawing.Point(257, 650);
+            this.cekV7.Location = new System.Drawing.Point(411, 635);
             this.cekV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekV7.Name = "cekV7";
             this.cekV7.Size = new System.Drawing.Size(43, 21);
@@ -536,7 +550,7 @@ namespace LED_Handheld_Project.Forms
             this.cekVOut3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut3.ForeColor = System.Drawing.Color.White;
-            this.cekVOut3.Location = new System.Drawing.Point(370, 756);
+            this.cekVOut3.Location = new System.Drawing.Point(614, 759);
             this.cekVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut3.Name = "cekVOut3";
             this.cekVOut3.Size = new System.Drawing.Size(66, 21);
@@ -551,7 +565,7 @@ namespace LED_Handheld_Project.Forms
             this.cekVOut2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut2.ForeColor = System.Drawing.Color.White;
-            this.cekVOut2.Location = new System.Drawing.Point(370, 703);
+            this.cekVOut2.Location = new System.Drawing.Point(614, 697);
             this.cekVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut2.Name = "cekVOut2";
             this.cekVOut2.Size = new System.Drawing.Size(66, 21);
@@ -566,7 +580,7 @@ namespace LED_Handheld_Project.Forms
             this.cekVOut1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVOut1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVOut1.ForeColor = System.Drawing.Color.White;
-            this.cekVOut1.Location = new System.Drawing.Point(370, 650);
+            this.cekVOut1.Location = new System.Drawing.Point(614, 635);
             this.cekVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVOut1.Name = "cekVOut1";
             this.cekVOut1.Size = new System.Drawing.Size(66, 21);
@@ -581,7 +595,7 @@ namespace LED_Handheld_Project.Forms
             this.cekVRef2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVRef2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVRef2.ForeColor = System.Drawing.Color.White;
-            this.cekVRef2.Location = new System.Drawing.Point(505, 703);
+            this.cekVRef2.Location = new System.Drawing.Point(838, 697);
             this.cekVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVRef2.Name = "cekVRef2";
             this.cekVRef2.Size = new System.Drawing.Size(65, 21);
@@ -596,7 +610,7 @@ namespace LED_Handheld_Project.Forms
             this.cekVRef1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekVRef1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekVRef1.ForeColor = System.Drawing.Color.White;
-            this.cekVRef1.Location = new System.Drawing.Point(505, 650);
+            this.cekVRef1.Location = new System.Drawing.Point(838, 635);
             this.cekVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cekVRef1.Name = "cekVRef1";
             this.cekVRef1.Size = new System.Drawing.Size(65, 21);
@@ -604,13 +618,223 @@ namespace LED_Handheld_Project.Forms
             this.cekVRef1.Text = "VRef1";
             this.cekVRef1.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(68, 622);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 41);
+            this.label1.TabIndex = 86;
+            this.label1.Text = "V1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(68, 684);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 41);
+            this.label2.TabIndex = 87;
+            this.label2.Text = "V2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(68, 746);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 41);
+            this.label3.TabIndex = 88;
+            this.label3.Text = "V3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(235, 746);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 41);
+            this.label4.TabIndex = 91;
+            this.label4.Text = "V6";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(235, 684);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 41);
+            this.label5.TabIndex = 90;
+            this.label5.Text = "V5";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(235, 622);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 41);
+            this.label6.TabIndex = 89;
+            this.label6.Text = "V4";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(429, 746);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 41);
+            this.label7.TabIndex = 94;
+            this.label7.Text = "V9";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(429, 684);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 41);
+            this.label8.TabIndex = 93;
+            this.label8.Text = "V8";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(429, 622);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 41);
+            this.label9.TabIndex = 92;
+            this.label9.Text = "V7";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
+            this.label10.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(631, 746);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 41);
+            this.label10.TabIndex = 97;
+            this.label10.Text = "VOut3  ";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(631, 684);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(135, 41);
+            this.label11.TabIndex = 96;
+            this.label11.Text = "VOut2  ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
+            this.label12.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(631, 622);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 41);
+            this.label12.TabIndex = 95;
+            this.label12.Text = "VOut1 ";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.Control;
+            this.label13.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(856, 684);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(130, 41);
+            this.label13.TabIndex = 99;
+            this.label13.Text = "VRef2  ";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.SystemColors.Control;
+            this.label14.Font = new System.Drawing.Font("Montserrat ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(856, 622);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(116, 41);
+            this.label14.TabIndex = 98;
+            this.label14.Text = "VRef1 ";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FormReal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1160, 803);
+            this.ClientSize = new System.Drawing.Size(1160, 813);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cekVRef2);
             this.Controls.Add(this.cekVRef1);
             this.Controls.Add(this.cekVOut3);
@@ -688,5 +912,19 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.CheckBox cekVOut1;
         private System.Windows.Forms.CheckBox cekVRef2;
         private System.Windows.Forms.CheckBox cekVRef1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
