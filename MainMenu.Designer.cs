@@ -292,7 +292,7 @@ namespace LED_Handheld_Project
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "MainMenu";
-            this.Text = "Main Menu";
+            this.Text = "LED Handheld";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
