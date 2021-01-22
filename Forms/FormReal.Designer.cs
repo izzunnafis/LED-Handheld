@@ -211,7 +211,7 @@ namespace LED_Handheld_Project.Forms
             // rtbSerialData
             // 
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbSerialData.Location = new System.Drawing.Point(483, 563);
+            this.rtbSerialData.Location = new System.Drawing.Point(411, 564);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbSerialData.Name = "rtbSerialData";
             this.rtbSerialData.Size = new System.Drawing.Size(645, 34);
@@ -261,7 +261,7 @@ namespace LED_Handheld_Project.Forms
             legend1.ForeColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
             this.chartData.Legends.Add(legend1);
-            this.chartData.Location = new System.Drawing.Point(49, 246);
+            this.chartData.Location = new System.Drawing.Point(-13, 246);
             this.chartData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartData.Name = "chartData";
             this.chartData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -349,7 +349,7 @@ namespace LED_Handheld_Project.Forms
             this.chartData.Series.Add(series12);
             this.chartData.Series.Add(series13);
             this.chartData.Series.Add(series14);
-            this.chartData.Size = new System.Drawing.Size(1079, 352);
+            this.chartData.Size = new System.Drawing.Size(1075, 352);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
             // 
