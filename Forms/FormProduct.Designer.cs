@@ -314,6 +314,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.TabIndex = 211;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // textBox1
             // 
@@ -817,7 +818,7 @@ namespace LED_Handheld_Project.Forms
             this.textBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(220, 41);
+            this.textBox41.Size = new System.Drawing.Size(186, 41);
             this.textBox41.TabIndex = 272;
             this.textBox41.Text = "Humidity";
             // 
@@ -825,11 +826,11 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valHumidity.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valHumidity.Location = new System.Drawing.Point(706, 616);
+            this.valHumidity.Location = new System.Drawing.Point(672, 616);
             this.valHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valHumidity.Multiline = true;
             this.valHumidity.Name = "valHumidity";
-            this.valHumidity.Size = new System.Drawing.Size(98, 41);
+            this.valHumidity.Size = new System.Drawing.Size(132, 41);
             this.valHumidity.TabIndex = 270;
             this.valHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -841,7 +842,7 @@ namespace LED_Handheld_Project.Forms
             this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox44.Multiline = true;
             this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(220, 41);
+            this.textBox44.Size = new System.Drawing.Size(186, 41);
             this.textBox44.TabIndex = 269;
             this.textBox44.Text = "Temperature";
             // 
@@ -849,11 +850,11 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valTemperature.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valTemperature.Location = new System.Drawing.Point(706, 571);
+            this.valTemperature.Location = new System.Drawing.Point(672, 571);
             this.valTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valTemperature.Multiline = true;
             this.valTemperature.Name = "valTemperature";
-            this.valTemperature.Size = new System.Drawing.Size(98, 41);
+            this.valTemperature.Size = new System.Drawing.Size(132, 41);
             this.valTemperature.TabIndex = 267;
             this.valTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

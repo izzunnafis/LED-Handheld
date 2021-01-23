@@ -22,6 +22,9 @@ namespace LED_Handheld_Project.Forms
         
 
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
+
+        
+
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
 
@@ -155,6 +158,8 @@ namespace LED_Handheld_Project.Forms
             tbDate.Text = DateTime.Now.ToString("G");
             tbTemperature.Text = ": " + Temperature + " °C";
             tbHumidity.Text = ": " + Humidity + " %";
+            valTemperature.Text = "  " + Temperature + " °C";
+            valHumidity.Text = "  " + Humidity + " %";
             for (int i = 0; i < 14; i++)
                 value[i].Text = voltages[i];
             string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
@@ -163,7 +168,117 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessValue()
         {
-            throw new NotImplementedException();
+            /*for (int i = 0; i < 9; i++)
+            {
+                float volt_val = float.Parse(voltages[i]);
+                if (volt_val >= 11.8 && volt_val <= 12.2)
+                {
+                    result[i].Text = "OK";
+                    result[i].BackColor = Color.Green;
+                }
+                else
+                {
+                    result[i].Text = "NOK";
+                    result[i].BackColor = Color.Red;
+                }
+            }*/
+            for (int i = 0; i < 9; i++)
+            {
+                double data_V;
+                bool result_V = double.TryParse(voltages[i], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V);
+                if (result_V )
+                {
+                    if(data_V >= 11.8 && data_V <= 12.2)
+                    {
+                        result[i].Text = "OK";
+                        result[i].BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        result[i].Text = "NOK";
+                        result[i].BackColor = Color.Red;
+                    }
+                }
+            }
+            double data_V9;//VRef1
+            bool result_V9 = double.TryParse(voltages[9], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V9);
+            if (result_V9)
+            {
+                if (data_V9 >= 6.3 && data_V9 <= 6.7)
+                {
+                    result[9].Text = "OK";
+                    result[9].BackColor = Color.Green;
+                }
+                else
+                {
+                    result[9].Text = "NOK";
+                    result[9].BackColor = Color.Red;
+                }
+            }
+            double data_VRef2;//VRef2
+            bool result_VRef2 = double.TryParse(voltages[10], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_VRef2);
+            if (result_VRef2)
+            {
+                if (data_VRef2 >= 5.3 && data_VRef2 <= 5.7)
+                {
+                    result[10].Text = "OK";
+                    result[10].BackColor = Color.Green;
+                }
+                else
+                {
+                    result[10].Text = "NOK";
+                    result[10].BackColor = Color.Red;
+                }
+            }
+            for (int i = 11; i < 14; i++)
+            {
+                double data_V;
+                bool result_V = double.TryParse(voltages[i], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V);
+                if (result_V)
+                {
+                    if (data_V >= 7.8 && data_V <= 8.2)
+                    {
+                        result[i].Text = "OK";
+                        result[i].BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        result[i].Text = "NOK";
+                        result[i].BackColor = Color.Red;
+                    }
+                }
+            }
+
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string time = DateTime.Now.ToString("ddMMyyyyTHHmmss");
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.InitialDirectory = @"C:\Users\%USERNAME%\Documents\";
+            saveFileDialog1.Title = "Save text Files";
+            saveFileDialog1.FileName = time + " Data Logger with " + tbModule.Text + " by " + tbOperator.Text;
+            saveFileDialog1.CheckPathExists = true;
+            saveFileDialog1.DefaultExt = "csv";
+            saveFileDialog1.Filter = "Text files (*.csv)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string[] contents = new string[21];
+                contents[0] = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd");
+                contents[1] = "Module ID" + "," + tbModule.Text;
+                contents[2] = "Operator ID" + "," + tbOperator.Text;
+                contents[3] = "Temperature" + "," + Temperature;
+                contents[4] = "Humidity" + "," + Humidity;
+                contents[5] = "" + "," + "Volts" + "," + "Results";
+                for (int i = 0; i < 14; i++)
+                    contents[i + 6] = voltage_name[i] + "," + value[i].Text + "," + result[i].Text;
+                contents[20] = "Test Result" + "," + text_TestResult.Text;
+                string location = saveFileDialog1.FileName;
+                //string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
+                System.IO.File.WriteAllLines(location, contents);
+                MessageBox.Show("Data has been saved");
+            }
         }
     }
 }
