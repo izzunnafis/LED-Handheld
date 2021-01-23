@@ -159,7 +159,7 @@ namespace LED_Handheld_Project
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color5);
-            OpenChildForm(form_real_time);
+            OpenChildForm(form_production_test);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
