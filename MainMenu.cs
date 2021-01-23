@@ -21,7 +21,7 @@ namespace LED_Handheld_Project
         private SerialPort myport; // untuk ports
 
         Form form_real = new Forms.FormReal();
-        Form form_production_test = new Forms.FormProductionTest();
+        Form form_production_test = new Forms.FormProduct();
         Form form_real_time = new Forms.FormRealTime();
         Form form_product_test = new Forms.ProductTest();
         Form form_load_data = new Forms.FormLoadData();

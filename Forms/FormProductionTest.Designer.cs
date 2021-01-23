@@ -143,7 +143,7 @@ namespace LED_Handheld_Project.Forms
             this.tbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOperator.Location = new System.Drawing.Point(-270, 91);
+            this.tbOperator.Location = new System.Drawing.Point(-333, 91);
             this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOperator.Name = "tbOperator";
             this.tbOperator.Size = new System.Drawing.Size(123, 25);
@@ -155,7 +155,7 @@ namespace LED_Handheld_Project.Forms
             this.tbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbModule.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbModule.Location = new System.Drawing.Point(-270, 57);
+            this.tbModule.Location = new System.Drawing.Point(-333, 57);
             this.tbModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbModule.Name = "tbModule";
             this.tbModule.Size = new System.Drawing.Size(123, 25);
@@ -167,7 +167,7 @@ namespace LED_Handheld_Project.Forms
             this.tbDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDate.Location = new System.Drawing.Point(-270, 21);
+            this.tbDate.Location = new System.Drawing.Point(-333, 21);
             this.tbDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDate.Name = "tbDate";
             this.tbDate.Size = new System.Drawing.Size(123, 25);
@@ -179,7 +179,7 @@ namespace LED_Handheld_Project.Forms
             this.lbOperator.AutoSize = true;
             this.lbOperator.BackColor = System.Drawing.SystemColors.Control;
             this.lbOperator.ForeColor = System.Drawing.Color.Black;
-            this.lbOperator.Location = new System.Drawing.Point(-389, 91);
+            this.lbOperator.Location = new System.Drawing.Point(-452, 91);
             this.lbOperator.Name = "lbOperator";
             this.lbOperator.Size = new System.Drawing.Size(82, 17);
             this.lbOperator.TabIndex = 93;
@@ -191,7 +191,7 @@ namespace LED_Handheld_Project.Forms
             this.lbModule.AutoSize = true;
             this.lbModule.BackColor = System.Drawing.SystemColors.Control;
             this.lbModule.ForeColor = System.Drawing.Color.Black;
-            this.lbModule.Location = new System.Drawing.Point(-389, 57);
+            this.lbModule.Location = new System.Drawing.Point(-452, 57);
             this.lbModule.Name = "lbModule";
             this.lbModule.Size = new System.Drawing.Size(71, 17);
             this.lbModule.TabIndex = 92;
@@ -203,7 +203,7 @@ namespace LED_Handheld_Project.Forms
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.SystemColors.Control;
             this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(-389, 21);
+            this.lbDate.Location = new System.Drawing.Point(-452, 21);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(38, 17);
             this.lbDate.TabIndex = 91;
@@ -225,7 +225,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(-204, 1095);
+            this.btnSave.Location = new System.Drawing.Point(-267, 1104);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(89, 34);
