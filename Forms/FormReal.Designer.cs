@@ -211,7 +211,7 @@ namespace LED_Handheld_Project.Forms
             // rtbSerialData
             // 
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbSerialData.Location = new System.Drawing.Point(411, 564);
+            this.rtbSerialData.Location = new System.Drawing.Point(358, 564);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbSerialData.Name = "rtbSerialData";
             this.rtbSerialData.Size = new System.Drawing.Size(645, 34);

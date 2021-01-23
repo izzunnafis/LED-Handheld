@@ -23,7 +23,11 @@ namespace LED_Handheld_Project.Forms
 
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
 
-        
+        private void rtbSerialData_TextChanged(object sender, EventArgs e)
+        {
+            rtbSerialData.SelectionStart = rtbSerialData.Text.Length;
+            rtbSerialData.ScrollToCaret();
+        }
 
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
@@ -33,14 +37,12 @@ namespace LED_Handheld_Project.Forms
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
         string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
 
-        CheckBox[] cek_V;
         TextBox[] value;
         TextBox[] result;
 
         public FormProduct()
         {
             InitializeComponent();
-            //cek_V = new CheckBox[] { cekV1, cekV2, cekV3, cekV4, cekV5, cekV6, cekV7, cekV8, cekV9, cekVRef1, cekVRef2, cekVOut1, cekVOut2, cekVOut3 };
             value = new TextBox[] { valV1, valV2, valV3, valV4, valV5, valV6, valV7, valV8, valV9, valVRef1, valVRef2, valVOut1, valVOut2, valVOut3 };
             result = new TextBox[] { resV1, resV2, resV3, resV4, resV5, resV6, resV7, resV8, resV9, resVRef1, resVRef2, resVOut1, resVOut2, resVOut3 };
         }
@@ -49,7 +51,7 @@ namespace LED_Handheld_Project.Forms
         {
             LoadTheme();
             btnStop.Enabled = false;
-            rtbSerialData.Visible = false;
+            //rtbSerialData.Visible = false;
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
         }
@@ -61,9 +63,9 @@ namespace LED_Handheld_Project.Forms
                 if (btns.GetType() == typeof(Button))
                 {
                     Button btn = (Button)btns;
-                    btn.BackColor = Color.FromArgb(172, 126, 241);
+                    btn.BackColor = Color.FromArgb(24, 161, 251);
                     btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = Color.FromArgb(172, 126, 241);
+                    btn.FlatAppearance.BorderColor = Color.FromArgb(24, 161, 251);
                     //btn.Size= new System.Drawing.Size(100, 40);
                 }
             }
@@ -137,11 +139,6 @@ namespace LED_Handheld_Project.Forms
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
 
                 //Display text
-                tbDate.Text = DateTime.Now.ToString("G");
-                tbTemperature.Text = ": " + Temperature + " °C";
-                tbHumidity.Text = ": " + Humidity + " %";
-                string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + V1 + "," + V2 + "," + V3 + "," + V4 + "," + V5 + "," + V6 + "," + V7 + "," + V8 + "," + V9 + "," + VRef1 + "," + VRef2 + "," + VOut1 + "," + VOut2 + "," + VOut3 + "\r"); });
                 DisplayValue();
                 ProcessValue();
                 /*text_V1.Text = V1;*/
@@ -156,14 +153,14 @@ namespace LED_Handheld_Project.Forms
         private void DisplayValue()
         {
             tbDate.Text = DateTime.Now.ToString("G");
-            tbTemperature.Text = ": " + Temperature + " °C";
-            tbHumidity.Text = ": " + Humidity + " %";
+            //tbTemperature.Text = ": " + Temperature + " °C";
+            //tbHumidity.Text = ": " + Humidity + " %";
             valTemperature.Text = "  " + Temperature + " °C";
             valHumidity.Text = "  " + Humidity + " %";
             for (int i = 0; i < 14; i++)
                 value[i].Text = voltages[i];
             string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-            rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + V1 + "," + V2 + "," + V3 + "," + V4 + "," + V5 + "," + V6 + "," + V7 + "," + V8 + "," + V9 + "," + VRef1 + "," + VRef2 + "," + VOut1 + "," + VOut2 + "," + VOut3 + "\r"); });
+            rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
         }
 
         private void ProcessValue()

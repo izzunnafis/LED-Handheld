@@ -57,7 +57,7 @@ namespace LED_Handheld_Project.Forms
         {
             LoadTheme();
             btnHold.Enabled = false;
-            rtbSerialData.Visible = false;
+            //rtbSerialData.Visible = false;
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
@@ -147,7 +147,7 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = ": " + Temperature + " °C";
                 tbHumidity.Text = ": " + Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + V1 + "," + V2 + "," + V3 + "," + V4 + "," + V5 + "," + V6 + "," + V7 + "," + V8 + "," + V9 + "," + VRef1 + "," + VRef2 + "," + VOut1 + "," + VOut2 + "," + VOut3 + "\r"); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
                 ProcessGraph();
                 /*text_V1.Text = V1;
                 text_V2.Text = V2;

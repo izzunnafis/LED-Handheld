@@ -32,10 +32,6 @@ namespace LED_Handheld_Project.Forms
             this.components = new System.ComponentModel.Container();
             this.tbOperator = new System.Windows.Forms.TextBox();
             this.tbModule = new System.Windows.Forms.TextBox();
-            this.tbHumidity = new System.Windows.Forms.TextBox();
-            this.tbTemperature = new System.Windows.Forms.TextBox();
-            this.lbHumidity = new System.Windows.Forms.Label();
-            this.lbTemperature = new System.Windows.Forms.Label();
             this.tbDate = new System.Windows.Forms.TextBox();
             this.lbOperator = new System.Windows.Forms.Label();
             this.lbModule = new System.Windows.Forms.Label();
@@ -100,7 +96,7 @@ namespace LED_Handheld_Project.Forms
             this.tbOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbOperator.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOperator.Location = new System.Drawing.Point(934, 98);
+            this.tbOperator.Location = new System.Drawing.Point(246, 140);
             this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOperator.Multiline = true;
             this.tbOperator.Name = "tbOperator";
@@ -112,58 +108,12 @@ namespace LED_Handheld_Project.Forms
             this.tbModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbModule.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbModule.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbModule.Location = new System.Drawing.Point(934, 63);
+            this.tbModule.Location = new System.Drawing.Point(246, 102);
             this.tbModule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbModule.Multiline = true;
             this.tbModule.Name = "tbModule";
             this.tbModule.Size = new System.Drawing.Size(189, 27);
             this.tbModule.TabIndex = 114;
-            // 
-            // tbHumidity
-            // 
-            this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(255, 162);
-            this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbHumidity.Multiline = true;
-            this.tbHumidity.Name = "tbHumidity";
-            this.tbHumidity.Size = new System.Drawing.Size(132, 27);
-            this.tbHumidity.TabIndex = 112;
-            // 
-            // tbTemperature
-            // 
-            this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTemperature.Location = new System.Drawing.Point(255, 128);
-            this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbTemperature.Multiline = true;
-            this.tbTemperature.Name = "tbTemperature";
-            this.tbTemperature.Size = new System.Drawing.Size(132, 27);
-            this.tbTemperature.TabIndex = 111;
-            // 
-            // lbHumidity
-            // 
-            this.lbHumidity.AutoSize = true;
-            this.lbHumidity.BackColor = System.Drawing.SystemColors.Control;
-            this.lbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHumidity.ForeColor = System.Drawing.Color.Black;
-            this.lbHumidity.Location = new System.Drawing.Point(40, 162);
-            this.lbHumidity.Name = "lbHumidity";
-            this.lbHumidity.Size = new System.Drawing.Size(113, 27);
-            this.lbHumidity.TabIndex = 110;
-            this.lbHumidity.Text = "Humidity ";
-            // 
-            // lbTemperature
-            // 
-            this.lbTemperature.AutoSize = true;
-            this.lbTemperature.BackColor = System.Drawing.SystemColors.Control;
-            this.lbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemperature.ForeColor = System.Drawing.Color.Black;
-            this.lbTemperature.Location = new System.Drawing.Point(40, 128);
-            this.lbTemperature.Name = "lbTemperature";
-            this.lbTemperature.Size = new System.Drawing.Size(149, 27);
-            this.lbTemperature.TabIndex = 109;
-            this.lbTemperature.Text = "Temperature ";
             // 
             // tbDate
             // 
@@ -184,7 +134,7 @@ namespace LED_Handheld_Project.Forms
             this.lbOperator.BackColor = System.Drawing.SystemColors.Control;
             this.lbOperator.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOperator.ForeColor = System.Drawing.Color.Black;
-            this.lbOperator.Location = new System.Drawing.Point(722, 98);
+            this.lbOperator.Location = new System.Drawing.Point(34, 140);
             this.lbOperator.Name = "lbOperator";
             this.lbOperator.Size = new System.Drawing.Size(137, 27);
             this.lbOperator.TabIndex = 106;
@@ -197,7 +147,7 @@ namespace LED_Handheld_Project.Forms
             this.lbModule.BackColor = System.Drawing.SystemColors.Control;
             this.lbModule.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbModule.ForeColor = System.Drawing.Color.Black;
-            this.lbModule.Location = new System.Drawing.Point(722, 63);
+            this.lbModule.Location = new System.Drawing.Point(34, 102);
             this.lbModule.Name = "lbModule";
             this.lbModule.Size = new System.Drawing.Size(123, 27);
             this.lbModule.TabIndex = 105;
@@ -219,11 +169,12 @@ namespace LED_Handheld_Project.Forms
             // cbPort
             // 
             this.cbPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPort.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPort.FormattingEnabled = true;
-            this.cbPort.Location = new System.Drawing.Point(266, 196);
+            this.cbPort.Location = new System.Drawing.Point(246, 175);
             this.cbPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPort.Name = "cbPort";
-            this.cbPort.Size = new System.Drawing.Size(132, 35);
+            this.cbPort.Size = new System.Drawing.Size(189, 32);
             this.cbPort.TabIndex = 103;
             // 
             // lbPort
@@ -232,7 +183,7 @@ namespace LED_Handheld_Project.Forms
             this.lbPort.BackColor = System.Drawing.SystemColors.Control;
             this.lbPort.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPort.ForeColor = System.Drawing.Color.Black;
-            this.lbPort.Location = new System.Drawing.Point(40, 195);
+            this.lbPort.Location = new System.Drawing.Point(34, 178);
             this.lbPort.Name = "lbPort";
             this.lbPort.Size = new System.Drawing.Size(126, 27);
             this.lbPort.TabIndex = 102;
@@ -246,7 +197,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV1.Location = new System.Drawing.Point(228, 301);
+            this.resV1.Location = new System.Drawing.Point(219, 244);
             this.resV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV1.Multiline = true;
             this.resV1.Name = "resV1";
@@ -258,7 +209,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV1.Location = new System.Drawing.Point(117, 301);
+            this.valV1.Location = new System.Drawing.Point(108, 244);
             this.valV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV1.Multiline = true;
             this.valV1.Name = "valV1";
@@ -294,12 +245,13 @@ namespace LED_Handheld_Project.Forms
             // rtbSerialData
             // 
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtbSerialData.Location = new System.Drawing.Point(36, 749);
+            this.rtbSerialData.Location = new System.Drawing.Point(36, 668);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbSerialData.Name = "rtbSerialData";
-            this.rtbSerialData.Size = new System.Drawing.Size(645, 34);
+            this.rtbSerialData.Size = new System.Drawing.Size(961, 34);
             this.rtbSerialData.TabIndex = 212;
             this.rtbSerialData.Text = "";
+            this.rtbSerialData.TextChanged += new System.EventHandler(this.rtbSerialData_TextChanged);
             // 
             // btnSave
             // 
@@ -320,7 +272,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(45, 301);
+            this.textBox1.Location = new System.Drawing.Point(36, 244);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -333,7 +285,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(45, 346);
+            this.textBox2.Location = new System.Drawing.Point(36, 289);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -346,7 +298,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV2.Location = new System.Drawing.Point(228, 346);
+            this.resV2.Location = new System.Drawing.Point(219, 289);
             this.resV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV2.Multiline = true;
             this.resV2.Name = "resV2";
@@ -358,7 +310,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV2.Location = new System.Drawing.Point(117, 346);
+            this.valV2.Location = new System.Drawing.Point(108, 289);
             this.valV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV2.Multiline = true;
             this.valV2.Name = "valV2";
@@ -370,7 +322,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(45, 436);
+            this.textBox5.Location = new System.Drawing.Point(36, 379);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -383,7 +335,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV4.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV4.Location = new System.Drawing.Point(228, 436);
+            this.resV4.Location = new System.Drawing.Point(219, 379);
             this.resV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV4.Multiline = true;
             this.resV4.Name = "resV4";
@@ -395,7 +347,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV4.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV4.Location = new System.Drawing.Point(117, 436);
+            this.valV4.Location = new System.Drawing.Point(108, 379);
             this.valV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV4.Multiline = true;
             this.valV4.Name = "valV4";
@@ -407,7 +359,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(45, 391);
+            this.textBox8.Location = new System.Drawing.Point(36, 334);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
@@ -420,7 +372,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV3.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV3.Location = new System.Drawing.Point(228, 391);
+            this.resV3.Location = new System.Drawing.Point(219, 334);
             this.resV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV3.Multiline = true;
             this.resV3.Name = "resV3";
@@ -432,7 +384,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV3.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV3.Location = new System.Drawing.Point(117, 391);
+            this.valV3.Location = new System.Drawing.Point(108, 334);
             this.valV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV3.Multiline = true;
             this.valV3.Name = "valV3";
@@ -444,7 +396,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(45, 526);
+            this.textBox11.Location = new System.Drawing.Point(36, 469);
             this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
@@ -457,7 +409,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV6.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV6.Location = new System.Drawing.Point(228, 526);
+            this.resV6.Location = new System.Drawing.Point(219, 469);
             this.resV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV6.Multiline = true;
             this.resV6.Name = "resV6";
@@ -469,7 +421,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV6.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV6.Location = new System.Drawing.Point(117, 526);
+            this.valV6.Location = new System.Drawing.Point(108, 469);
             this.valV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV6.Multiline = true;
             this.valV6.Name = "valV6";
@@ -481,7 +433,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(45, 481);
+            this.textBox14.Location = new System.Drawing.Point(36, 424);
             this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
@@ -494,7 +446,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV5.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV5.Location = new System.Drawing.Point(228, 481);
+            this.resV5.Location = new System.Drawing.Point(219, 424);
             this.resV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV5.Multiline = true;
             this.resV5.Name = "resV5";
@@ -506,7 +458,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV5.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV5.Location = new System.Drawing.Point(117, 481);
+            this.valV5.Location = new System.Drawing.Point(108, 424);
             this.valV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV5.Multiline = true;
             this.valV5.Name = "valV5";
@@ -518,7 +470,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(45, 571);
+            this.textBox17.Location = new System.Drawing.Point(36, 514);
             this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
@@ -531,7 +483,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV7.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV7.Location = new System.Drawing.Point(228, 571);
+            this.resV7.Location = new System.Drawing.Point(219, 514);
             this.resV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV7.Multiline = true;
             this.resV7.Name = "resV7";
@@ -543,7 +495,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV7.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV7.Location = new System.Drawing.Point(117, 571);
+            this.valV7.Location = new System.Drawing.Point(108, 514);
             this.valV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV7.Multiline = true;
             this.valV7.Name = "valV7";
@@ -555,7 +507,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(45, 616);
+            this.textBox20.Location = new System.Drawing.Point(36, 559);
             this.textBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
@@ -568,7 +520,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV8.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV8.Location = new System.Drawing.Point(228, 616);
+            this.resV8.Location = new System.Drawing.Point(219, 559);
             this.resV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV8.Multiline = true;
             this.resV8.Name = "resV8";
@@ -580,7 +532,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV8.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV8.Location = new System.Drawing.Point(117, 616);
+            this.valV8.Location = new System.Drawing.Point(108, 559);
             this.valV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV8.Multiline = true;
             this.valV8.Name = "valV8";
@@ -592,7 +544,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(45, 661);
+            this.textBox23.Location = new System.Drawing.Point(36, 604);
             this.textBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox23.Multiline = true;
             this.textBox23.Name = "textBox23";
@@ -605,7 +557,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resV9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resV9.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resV9.Location = new System.Drawing.Point(228, 661);
+            this.resV9.Location = new System.Drawing.Point(219, 604);
             this.resV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resV9.Multiline = true;
             this.resV9.Name = "resV9";
@@ -617,7 +569,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valV9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valV9.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valV9.Location = new System.Drawing.Point(117, 661);
+            this.valV9.Location = new System.Drawing.Point(108, 604);
             this.valV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valV9.Multiline = true;
             this.valV9.Name = "valV9";
@@ -629,7 +581,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox26.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(480, 481);
+            this.textBox26.Location = new System.Drawing.Point(471, 424);
             this.textBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox26.Multiline = true;
             this.textBox26.Name = "textBox26";
@@ -642,7 +594,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resVOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resVOut3.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resVOut3.Location = new System.Drawing.Point(706, 481);
+            this.resVOut3.Location = new System.Drawing.Point(697, 424);
             this.resVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resVOut3.Multiline = true;
             this.resVOut3.Name = "resVOut3";
@@ -654,7 +606,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valVOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valVOut3.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valVOut3.Location = new System.Drawing.Point(595, 481);
+            this.valVOut3.Location = new System.Drawing.Point(586, 424);
             this.valVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valVOut3.Multiline = true;
             this.valVOut3.Name = "valVOut3";
@@ -666,7 +618,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox29.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.Location = new System.Drawing.Point(480, 436);
+            this.textBox29.Location = new System.Drawing.Point(471, 379);
             this.textBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox29.Multiline = true;
             this.textBox29.Name = "textBox29";
@@ -679,7 +631,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resVOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resVOut2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resVOut2.Location = new System.Drawing.Point(706, 436);
+            this.resVOut2.Location = new System.Drawing.Point(697, 379);
             this.resVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resVOut2.Multiline = true;
             this.resVOut2.Name = "resVOut2";
@@ -691,7 +643,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valVOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valVOut2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valVOut2.Location = new System.Drawing.Point(595, 436);
+            this.valVOut2.Location = new System.Drawing.Point(586, 379);
             this.valVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valVOut2.Multiline = true;
             this.valVOut2.Name = "valVOut2";
@@ -703,7 +655,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox32.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox32.Location = new System.Drawing.Point(480, 391);
+            this.textBox32.Location = new System.Drawing.Point(471, 334);
             this.textBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox32.Multiline = true;
             this.textBox32.Name = "textBox32";
@@ -716,7 +668,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resVOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resVOut1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resVOut1.Location = new System.Drawing.Point(706, 391);
+            this.resVOut1.Location = new System.Drawing.Point(697, 334);
             this.resVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resVOut1.Multiline = true;
             this.resVOut1.Name = "resVOut1";
@@ -728,7 +680,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valVOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valVOut1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valVOut1.Location = new System.Drawing.Point(595, 391);
+            this.valVOut1.Location = new System.Drawing.Point(586, 334);
             this.valVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valVOut1.Multiline = true;
             this.valVOut1.Name = "valVOut1";
@@ -740,7 +692,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox35.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox35.Location = new System.Drawing.Point(480, 346);
+            this.textBox35.Location = new System.Drawing.Point(471, 289);
             this.textBox35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox35.Multiline = true;
             this.textBox35.Name = "textBox35";
@@ -753,7 +705,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resVRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resVRef2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resVRef2.Location = new System.Drawing.Point(706, 346);
+            this.resVRef2.Location = new System.Drawing.Point(697, 289);
             this.resVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resVRef2.Multiline = true;
             this.resVRef2.Name = "resVRef2";
@@ -765,7 +717,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valVRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valVRef2.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valVRef2.Location = new System.Drawing.Point(595, 346);
+            this.valVRef2.Location = new System.Drawing.Point(586, 289);
             this.valVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valVRef2.Multiline = true;
             this.valVRef2.Name = "valVRef2";
@@ -777,7 +729,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox38.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox38.Location = new System.Drawing.Point(480, 301);
+            this.textBox38.Location = new System.Drawing.Point(471, 244);
             this.textBox38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox38.Multiline = true;
             this.textBox38.Name = "textBox38";
@@ -790,7 +742,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.resVRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resVRef1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resVRef1.Location = new System.Drawing.Point(706, 301);
+            this.resVRef1.Location = new System.Drawing.Point(697, 244);
             this.resVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resVRef1.Multiline = true;
             this.resVRef1.Name = "resVRef1";
@@ -802,7 +754,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valVRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valVRef1.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valVRef1.Location = new System.Drawing.Point(595, 301);
+            this.valVRef1.Location = new System.Drawing.Point(586, 244);
             this.valVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valVRef1.Multiline = true;
             this.valVRef1.Name = "valVRef1";
@@ -814,7 +766,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox41.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox41.Location = new System.Drawing.Point(480, 616);
+            this.textBox41.Location = new System.Drawing.Point(471, 559);
             this.textBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
@@ -826,7 +778,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valHumidity.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valHumidity.Location = new System.Drawing.Point(672, 616);
+            this.valHumidity.Location = new System.Drawing.Point(663, 559);
             this.valHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valHumidity.Multiline = true;
             this.valHumidity.Name = "valHumidity";
@@ -838,7 +790,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox44.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox44.Location = new System.Drawing.Point(480, 571);
+            this.textBox44.Location = new System.Drawing.Point(471, 514);
             this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox44.Multiline = true;
             this.textBox44.Name = "textBox44";
@@ -850,7 +802,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.valTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.valTemperature.Font = new System.Drawing.Font("Montserrat Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valTemperature.Location = new System.Drawing.Point(672, 571);
+            this.valTemperature.Location = new System.Drawing.Point(663, 514);
             this.valTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.valTemperature.Multiline = true;
             this.valTemperature.Name = "valTemperature";
@@ -917,10 +869,6 @@ namespace LED_Handheld_Project.Forms
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.tbOperator);
             this.Controls.Add(this.tbModule);
-            this.Controls.Add(this.tbHumidity);
-            this.Controls.Add(this.tbTemperature);
-            this.Controls.Add(this.lbHumidity);
-            this.Controls.Add(this.lbTemperature);
             this.Controls.Add(this.tbDate);
             this.Controls.Add(this.lbOperator);
             this.Controls.Add(this.lbModule);
@@ -942,10 +890,6 @@ namespace LED_Handheld_Project.Forms
 
         private System.Windows.Forms.TextBox tbOperator;
         private System.Windows.Forms.TextBox tbModule;
-        private System.Windows.Forms.TextBox tbHumidity;
-        private System.Windows.Forms.TextBox tbTemperature;
-        private System.Windows.Forms.Label lbHumidity;
-        private System.Windows.Forms.Label lbTemperature;
         private System.Windows.Forms.TextBox tbDate;
         private System.Windows.Forms.Label lbOperator;
         private System.Windows.Forms.Label lbModule;
