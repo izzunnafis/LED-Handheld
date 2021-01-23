@@ -168,20 +168,6 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessValue()
         {
-            /*for (int i = 0; i < 9; i++)
-            {
-                float volt_val = float.Parse(voltages[i]);
-                if (volt_val >= 11.8 && volt_val <= 12.2)
-                {
-                    result[i].Text = "OK";
-                    result[i].BackColor = Color.Green;
-                }
-                else
-                {
-                    result[i].Text = "NOK";
-                    result[i].BackColor = Color.Red;
-                }
-            }*/
             for (int i = 0; i < 9; i++)
             {
                 double data_V;
@@ -273,7 +259,7 @@ namespace LED_Handheld_Project.Forms
                 contents[5] = "" + "," + "Volts" + "," + "Results";
                 for (int i = 0; i < 14; i++)
                     contents[i + 6] = voltage_name[i] + "," + value[i].Text + "," + result[i].Text;
-                contents[20] = "Test Result" + "," + text_TestResult.Text;
+                //contents[20] = "Test Result" + "," + text_TestResult.Text;
                 string location = saveFileDialog1.FileName;
                 //string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
                 System.IO.File.WriteAllLines(location, contents);
