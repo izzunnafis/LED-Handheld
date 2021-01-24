@@ -149,21 +149,6 @@ namespace LED_Handheld_Project.Forms
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
                 rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
                 ProcessGraph();
-                /*text_V1.Text = V1;
-                text_V2.Text = V2;
-                text_V3.Text = V3;
-                text_V4.Text = V4;
-                text_V5.Text = V5;
-                text_V6.Text = V6;
-                text_V7.Text = V7;
-                text_V8.Text = V8;
-                text_V9.Text = V9;
-                text_VOut1.Text = VOut1;
-                text_VOut2.Text = VOut2;
-                text_VOut3.Text = VOut3;
-                text_VRef1.Text = VRef1;
-                text_VRef2.Text = VRef2;
-                text_VRef3.Text = VRef3;*/
             }
             catch (Exception error)
             {
