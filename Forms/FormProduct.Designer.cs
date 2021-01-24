@@ -121,10 +121,11 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbDate
             // 
-            this.tbDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.tbDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbDate.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDate.Location = new System.Drawing.Point(1000, 30);
+            this.tbDate.ForeColor = System.Drawing.Color.White;
+            this.tbDate.Location = new System.Drawing.Point(246, 62);
             this.tbDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDate.Multiline = true;
             this.tbDate.Name = "tbDate";
@@ -159,12 +160,11 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbDate
             // 
-            this.lbDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.SystemColors.Control;
             this.lbDate.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(928, 30);
+            this.lbDate.Location = new System.Drawing.Point(34, 64);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(66, 27);
             this.lbDate.TabIndex = 104;
