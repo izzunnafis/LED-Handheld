@@ -355,7 +355,7 @@ namespace LED_Handheld_Project.Forms
                 {
                     Label lab = (Label)labs;
                     lab.BackColor = Color.Transparent;
-                    lab.ForeColor = Color.White;
+                    lab.ForeColor = Color.FromArgb(24, 161, 251);
                 }
             }
             /*foreach (Control tboxs in this.Controls)
