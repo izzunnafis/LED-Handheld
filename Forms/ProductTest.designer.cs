@@ -204,6 +204,7 @@ namespace LED_Handheld_Project.Forms
             this.cbLampTypes.Name = "cbLampTypes";
             this.cbLampTypes.Size = new System.Drawing.Size(148, 24);
             this.cbLampTypes.TabIndex = 2;
+            this.cbLampTypes.TextChanged += new System.EventHandler(this.cbLampTypes_TextChanged);
             // 
             // label22
             // 
@@ -670,7 +671,7 @@ namespace LED_Handheld_Project.Forms
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.text_ResultV4);
-            this.panel6.Location = new System.Drawing.Point(158, 311);
+            this.panel6.Location = new System.Drawing.Point(158, 312);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(325, 323);
             this.panel6.TabIndex = 29;
