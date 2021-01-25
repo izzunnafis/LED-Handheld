@@ -29,11 +29,6 @@ namespace LED_Handheld_Project.Forms
 
         CheckBox[] cek_V;
 
-        private void lbOperator_Click(object sender, EventArgs e)
-        {
-
-        }
-
         static kayChart serialDataChartV1, serialDataChartV2, serialDataChartV3, serialDataChartV4, serialDataChartV5,
             serialDataChartV6, serialDataChartV7, serialDataChartV8, serialDataChartV9,
             serialDataChartVRef1, serialDataChartVRef2,
@@ -98,20 +93,11 @@ namespace LED_Handheld_Project.Forms
                     lab.ForeColor = Color.White;
                 }
             }
-            foreach (Control tboxs in this.Controls)
-            {
-                if (tboxs.GetType() == typeof(TextBox))
-                {
-                    TextBox tbox = (TextBox)tboxs;
-                    tbox.BackColor = Color.FromArgb(34, 33, 74);
-                    tbox.ForeColor = Color.FromArgb(172, 126, 241); ;//FromArgb(172, 126, 241);
-                }
-            }
-            tbOperator.BackColor= Color.FromArgb(172, 126, 241);
+            /*tbOperator.BackColor= Color.FromArgb(172, 126, 241);
             tbOperator.ForeColor = Color.White;
-            tbModule.BackColor = Color.FromArgb(172, 126, 241);
-            tbModule.ForeColor = Color.White;
-            //lbPort.ForeColor = Color.White;
+            tbSerialNumber.BackColor = Color.FromArgb(172, 126, 241);
+            tbSerialNumber.ForeColor = Color.White;
+            //lbPort.ForeColor = Color.White;*/
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -144,8 +130,8 @@ namespace LED_Handheld_Project.Forms
 
                 //Display text
                 tbDate.Text = DateTime.Now.ToString("G");
-                tbTemperature.Text = ": " + Temperature + " °C";
-                tbHumidity.Text = ": " + Humidity + " %";
+                tbTemperature.Text = Temperature + " °C";
+                tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
                 rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
                 ProcessGraph();
@@ -226,7 +212,7 @@ namespace LED_Handheld_Project.Forms
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.InitialDirectory = @"C:\Users\%USERNAME%\Documents\";
             saveFileDialog1.Title = "Save text Files";
-            saveFileDialog1.FileName = time + " Data Logger with " + tbModule.Text + " by " + tbOperator.Text;
+            saveFileDialog1.FileName = time + " Data Logger with " + tbSerialNumber.Text + " by " + tbOperator.Text;
             saveFileDialog1.CheckPathExists = true;
             saveFileDialog1.DefaultExt = "csv";
             saveFileDialog1.Filter = "Text files (*.csv)|*.txt|All files (*.*)|*.*";
@@ -235,7 +221,7 @@ namespace LED_Handheld_Project.Forms
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string location = saveFileDialog1.FileName;
-                string dataSave = DateTime.Now.ToString("yyyy/MM/dd") + "\r" + tbModule.Text + "\r" + tbOperator.Text + "\r" + rtbSerialData.Text + "\r"+rtbSerialData.Text;
+                string dataSave = DateTime.Now.ToString("yyyy/MM/dd") + "\r" + tbSerialNumber.Text + "\r" + tbOperator.Text + "\r" + rtbSerialData.Text + "\r"+rtbSerialData.Text;
                 System.IO.File.WriteAllText(location, dataSave);
                 MessageBox.Show("Data has been saved");
             }
