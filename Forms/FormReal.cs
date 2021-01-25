@@ -19,6 +19,7 @@ namespace LED_Handheld_Project.Forms
         string in_data;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
+
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
 
@@ -41,6 +42,7 @@ namespace LED_Handheld_Project.Forms
             serialDataChartVRef1, serialDataChartVRef2,
             serialDataChartVOut1, serialDataChartVOut2, serialDataChartVOut3
         };
+        
 
         public FormReal()
         {
@@ -48,7 +50,7 @@ namespace LED_Handheld_Project.Forms
 
             cek_V = new CheckBox[] { cekV1, cekV2, cekV3, cekV4, cekV5, cekV6, cekV7, cekV8, cekV9, cekVRef1, cekVRef2, cekVOut1, cekVOut2, cekVOut3};
             label_V = new Label[] { lbV1, lbV2, lbV3, lbV4, lbV5, lbV6, lbV7, lbV8, lbV9, lbVRef1, lbVRef2, lbVOut1, lbVOut2, lbVOut3 };
-
+            lamptype();
         }
 
         private void FormReal_Load(object sender, EventArgs e)
@@ -61,11 +63,12 @@ namespace LED_Handheld_Project.Forms
             //untuk grafik
             ResetGraph();
 
-            for (int i = 0; i < 14; i++)
+/*            for (int i = 0; i < 14; i++)
             {
                 chart_V[i] = new kayChart(chartData, 150);
                 chart_V[i].serieName = voltage_name[i];
-            } //chart naming and initializer
+
+            } //chart naming and initializer*/
         }
 
         private void lamptype()
@@ -101,7 +104,12 @@ namespace LED_Handheld_Project.Forms
         private void ResetGraph()
         {
             for(int i=0; i<14; i++)
+            {
+                chart_V[i] = new kayChart(chartData, 150);
+                chart_V[i].serieName = voltage_name[i];
+                chartData.Series[voltage_name[i]].Points.Clear();
                 chartData.Series[voltage_name[i]].Enabled = false;
+            }
         }
 
         private void LoadTheme()
@@ -148,7 +156,9 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessData(object sender, EventArgs e)
         {
-            lamptype();
+#if izzun_test
+            in_data = "1A2B3C4D5E6F7G8H9I10J11K12L13M14N15O16P";
+#endif
             try
             {
                 //convert nilai index
@@ -198,8 +208,7 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
-            lamptype();
-            btnStart.Enabled = false;
+            //btnStart.Enabled = false;
             btnHold.Enabled = true;
             try
             {
@@ -209,7 +218,12 @@ namespace LED_Handheld_Project.Forms
             }
             catch (Exception error)
             {
+#if izzun_test
+                this.BeginInvoke(new EventHandler(ProcessData));
+                //MessageBox.Show(error.Message);
+#else
                 MessageBox.Show(error.Message);
+#endif
             }
         }
 
@@ -221,7 +235,6 @@ namespace LED_Handheld_Project.Forms
 
         private void btnHold_Click(object sender, EventArgs e)
         {
-            lamptype();
             btnStart.Enabled = true;
             btnHold.Enabled = false;
             try
@@ -277,6 +290,18 @@ namespace LED_Handheld_Project.Forms
                 chartData.ChartAreas["ChartArea1"].AxisY.MajorGrid.Enabled = false;
                 btnGridTable.Text = "Grid OFF";
             }
+        }
+        private void cboxLampType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lamptype();
+            ResetGraph();
+        }
+
+        private void cbPort_DropDown(object sender, EventArgs e)
+        {
+            string[] ports = SerialPort.GetPortNames(); // untuk ports
+            cbPort.Items.AddRange(ports); // untuk ports
+            ResetGraph();
         }
 
     }
