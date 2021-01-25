@@ -67,7 +67,35 @@ namespace LED_Handheld_Project.Forms
                 chart_V[i].serieName = voltage_name[i];
             } //chart naming and initializer
         }
-
+        private void cboxLampType_TextChanged(object sender, EventArgs e)
+        {
+            if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
+            {
+                for (int i = 0; i < 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+                for (int i = 2; i < 9; i++)
+                {
+                    label_V[i].Visible = false;
+                    cek_V[i].Visible = false;
+                }
+                for (int i = 9; i < 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
+        }
         private void lamptype()
         {
             if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
@@ -148,7 +176,7 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessData(object sender, EventArgs e)
         {
-            lamptype();
+            //lamptype();
             try
             {
                 //convert nilai index
@@ -198,7 +226,7 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
-            lamptype();
+            //lamptype();
             btnStart.Enabled = false;
             btnHold.Enabled = true;
             try
@@ -221,7 +249,7 @@ namespace LED_Handheld_Project.Forms
 
         private void btnHold_Click(object sender, EventArgs e)
         {
-            lamptype();
+            //lamptype();
             btnStart.Enabled = true;
             btnHold.Enabled = false;
             try
