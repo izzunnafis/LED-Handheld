@@ -221,6 +221,7 @@ namespace LED_Handheld_Project.Forms
 
         private void btnHold_Click(object sender, EventArgs e)
         {
+            lamptype();
             btnStart.Enabled = true;
             btnHold.Enabled = false;
             try
