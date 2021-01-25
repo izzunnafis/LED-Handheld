@@ -63,7 +63,7 @@ namespace LED_Handheld_Project
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 803);
+            this.panelMenu.Size = new System.Drawing.Size(220, 873);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSettings
@@ -274,7 +274,7 @@ namespace LED_Handheld_Project
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 89);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1162, 714);
+            this.panelDesktop.Size = new System.Drawing.Size(1162, 784);
             this.panelDesktop.TabIndex = 3;
             // 
             // timer1
@@ -285,7 +285,7 @@ namespace LED_Handheld_Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 803);
+            this.ClientSize = new System.Drawing.Size(1382, 873);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);

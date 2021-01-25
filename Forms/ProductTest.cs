@@ -18,7 +18,6 @@ namespace LED_Handheld_Project.Forms
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
-
         sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
@@ -55,34 +54,76 @@ namespace LED_Handheld_Project.Forms
             saveFileDialog1.RestoreDirectory = true;
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                string[] contents = new string[21];
-                contents[0] = "Date" + "," + textTanggal.Text;
-                contents[1] = "Module ID" + "," + textModuleID.Text;
-                contents[2] = "Operator ID" + "," + textOperatorID.Text;
-                contents[3] = "Temperature" + "," + text_Temp.Text; 
-                contents[4] = "Humidity" + "," + text_Humid.Text;
-                contents[5] = "" + "," + "Volts" +  "," + "Results";
-                for (int i = 0; i < 14; i++)
-                    contents[i + 6] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
-                //contents[6] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
-                //contents[7] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
-                //contents[8] = "V3" + "," + text_V3.Text + "," + text_ResultV3.Text;
-                //contents[9] = "V4" + "," + text_V4.Text + "," + text_ResultV4.Text;
-                //contents[10] = "V5" + "," + text_V5.Text + "," + text_ResultV5.Text;
-                //contents[11] = "V6" + "," + text_V6.Text + "," + text_ResultV6.Text;
-                //contents[12] = "V7" + "," + text_V7.Text + "," + text_ResultV7.Text;
-                //contents[13] = "V8" + "," + text_V8.Text + "," + text_ResultV8.Text;
-                //contents[14] = "V9" + "," + text_V9.Text + "," + text_ResultV9.Text;
-                //contents[15] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
-                //contents[16] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
-                //contents[17] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
-                //contents[18] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
-                //contents[19] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
-                contents[20] = "Test Result" + "," + text_TestResult.Text;
-                string location = saveFileDialog1.FileName;
-                //string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
-                System.IO.File.WriteAllLines(location, contents);
-                MessageBox.Show("Data has been saved");
+                if (cbLampTypes.Text == "V4.0")
+                {
+                    string[] contents = new string[15];
+                    contents[0] = "Date" + "," + textTanggal.Text;
+                    contents[1] = "Module ID" + "," + textModuleID.Text;
+                    contents[2] = "Operator ID" + "," + textOperatorID.Text;
+                    contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
+                    contents[4] = "Temperature" + "," + text_Temp.Text;
+                    contents[5] = "Humidity" + "," + text_Humid.Text;
+                    contents[6] = "" + "," + "Volts" + "," + "Results";
+                    for (int i = 0; i < 2; i++)
+                        contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
+                    for (int i = 0; i < 5; i++)
+                        contents[i + 9] = voltage_name[i+9] + "," + text_V[i+9].Text + "," + text_res_V[i+9].Text;
+                    //contents[7] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
+                    //contents[8] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
+                    //contents[9] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
+                    //contents[10] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
+                    //contents[11] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
+                    //contents[12] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
+                    //contents[13] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
+                    contents[14] = "Test Result" + "," + text_TestResult.Text;
+                    string location = saveFileDialog1.FileName;
+                    System.IO.File.WriteAllLines(location, contents);
+                }
+                else
+                {
+                    string[] contents = new string[22];
+                    contents[0] = "Date" + "," + textTanggal.Text;
+                    contents[1] = "Module ID" + "," + textModuleID.Text;
+                    contents[2] = "Operator ID" + "," + textOperatorID.Text;
+                    contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
+                    contents[4] = "Temperature" + "," + text_Temp.Text;
+                    contents[5] = "Humidity" + "," + text_Humid.Text;
+                    contents[6] = "" + "," + "Volts" + "," + "Results";
+                    for (int i = 0; i < 14; i++)
+                        contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
+                    contents[21] = "Test Result" + "," + text_TestResult.Text;
+                    string location = saveFileDialog1.FileName;
+                    System.IO.File.WriteAllLines(location, contents);
+                }
+                //string[] contents = new string[22];
+                //contents[0] = "Date" + "," + textTanggal.Text;
+                //contents[1] = "Module ID" + "," + textModuleID.Text;
+                //contents[2] = "Operator ID" + "," + textOperatorID.Text;
+                //contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
+                //contents[4] = "Temperature" + "," + text_Temp.Text; 
+                //contents[5] = "Humidity" + "," + text_Humid.Text;
+                //contents[6] = "" + "," + "Volts" +  "," + "Results";
+                //for (int i = 0; i < 14; i++)
+                //    contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
+                ////contents[6] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
+                ////contents[7] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
+                ////contents[8] = "V3" + "," + text_V3.Text + "," + text_ResultV3.Text;
+                ////contents[9] = "V4" + "," + text_V4.Text + "," + text_ResultV4.Text;
+                ////contents[10] = "V5" + "," + text_V5.Text + "," + text_ResultV5.Text;
+                ////contents[11] = "V6" + "," + text_V6.Text + "," + text_ResultV6.Text;
+                ////contents[12] = "V7" + "," + text_V7.Text + "," + text_ResultV7.Text;
+                ////contents[13] = "V8" + "," + text_V8.Text + "," + text_ResultV8.Text;
+                ////contents[14] = "V9" + "," + text_V9.Text + "," + text_ResultV9.Text;
+                ////contents[15] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
+                ////contents[16] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
+                ////contents[17] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
+                ////contents[18] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
+                ////contents[19] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
+                //contents[21] = "Test Result" + "," + text_TestResult.Text;
+                //string location = saveFileDialog1.FileName;
+                ////string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
+                //System.IO.File.WriteAllLines(location, contents);
+                ////MessageBox.Show("Data has been saved");
             }
         }
 
@@ -167,19 +208,41 @@ namespace LED_Handheld_Project.Forms
                         text_res_V[i].BackColor = Color.Red;
                     }
                 }
-                for (int i = 9; i < 11; i++)
+                //for (int i = 9; i < 11; i++)
+                //{
+                //    float volt_val = float.Parse(voltages[i]);
+                //    if (volt_val >= 6.3 && volt_val <= 6.7)
+                //    {
+                //        text_res_V[i].Text = "OK";
+                //        text_res_V[i].BackColor = Color.Green;
+                //    }
+                //    else
+                //    {
+                //        text_res_V[i].Text = "NOK";
+                //        text_res_V[i].BackColor = Color.Red;
+                //    }
+                //}
+                float volt_valref1 = float.Parse(voltages[9]);
+                if (volt_valref1 >= 6.3 && volt_valref1 <= 6.7)
                 {
-                    float volt_val = float.Parse(voltages[i]);
-                    if (volt_val >= 6.3 && volt_val <= 6.7)
-                    {
-                        text_res_V[i].Text = "OK";
-                        text_res_V[i].BackColor = Color.Green;
-                    }
-                    else
-                    {
-                        text_res_V[i].Text = "NOK";
-                        text_res_V[i].BackColor = Color.Red;
-                    }
+                    text_res_V[9].Text = "OK";
+                    text_res_V[9].BackColor = Color.Green;
+                }
+                else
+                {
+                    text_res_V[9].Text = "NOK";
+                    text_res_V[9].BackColor = Color.Red;
+                }
+                float volt_valref2 = float.Parse(voltages[10]);
+                if (volt_valref2 >= 5.3 && volt_valref2 <= 5.7)
+                {
+                    text_res_V[10].Text = "OK";
+                    text_res_V[10].BackColor = Color.Green;
+                }
+                else
+                {
+                    text_res_V[10].Text = "NOK";
+                    text_res_V[10].BackColor = Color.Red;
                 }
                 for (int i = 11; i < 14; i++)
                 {
@@ -219,8 +282,21 @@ namespace LED_Handheld_Project.Forms
             comboBox1.Items.Clear();
             comboBox1.Items.AddRange(portlists);
         }
-
-        
+        private void cbLampTypes_TextChanged(object sender, EventArgs e)
+        {
+            if (cbLampTypes.Text == "V4.0")
+            {
+                panel4.Show();
+                panel5.Show();
+                panel6.Show();
+            }
+            else
+            {
+                panel4.Show();
+                panel5.Show();
+                panel6.Hide();
+            }
+        }
         public ProductTest()
         {
             InitializeComponent();
