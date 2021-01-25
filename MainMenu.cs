@@ -46,7 +46,7 @@ namespace LED_Handheld_Project
             string[] ports = SerialPort.GetPortNames(); //untuk ports
             myport = new SerialPort();
             myport.Close();
-            LoadTheme();
+            //LoadTheme();
             timer1.Start();
             //myport.BaudRate = 9600;
         }
