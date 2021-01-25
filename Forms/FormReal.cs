@@ -52,7 +52,7 @@ namespace LED_Handheld_Project.Forms
         {
             LoadTheme();
             btnHold.Enabled = false;
-            rtbSerialData.Visible = false;
+            //rtbSerialData.Visible = false;
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
