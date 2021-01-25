@@ -28,6 +28,7 @@ namespace LED_Handheld_Project.Forms
         string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
 
         CheckBox[] cek_V;
+        Label[] label_V;
 
         static kayChart serialDataChartV1, serialDataChartV2, serialDataChartV3, serialDataChartV4, serialDataChartV5,
             serialDataChartV6, serialDataChartV7, serialDataChartV8, serialDataChartV9,
@@ -46,13 +47,15 @@ namespace LED_Handheld_Project.Forms
             InitializeComponent();
 
             cek_V = new CheckBox[] { cekV1, cekV2, cekV3, cekV4, cekV5, cekV6, cekV7, cekV8, cekV9, cekVRef1, cekVRef2, cekVOut1, cekVOut2, cekVOut3};
+            label_V = new Label[] { lbV1, lbV2, lbV3, lbV4, lbV5, lbV6, lbV7, lbV8, lbV9, lbVRef1, lbVRef2, lbVOut1, lbVOut2, lbVOut3 };
+
         }
 
         private void FormReal_Load(object sender, EventArgs e)
         {
             LoadTheme();
             btnHold.Enabled = false;
-            //rtbSerialData.Visible = false;
+            rtbSerialData.Visible = false;
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
@@ -63,6 +66,36 @@ namespace LED_Handheld_Project.Forms
                 chart_V[i] = new kayChart(chartData, 150);
                 chart_V[i].serieName = voltage_name[i];
             } //chart naming and initializer
+        }
+
+        private void lamptype()
+        {
+            if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
+            {
+                for(int i=0; i< 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+                for (int i = 2; i < 9; i++)
+                {
+                    label_V[i].Visible = false;
+                    cek_V[i].Visible = false;
+                }
+                for (int i = 9; i < 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
         }
 
         private void ResetGraph()
@@ -115,6 +148,7 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessData(object sender, EventArgs e)
         {
+            lamptype();
             try
             {
                 //convert nilai index
@@ -164,6 +198,7 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
+            lamptype();
             btnStart.Enabled = false;
             btnHold.Enabled = true;
             try
