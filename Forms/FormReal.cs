@@ -191,7 +191,7 @@ namespace LED_Handheld_Project.Forms
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
 
                 //Display text
-                tbDate.Text = DateTime.Now.ToString("G");
+                tbDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
