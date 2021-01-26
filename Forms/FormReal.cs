@@ -78,7 +78,7 @@ namespace LED_Handheld_Project.Forms
                     cek_V[i].Visible = true;
                 }
             }
-            else
+            else if(cboxLampType.Text == "V4.0")
             {
                 for (int i = 0; i < 2; i++)
                 {
@@ -94,6 +94,14 @@ namespace LED_Handheld_Project.Forms
                 {
                     label_V[i].Visible = true;
                     cek_V[i].Visible = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 14; i++)
+                {
+                    label_V[i].Visible = false;
+                    cek_V[i].Visible = false;
                 }
             }
         }
