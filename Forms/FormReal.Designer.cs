@@ -85,9 +85,9 @@ namespace LED_Handheld_Project.Forms
             this.tbOperator = new System.Windows.Forms.TextBox();
             this.tbSerialNumber = new System.Windows.Forms.TextBox();
             this.tbDate = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.lbHumidity = new System.Windows.Forms.TextBox();
             this.tbHumidity = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.lbTemperature = new System.Windows.Forms.TextBox();
             this.tbTemperature = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -745,18 +745,18 @@ namespace LED_Handheld_Project.Forms
             this.tbDate.Size = new System.Drawing.Size(189, 27);
             this.tbDate.TabIndex = 119;
             // 
-            // textBox41
+            // lbHumidity
             // 
-            this.textBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox41.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox41.Location = new System.Drawing.Point(825, 320);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(181, 41);
-            this.textBox41.TabIndex = 276;
-            this.textBox41.Text = "Humidity";
+            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHumidity.Location = new System.Drawing.Point(825, 320);
+            this.lbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbHumidity.Multiline = true;
+            this.lbHumidity.Name = "lbHumidity";
+            this.lbHumidity.Size = new System.Drawing.Size(181, 41);
+            this.lbHumidity.TabIndex = 276;
+            this.lbHumidity.Text = "Humidity";
             // 
             // tbHumidity
             // 
@@ -771,18 +771,18 @@ namespace LED_Handheld_Project.Forms
             this.tbHumidity.TabIndex = 275;
             this.tbHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox44
+            // lbTemperature
             // 
-            this.textBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox44.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox44.Location = new System.Drawing.Point(825, 275);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(181, 41);
-            this.textBox44.TabIndex = 274;
-            this.textBox44.Text = "Temperature";
+            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemperature.Location = new System.Drawing.Point(825, 275);
+            this.lbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbTemperature.Multiline = true;
+            this.lbTemperature.Name = "lbTemperature";
+            this.lbTemperature.Size = new System.Drawing.Size(181, 41);
+            this.lbTemperature.TabIndex = 274;
+            this.lbTemperature.Text = "Temperature";
             // 
             // tbTemperature
             // 
@@ -892,9 +892,9 @@ namespace LED_Handheld_Project.Forms
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox41);
+            this.Controls.Add(this.lbHumidity);
             this.Controls.Add(this.tbHumidity);
-            this.Controls.Add(this.textBox44);
+            this.Controls.Add(this.lbTemperature);
             this.Controls.Add(this.tbTemperature);
             this.Controls.Add(this.tbOperator);
             this.Controls.Add(this.tbSerialNumber);
@@ -984,9 +984,9 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.TextBox tbOperator;
         private System.Windows.Forms.TextBox tbSerialNumber;
         private System.Windows.Forms.TextBox tbDate;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox lbHumidity;
         private System.Windows.Forms.TextBox tbHumidity;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox lbTemperature;
         private System.Windows.Forms.TextBox tbTemperature;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

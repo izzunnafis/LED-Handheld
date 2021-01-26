@@ -56,6 +56,7 @@ namespace LED_Handheld_Project.Forms
             LoadTheme();
             btnHold.Enabled = false;
             rtbSerialData.Visible = false;
+            hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
@@ -226,9 +227,9 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
-            //lamptype();
             btnStart.Enabled = false;
             btnHold.Enabled = true;
+            openVisible();
             try
             {
                 serialPort1.PortName = cbPort.Text;
@@ -239,6 +240,22 @@ namespace LED_Handheld_Project.Forms
             {
                 MessageBox.Show(error.Message);
             }
+        }
+
+        private void openVisible()
+        {
+            tbHumidity.Visible = true;
+            tbTemperature.Visible = true;
+            lbTemperature.Visible = true;
+            lbHumidity.Visible = true;
+        }
+
+        private void hideVisible()
+        {
+            tbHumidity.Visible = false;
+            tbTemperature.Visible = false;
+            lbTemperature.Visible = false;
+            lbHumidity.Visible = false;
         }
 
         private void rtbSerialData_TextChanged(object sender, EventArgs e)
