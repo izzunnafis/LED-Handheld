@@ -139,15 +139,16 @@ namespace LED_Handheld_Project
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "Home";
+            //panelDesktop.Controls.Add(new MainMenu());
         }
 
         private void OpenChildForm(Form childForm)
         {
             //open only form
-            //if (currentChildForm != null)
-            //{
-            //    currentChildForm.Close();
-            //}
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
             currentChildForm = childForm;
             //End
             childForm.TopLevel = false;
