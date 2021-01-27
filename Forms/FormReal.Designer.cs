@@ -85,9 +85,9 @@ namespace LED_Handheld_Project.Forms
             this.tbOperator = new System.Windows.Forms.TextBox();
             this.tbSerialNumber = new System.Windows.Forms.TextBox();
             this.tbDate = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.lbHumidity = new System.Windows.Forms.TextBox();
             this.tbHumidity = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.lbTemperature = new System.Windows.Forms.TextBox();
             this.tbTemperature = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(884, 454);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
@@ -129,7 +129,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(884, 588);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
@@ -262,11 +262,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cbPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPort.Font = new System.Drawing.Font("Montserrat Medium", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPort.FormattingEnabled = true;
             this.cbPort.Location = new System.Drawing.Point(255, 154);
             this.cbPort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbPort.Name = "cbPort";
-            this.cbPort.Size = new System.Drawing.Size(189, 24);
+            this.cbPort.Size = new System.Drawing.Size(189, 26);
             this.cbPort.TabIndex = 23;
             // 
             // serialPort1
@@ -278,7 +279,7 @@ namespace LED_Handheld_Project.Forms
             this.btnGridTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGridTable.FlatAppearance.BorderSize = 0;
             this.btnGridTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGridTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGridTable.Font = new System.Drawing.Font("Montserrat Medium", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGridTable.Location = new System.Drawing.Point(1063, 11);
             this.btnGridTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGridTable.Name = "btnGridTable";
@@ -293,7 +294,7 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHold.FlatAppearance.BorderSize = 0;
             this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHold.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHold.Location = new System.Drawing.Point(884, 521);
             this.btnHold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHold.Name = "btnHold";
@@ -518,11 +519,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV1.AutoSize = true;
             this.lbV1.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV1.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV1.ForeColor = System.Drawing.Color.Black;
             this.lbV1.Location = new System.Drawing.Point(482, 617);
             this.lbV1.Name = "lbV1";
-            this.lbV1.Size = new System.Drawing.Size(55, 36);
+            this.lbV1.Size = new System.Drawing.Size(53, 41);
             this.lbV1.TabIndex = 86;
             this.lbV1.Text = "V1";
             this.lbV1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -532,11 +533,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV2.AutoSize = true;
             this.lbV2.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV2.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV2.ForeColor = System.Drawing.Color.Black;
             this.lbV2.Location = new System.Drawing.Point(482, 679);
             this.lbV2.Name = "lbV2";
-            this.lbV2.Size = new System.Drawing.Size(55, 36);
+            this.lbV2.Size = new System.Drawing.Size(58, 41);
             this.lbV2.TabIndex = 87;
             this.lbV2.Text = "V2";
             this.lbV2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -546,11 +547,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV3.AutoSize = true;
             this.lbV3.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV3.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV3.ForeColor = System.Drawing.Color.Black;
             this.lbV3.Location = new System.Drawing.Point(482, 741);
             this.lbV3.Name = "lbV3";
-            this.lbV3.Size = new System.Drawing.Size(55, 36);
+            this.lbV3.Size = new System.Drawing.Size(58, 41);
             this.lbV3.TabIndex = 88;
             this.lbV3.Text = "V3";
             this.lbV3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -560,11 +561,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV6.AutoSize = true;
             this.lbV6.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV6.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV6.ForeColor = System.Drawing.Color.Black;
             this.lbV6.Location = new System.Drawing.Point(623, 741);
             this.lbV6.Name = "lbV6";
-            this.lbV6.Size = new System.Drawing.Size(55, 36);
+            this.lbV6.Size = new System.Drawing.Size(59, 41);
             this.lbV6.TabIndex = 91;
             this.lbV6.Text = "V6";
             this.lbV6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -574,11 +575,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV5.AutoSize = true;
             this.lbV5.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV5.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV5.ForeColor = System.Drawing.Color.Black;
             this.lbV5.Location = new System.Drawing.Point(623, 679);
             this.lbV5.Name = "lbV5";
-            this.lbV5.Size = new System.Drawing.Size(55, 36);
+            this.lbV5.Size = new System.Drawing.Size(58, 41);
             this.lbV5.TabIndex = 90;
             this.lbV5.Text = "V5";
             this.lbV5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -588,11 +589,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV4.AutoSize = true;
             this.lbV4.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV4.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV4.ForeColor = System.Drawing.Color.Black;
             this.lbV4.Location = new System.Drawing.Point(623, 617);
             this.lbV4.Name = "lbV4";
-            this.lbV4.Size = new System.Drawing.Size(55, 36);
+            this.lbV4.Size = new System.Drawing.Size(59, 41);
             this.lbV4.TabIndex = 89;
             this.lbV4.Text = "V4";
             this.lbV4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -602,11 +603,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV9.AutoSize = true;
             this.lbV9.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV9.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV9.ForeColor = System.Drawing.Color.Black;
             this.lbV9.Location = new System.Drawing.Point(767, 741);
             this.lbV9.Name = "lbV9";
-            this.lbV9.Size = new System.Drawing.Size(55, 36);
+            this.lbV9.Size = new System.Drawing.Size(60, 41);
             this.lbV9.TabIndex = 94;
             this.lbV9.Text = "V9";
             this.lbV9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -616,11 +617,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV8.AutoSize = true;
             this.lbV8.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV8.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV8.ForeColor = System.Drawing.Color.Black;
             this.lbV8.Location = new System.Drawing.Point(767, 679);
             this.lbV8.Name = "lbV8";
-            this.lbV8.Size = new System.Drawing.Size(55, 36);
+            this.lbV8.Size = new System.Drawing.Size(59, 41);
             this.lbV8.TabIndex = 93;
             this.lbV8.Text = "V8";
             this.lbV8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -630,11 +631,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV7.AutoSize = true;
             this.lbV7.BackColor = System.Drawing.SystemColors.Control;
-            this.lbV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV7.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV7.ForeColor = System.Drawing.Color.Black;
             this.lbV7.Location = new System.Drawing.Point(767, 617);
             this.lbV7.Name = "lbV7";
-            this.lbV7.Size = new System.Drawing.Size(55, 36);
+            this.lbV7.Size = new System.Drawing.Size(59, 41);
             this.lbV7.TabIndex = 92;
             this.lbV7.Text = "V7";
             this.lbV7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -644,11 +645,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut3.AutoSize = true;
             this.lbVOut3.BackColor = System.Drawing.SystemColors.Control;
-            this.lbVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut3.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut3.ForeColor = System.Drawing.Color.Black;
             this.lbVOut3.Location = new System.Drawing.Point(86, 746);
             this.lbVOut3.Name = "lbVOut3";
-            this.lbVOut3.Size = new System.Drawing.Size(123, 36);
+            this.lbVOut3.Size = new System.Drawing.Size(135, 41);
             this.lbVOut3.TabIndex = 97;
             this.lbVOut3.Text = "VOut3  ";
             this.lbVOut3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -658,11 +659,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut2.AutoSize = true;
             this.lbVOut2.BackColor = System.Drawing.SystemColors.Control;
-            this.lbVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut2.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut2.ForeColor = System.Drawing.Color.Black;
             this.lbVOut2.Location = new System.Drawing.Point(86, 684);
             this.lbVOut2.Name = "lbVOut2";
-            this.lbVOut2.Size = new System.Drawing.Size(123, 36);
+            this.lbVOut2.Size = new System.Drawing.Size(135, 41);
             this.lbVOut2.TabIndex = 96;
             this.lbVOut2.Text = "VOut2  ";
             this.lbVOut2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -672,11 +673,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut1.AutoSize = true;
             this.lbVOut1.BackColor = System.Drawing.SystemColors.Control;
-            this.lbVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut1.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut1.ForeColor = System.Drawing.Color.Black;
             this.lbVOut1.Location = new System.Drawing.Point(86, 622);
             this.lbVOut1.Name = "lbVOut1";
-            this.lbVOut1.Size = new System.Drawing.Size(114, 36);
+            this.lbVOut1.Size = new System.Drawing.Size(119, 41);
             this.lbVOut1.TabIndex = 95;
             this.lbVOut1.Text = "VOut1 ";
             this.lbVOut1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -686,11 +687,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVRef2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVRef2.AutoSize = true;
             this.lbVRef2.BackColor = System.Drawing.SystemColors.Control;
-            this.lbVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVRef2.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVRef2.ForeColor = System.Drawing.Color.Black;
             this.lbVRef2.Location = new System.Drawing.Point(281, 684);
             this.lbVRef2.Name = "lbVRef2";
-            this.lbVRef2.Size = new System.Drawing.Size(122, 36);
+            this.lbVRef2.Size = new System.Drawing.Size(131, 41);
             this.lbVRef2.TabIndex = 99;
             this.lbVRef2.Text = "VRef2  ";
             this.lbVRef2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -700,11 +701,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVRef1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVRef1.AutoSize = true;
             this.lbVRef1.BackColor = System.Drawing.SystemColors.Control;
-            this.lbVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVRef1.Font = new System.Drawing.Font("Montserrat Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVRef1.ForeColor = System.Drawing.Color.Black;
             this.lbVRef1.Location = new System.Drawing.Point(281, 622);
             this.lbVRef1.Name = "lbVRef1";
-            this.lbVRef1.Size = new System.Drawing.Size(113, 36);
+            this.lbVRef1.Size = new System.Drawing.Size(116, 41);
             this.lbVRef1.TabIndex = 98;
             this.lbVRef1.Text = "VRef1 ";
             this.lbVRef1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -712,7 +713,7 @@ namespace LED_Handheld_Project.Forms
             // tbOperator
             // 
             this.tbOperator.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOperator.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOperator.Location = new System.Drawing.Point(255, 113);
             this.tbOperator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOperator.Multiline = true;
@@ -723,7 +724,7 @@ namespace LED_Handheld_Project.Forms
             // tbSerialNumber
             // 
             this.tbSerialNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSerialNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSerialNumber.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSerialNumber.Location = new System.Drawing.Point(255, 72);
             this.tbSerialNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSerialNumber.Multiline = true;
@@ -735,7 +736,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.tbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.tbDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDate.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDate.ForeColor = System.Drawing.Color.White;
             this.tbDate.Location = new System.Drawing.Point(255, 31);
             this.tbDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -744,24 +745,24 @@ namespace LED_Handheld_Project.Forms
             this.tbDate.Size = new System.Drawing.Size(189, 27);
             this.tbDate.TabIndex = 119;
             // 
-            // textBox41
+            // lbHumidity
             // 
-            this.textBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox41.Location = new System.Drawing.Point(825, 320);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(181, 41);
-            this.textBox41.TabIndex = 276;
-            this.textBox41.Text = "Humidity";
+            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHumidity.Location = new System.Drawing.Point(825, 320);
+            this.lbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbHumidity.Multiline = true;
+            this.lbHumidity.Name = "lbHumidity";
+            this.lbHumidity.Size = new System.Drawing.Size(181, 41);
+            this.lbHumidity.TabIndex = 276;
+            this.lbHumidity.Text = "Humidity";
             // 
             // tbHumidity
             // 
             this.tbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbHumidity.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHumidity.Location = new System.Drawing.Point(1012, 320);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHumidity.Multiline = true;
@@ -770,24 +771,24 @@ namespace LED_Handheld_Project.Forms
             this.tbHumidity.TabIndex = 275;
             this.tbHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox44
+            // lbTemperature
             // 
-            this.textBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox44.Location = new System.Drawing.Point(825, 275);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(181, 41);
-            this.textBox44.TabIndex = 274;
-            this.textBox44.Text = "Temperature";
+            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemperature.Location = new System.Drawing.Point(825, 275);
+            this.lbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbTemperature.Multiline = true;
+            this.lbTemperature.Name = "lbTemperature";
+            this.lbTemperature.Size = new System.Drawing.Size(181, 41);
+            this.lbTemperature.TabIndex = 274;
+            this.lbTemperature.Text = "Temperature";
             // 
             // tbTemperature
             // 
             this.tbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTemperature.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTemperature.Location = new System.Drawing.Point(1012, 275);
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTemperature.Multiline = true;
@@ -800,12 +801,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(49, 31);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 25);
+            this.textBox1.Size = new System.Drawing.Size(189, 27);
             this.textBox1.TabIndex = 277;
             this.textBox1.Text = "Date";
             // 
@@ -813,12 +814,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(49, 71);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 25);
+            this.textBox2.Size = new System.Drawing.Size(189, 27);
             this.textBox2.TabIndex = 278;
             this.textBox2.Text = "Serial Number";
             // 
@@ -826,12 +827,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(49, 111);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 25);
+            this.textBox3.Size = new System.Drawing.Size(189, 27);
             this.textBox3.TabIndex = 279;
             this.textBox3.Text = "Operator";
             // 
@@ -839,12 +840,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.White;
             this.textBox4.Location = new System.Drawing.Point(49, 151);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 25);
+            this.textBox4.Size = new System.Drawing.Size(189, 27);
             this.textBox4.TabIndex = 280;
             this.textBox4.Text = "Port Name";
             // 
@@ -852,12 +853,12 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Font = new System.Drawing.Font("Montserrat Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.White;
             this.textBox5.Location = new System.Drawing.Point(49, 191);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 25);
+            this.textBox5.Size = new System.Drawing.Size(189, 27);
             this.textBox5.TabIndex = 282;
             this.textBox5.Text = "Lamp Type";
             // 
@@ -865,6 +866,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cboxLampType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxLampType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboxLampType.Font = new System.Drawing.Font("Montserrat Medium", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxLampType.FormattingEnabled = true;
             this.cboxLampType.Items.AddRange(new object[] {
             "V3.0",
@@ -873,7 +875,7 @@ namespace LED_Handheld_Project.Forms
             this.cboxLampType.Location = new System.Drawing.Point(255, 192);
             this.cboxLampType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboxLampType.Name = "cboxLampType";
-            this.cboxLampType.Size = new System.Drawing.Size(189, 24);
+            this.cboxLampType.Size = new System.Drawing.Size(189, 26);
             this.cboxLampType.TabIndex = 281;
             this.cboxLampType.TextChanged += new System.EventHandler(this.cboxLampType_TextChanged);
             // 
@@ -890,9 +892,9 @@ namespace LED_Handheld_Project.Forms
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox41);
+            this.Controls.Add(this.lbHumidity);
             this.Controls.Add(this.tbHumidity);
-            this.Controls.Add(this.textBox44);
+            this.Controls.Add(this.lbTemperature);
             this.Controls.Add(this.tbTemperature);
             this.Controls.Add(this.tbOperator);
             this.Controls.Add(this.tbSerialNumber);
@@ -982,9 +984,9 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.TextBox tbOperator;
         private System.Windows.Forms.TextBox tbSerialNumber;
         private System.Windows.Forms.TextBox tbDate;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox lbHumidity;
         private System.Windows.Forms.TextBox tbHumidity;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox lbTemperature;
         private System.Windows.Forms.TextBox tbTemperature;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
