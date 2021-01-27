@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Globalization;
 
 namespace LED_Handheld_Project.Forms
 {
@@ -189,7 +190,91 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show(error.Message);
             }
         }
+        private void ProcessOkNok()
+        {
+            double error_V;
+            bool error_res = double.TryParse("0.2", NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out error_V);
+            double downBoundV = 12 - error_V, upBoundV = 12 + error_V;
+            double downBoundVRef1 = 6.5 - error_V, upBoundVRef1 = 6.5 + error_V;
+            double downBoundVRef2 = 5.5 - error_V, upBoundVRef2 = 5.5 + error_V;
+            double downBoundVOut = 8 - error_V, upBoundVOut = 8 + error_V;
+            for (int i = 0; i < 9; i++)
+            {
+                double data_V;
+                bool result_V = double.TryParse(voltages[i], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V);
+                if (result_V)
+                {
+                    if (data_V >= downBoundV && data_V <= upBoundV)
+                    {
+                        text_res_V[i].Text = "OK";
+                        text_res_V[i].BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        text_res_V[i].Text = "NOK";
+                        text_res_V[i].BackColor = Color.Red;
+                    }
+                }
+            }
+            double data_V9;//VRef1
+            bool result_V9 = double.TryParse(voltages[9], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V9);
+            if (result_V9)
+            {
+                if (data_V9 >= downBoundVRef1 && data_V9 <= upBoundVRef1)
+                {
+                    text_res_V[9].Text = "OK";
+                    text_res_V[9].BackColor = Color.Green;
+                }
+                else
+                {
+                    text_res_V[9].Text = "NOK";
+                    text_res_V[9].BackColor = Color.Red;
+                }
+            }
+            double data_VRef2;//VRef2
+            bool result_VRef2 = double.TryParse(voltages[10], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_VRef2);
+            if (result_VRef2)
+            {
+                if (data_VRef2 >= downBoundVRef2 && data_VRef2 <= upBoundVRef2)
+                {
+                    text_res_V[10].Text = "OK";
+                    text_res_V[10].BackColor = Color.Green;
+                }
+                else
+                {
+                    text_res_V[10].Text = "NOK";
+                    text_res_V[10].BackColor = Color.Red;
+                }
+            }
+            for (int i = 11; i < 14; i++)
+            {
+                double data_V;
+                bool result_V = double.TryParse(voltages[i], NumberStyles.Number, CultureInfo.CreateSpecificCulture("en-US"), out data_V);
+                if (result_V)
+                {
+                    if (data_V >= downBoundVOut && data_V <= upBoundVOut)
+                    {
+                        text_res_V[i].Text = "OK";
+                        text_res_V[i].BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        text_res_V[i].Text = "NOK";
+                        text_res_V[i].BackColor = Color.Red;
+                    }
+                }
+            }
+            //Final Result
+            text_TestResult.Text = "Success";
+            text_TestResult.BackColor = Color.Green;
 
+            for (int i = 0; i < 14; i++)
+                if (text_res_V[i].Text == "NOK")
+                {
+                    text_TestResult.Text = "Failed";
+                    text_TestResult.BackColor = Color.Red;
+                }
+        }
         private void ProcessData(object sender, EventArgs e)
         {
             try
@@ -211,24 +296,11 @@ namespace LED_Handheld_Project.Forms
                     text_V[i].Text = voltages[i];
 
                 //NOK or OK
-                for(int i=0; i<9; i++)
-                {
-                    float volt_val = float.Parse(voltages[i]);
-                    if(volt_val >= 11.8 && volt_val <=12.2)
-                    {
-                        text_res_V[i].Text = "OK";
-                        text_res_V[i].BackColor = Color.Green;
-                    }
-                    else
-                    {
-                        text_res_V[i].Text = "NOK";
-                        text_res_V[i].BackColor = Color.Red;
-                    }
-                }
-                //for (int i = 9; i < 11; i++)
+                ProcessOkNok();
+                //for(int i=0; i<9; i++)
                 //{
                 //    float volt_val = float.Parse(voltages[i]);
-                //    if (volt_val >= 6.3 && volt_val <= 6.7)
+                //    if(volt_val >= 11.8 && volt_val <=12.2)
                 //    {
                 //        text_res_V[i].Text = "OK";
                 //        text_res_V[i].BackColor = Color.Green;
@@ -239,52 +311,66 @@ namespace LED_Handheld_Project.Forms
                 //        text_res_V[i].BackColor = Color.Red;
                 //    }
                 //}
-                float volt_valref1 = float.Parse(voltages[9]);
-                if (volt_valref1 >= 6.3 && volt_valref1 <= 6.7)
-                {
-                    text_res_V[9].Text = "OK";
-                    text_res_V[9].BackColor = Color.Green;
-                }
-                else
-                {
-                    text_res_V[9].Text = "NOK";
-                    text_res_V[9].BackColor = Color.Red;
-                }
-                float volt_valref2 = float.Parse(voltages[10]);
-                if (volt_valref2 >= 5.3 && volt_valref2 <= 5.7)
-                {
-                    text_res_V[10].Text = "OK";
-                    text_res_V[10].BackColor = Color.Green;
-                }
-                else
-                {
-                    text_res_V[10].Text = "NOK";
-                    text_res_V[10].BackColor = Color.Red;
-                }
-                for (int i = 11; i < 14; i++)
-                {
-                    float volt_val = float.Parse(voltages[i]);
-                    if (volt_val >= 7.8 && volt_val <= 8.2)
-                    {
-                        text_res_V[i].Text = "OK";
-                        text_res_V[i].BackColor = Color.Green;
-                    }
-                    else
-                    {
-                        text_res_V[i].Text = "NOK";
-                        text_res_V[i].BackColor = Color.Red;
-                    }
-                }
-                //Hasil results
-                text_TestResult.Text = "Success";
-                text_TestResult.BackColor = Color.Green;
+                ////for (int i = 9; i < 11; i++)
+                ////{
+                ////    float volt_val = float.Parse(voltages[i]);
+                ////    if (volt_val >= 6.3 && volt_val <= 6.7)
+                ////    {
+                ////        text_res_V[i].Text = "OK";
+                ////        text_res_V[i].BackColor = Color.Green;
+                ////    }
+                ////    else
+                ////    {
+                ////        text_res_V[i].Text = "NOK";
+                ////        text_res_V[i].BackColor = Color.Red;
+                ////    }
+                ////}
+                //float volt_valref1 = float.Parse(voltages[9]);
+                //if (volt_valref1 >= 6.3 && volt_valref1 <= 6.7)
+                //{
+                //    text_res_V[9].Text = "OK";
+                //    text_res_V[9].BackColor = Color.Green;
+                //}
+                //else
+                //{
+                //    text_res_V[9].Text = "NOK";
+                //    text_res_V[9].BackColor = Color.Red;
+                //}
+                //float volt_valref2 = float.Parse(voltages[10]);
+                //if (volt_valref2 >= 5.3 && volt_valref2 <= 5.7)
+                //{
+                //    text_res_V[10].Text = "OK";
+                //    text_res_V[10].BackColor = Color.Green;
+                //}
+                //else
+                //{
+                //    text_res_V[10].Text = "NOK";
+                //    text_res_V[10].BackColor = Color.Red;
+                //}
+                //for (int i = 11; i < 14; i++)
+                //{
+                //    float volt_val = float.Parse(voltages[i]);
+                //    if (volt_val >= 7.8 && volt_val <= 8.2)
+                //    {
+                //        text_res_V[i].Text = "OK";
+                //        text_res_V[i].BackColor = Color.Green;
+                //    }
+                //    else
+                //    {
+                //        text_res_V[i].Text = "NOK";
+                //        text_res_V[i].BackColor = Color.Red;
+                //    }
+                //}
+                ////Hasil results
+                //text_TestResult.Text = "Success";
+                //text_TestResult.BackColor = Color.Green;
 
-                for (int i=0; i<14; i++)
-                    if(text_res_V[i].Text=="NOK")
-                    {
-                        text_TestResult.Text = "Failed";
-                        text_TestResult.BackColor = Color.Red;
-                    }
+                //for (int i=0; i<14; i++)
+                //    if(text_res_V[i].Text=="NOK")
+                //    {
+                //        text_TestResult.Text = "Failed";
+                //        text_TestResult.BackColor = Color.Red;
+                //    }
 
             }
             catch (Exception error)
