@@ -19,9 +19,25 @@ namespace LED_Handheld_Project.Forms
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
-
+        sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
+            indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
+        string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
+        string[] sep_string = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P" };
+        string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
+        TextBox[] text_res_V;
+        TextBox[] text_V;
+        
+        private void ResetTable()
+        {
+            for (int i = 0; i < 14; i++)
+            {
+                text_V[i].Clear();
+                text_res_V[i].Clear();
+            }
+        }
         private void cbLampTypes_TextChanged(object sender, EventArgs e)
         {
+            ResetTable();
             if (cbLampTypes.Text == "V4.0")
             {
                 panel4.Show();
@@ -35,14 +51,6 @@ namespace LED_Handheld_Project.Forms
                 panel6.Show();
             }
         }
-
-        sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
-            indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
-        string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
-        string[] sep_string = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P" };
-        string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
-        TextBox[] text_res_V;
-        TextBox[] text_V;
 
         private void ProductTest_Load(object sender, EventArgs e)
         {
@@ -297,10 +305,10 @@ namespace LED_Handheld_Project.Forms
 
                 //NOK or OK
                 ProcessOkNok();
-                //for(int i=0; i<9; i++)
+                //for (int i = 0; i < 9; i++)
                 //{
                 //    float volt_val = float.Parse(voltages[i]);
-                //    if(volt_val >= 11.8 && volt_val <=12.2)
+                //    if (volt_val >= 11.8 && volt_val <= 12.2)
                 //    {
                 //        text_res_V[i].Text = "OK";
                 //        text_res_V[i].BackColor = Color.Green;
@@ -365,8 +373,8 @@ namespace LED_Handheld_Project.Forms
                 //text_TestResult.Text = "Success";
                 //text_TestResult.BackColor = Color.Green;
 
-                //for (int i=0; i<14; i++)
-                //    if(text_res_V[i].Text=="NOK")
+                //for (int i = 0; i < 14; i++)
+                //    if (text_res_V[i].Text == "NOK")
                 //    {
                 //        text_TestResult.Text = "Failed";
                 //        text_TestResult.BackColor = Color.Red;
