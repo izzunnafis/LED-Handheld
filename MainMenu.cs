@@ -171,6 +171,11 @@ namespace LED_Handheld_Project
         {
             OpenChildForm(new Forms.FormLogin());
         }
+
+        private void btnUjiCoba_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormLogin());
+        }
     }
 }
 
