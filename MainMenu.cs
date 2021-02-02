@@ -22,6 +22,7 @@ namespace LED_Handheld_Project
 
         //Form real_time_form = new Forms.FormReal();
         //Form product_test_form = new Forms.ProductTest();
+        //Form realtime_form = new Forms.FormRealTime();
 
         //Constructor
         public MainMenu()
@@ -112,6 +113,7 @@ namespace LED_Handheld_Project
         {
             ActivatedButton(sender, RGBColors.color3);
             OpenChildForm(new Forms.FormRealTime());
+            //OpenChildForm(realtime_form);
         }
 
         private void BtnDevice_Click(object sender, EventArgs e)
@@ -163,6 +165,11 @@ namespace LED_Handheld_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbTime.Text = DateTime.Now.ToString("T");
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormLogin());
         }
     }
 }
