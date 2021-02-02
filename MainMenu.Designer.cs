@@ -86,11 +86,11 @@ namespace LED_Handheld_Project
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Montserrat Black", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitleChildForm.Location = new System.Drawing.Point(72, 36);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(94, 35);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -98,11 +98,11 @@ namespace LED_Handheld_Project
             // 
             this.lbTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
             this.lbTime.Location = new System.Drawing.Point(3, 30);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(50, 25);
+            this.lbTime.Size = new System.Drawing.Size(55, 27);
             this.lbTime.TabIndex = 0;
             this.lbTime.Text = "Jam";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@ namespace LED_Handheld_Project
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
             this.btnHome.IconColor = System.Drawing.Color.White;
@@ -166,7 +166,7 @@ namespace LED_Handheld_Project
             this.btnRealTime.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRealTime.FlatAppearance.BorderSize = 0;
             this.btnRealTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRealTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRealTime.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRealTime.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRealTime.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.btnRealTime.IconColor = System.Drawing.Color.Gainsboro;
@@ -190,7 +190,7 @@ namespace LED_Handheld_Project
             this.btnProductionTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProductionTest.FlatAppearance.BorderSize = 0;
             this.btnProductionTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductionTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductionTest.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductionTest.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProductionTest.IconChar = FontAwesome.Sharp.IconChar.Check;
             this.btnProductionTest.IconColor = System.Drawing.Color.Gainsboro;
@@ -214,7 +214,7 @@ namespace LED_Handheld_Project
             this.btnLoadData.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLoadData.FlatAppearance.BorderSize = 0;
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoadData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadData.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadData.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLoadData.IconChar = FontAwesome.Sharp.IconChar.FileCsv;
             this.btnLoadData.IconColor = System.Drawing.Color.Gainsboro;
@@ -238,7 +238,7 @@ namespace LED_Handheld_Project
             this.BtnDevice.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnDevice.FlatAppearance.BorderSize = 0;
             this.BtnDevice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDevice.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDevice.ForeColor = System.Drawing.Color.Gainsboro;
             this.BtnDevice.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
             this.BtnDevice.IconColor = System.Drawing.Color.Gainsboro;
@@ -262,7 +262,7 @@ namespace LED_Handheld_Project
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
@@ -303,7 +303,7 @@ namespace LED_Handheld_Project
             this.btnUjiCoba.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUjiCoba.FlatAppearance.BorderSize = 0;
             this.btnUjiCoba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUjiCoba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUjiCoba.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUjiCoba.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnUjiCoba.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.btnUjiCoba.IconColor = System.Drawing.Color.Gainsboro;

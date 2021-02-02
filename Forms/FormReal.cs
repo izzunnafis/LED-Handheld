@@ -57,6 +57,7 @@ namespace LED_Handheld_Project.Forms
             LoadTheme();
             btnHold.Enabled = false;
             rtbSerialData.Visible = false;
+            tbDateValue.Visible = false;
             hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
@@ -201,8 +202,9 @@ namespace LED_Handheld_Project.Forms
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
 
                 //Display text
-                textBox1.Clear();
-                textBox1.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                tbDateValue.Clear();
+                tbDateValue.Visible = true;
+                tbDateValue.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 tbDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";

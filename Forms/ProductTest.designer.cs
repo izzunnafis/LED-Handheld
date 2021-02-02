@@ -424,6 +424,7 @@ namespace LED_Handheld_Project.Forms
             this.text_Temp.Location = new System.Drawing.Point(233, 36);
             this.text_Temp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_Temp.Name = "text_Temp";
+            this.text_Temp.ReadOnly = true;
             this.text_Temp.Size = new System.Drawing.Size(165, 30);
             this.text_Temp.TabIndex = 6;
             // 
@@ -450,6 +451,7 @@ namespace LED_Handheld_Project.Forms
             this.text_Humid.Location = new System.Drawing.Point(233, 79);
             this.text_Humid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_Humid.Name = "text_Humid";
+            this.text_Humid.ReadOnly = true;
             this.text_Humid.Size = new System.Drawing.Size(165, 30);
             this.text_Humid.TabIndex = 7;
             // 
@@ -490,6 +492,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV9.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV9.Name = "text_ResultV9";
+            this.text_ResultV9.ReadOnly = true;
             this.text_ResultV9.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV9.TabIndex = 8;
             // 
@@ -499,6 +502,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V9.Location = new System.Drawing.Point(127, 6);
             this.text_V9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V9.Name = "text_V9";
+            this.text_V9.ReadOnly = true;
             this.text_V9.Size = new System.Drawing.Size(100, 30);
             this.text_V9.TabIndex = 8;
             // 
@@ -531,6 +535,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV8.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV8.Name = "text_ResultV8";
+            this.text_ResultV8.ReadOnly = true;
             this.text_ResultV8.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV8.TabIndex = 7;
             // 
@@ -540,6 +545,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V8.Location = new System.Drawing.Point(127, 6);
             this.text_V8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V8.Name = "text_V8";
+            this.text_V8.ReadOnly = true;
             this.text_V8.Size = new System.Drawing.Size(100, 30);
             this.text_V8.TabIndex = 7;
             // 
@@ -572,6 +578,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV7.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV7.Name = "text_ResultV7";
+            this.text_ResultV7.ReadOnly = true;
             this.text_ResultV7.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV7.TabIndex = 6;
             // 
@@ -581,6 +588,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V7.Location = new System.Drawing.Point(127, 6);
             this.text_V7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V7.Name = "text_V7";
+            this.text_V7.ReadOnly = true;
             this.text_V7.Size = new System.Drawing.Size(100, 30);
             this.text_V7.TabIndex = 6;
             // 
@@ -613,6 +621,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV6.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV6.Name = "text_ResultV6";
+            this.text_ResultV6.ReadOnly = true;
             this.text_ResultV6.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV6.TabIndex = 5;
             // 
@@ -633,6 +642,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V6.Location = new System.Drawing.Point(127, 6);
             this.text_V6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V6.Name = "text_V6";
+            this.text_V6.ReadOnly = true;
             this.text_V6.Size = new System.Drawing.Size(100, 30);
             this.text_V6.TabIndex = 5;
             // 
@@ -654,6 +664,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV5.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV5.Name = "text_ResultV5";
+            this.text_ResultV5.ReadOnly = true;
             this.text_ResultV5.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV5.TabIndex = 4;
             // 
@@ -674,6 +685,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V5.Location = new System.Drawing.Point(127, 6);
             this.text_V5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V5.Name = "text_V5";
+            this.text_V5.ReadOnly = true;
             this.text_V5.Size = new System.Drawing.Size(100, 30);
             this.text_V5.TabIndex = 4;
             // 
@@ -695,6 +707,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV4.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV4.Name = "text_ResultV4";
+            this.text_ResultV4.ReadOnly = true;
             this.text_ResultV4.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV4.TabIndex = 3;
             // 
@@ -715,6 +728,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V4.Location = new System.Drawing.Point(127, 6);
             this.text_V4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V4.Name = "text_V4";
+            this.text_V4.ReadOnly = true;
             this.text_V4.Size = new System.Drawing.Size(100, 30);
             this.text_V4.TabIndex = 3;
             // 
@@ -736,6 +750,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV3.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV3.Name = "text_ResultV3";
+            this.text_ResultV3.ReadOnly = true;
             this.text_ResultV3.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV3.TabIndex = 2;
             // 
@@ -745,6 +760,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V3.Location = new System.Drawing.Point(127, 6);
             this.text_V3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V3.Name = "text_V3";
+            this.text_V3.ReadOnly = true;
             this.text_V3.Size = new System.Drawing.Size(100, 30);
             this.text_V3.TabIndex = 2;
             // 
@@ -777,6 +793,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V2.Location = new System.Drawing.Point(127, 6);
             this.text_V2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V2.Name = "text_V2";
+            this.text_V2.ReadOnly = true;
             this.text_V2.Size = new System.Drawing.Size(100, 30);
             this.text_V2.TabIndex = 1;
             // 
@@ -797,6 +814,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV2.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV2.Name = "text_ResultV2";
+            this.text_ResultV2.ReadOnly = true;
             this.text_ResultV2.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV2.TabIndex = 1;
             // 
@@ -818,6 +836,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V1.Location = new System.Drawing.Point(127, 6);
             this.text_V1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V1.Name = "text_V1";
+            this.text_V1.ReadOnly = true;
             this.text_V1.Size = new System.Drawing.Size(100, 30);
             this.text_V1.TabIndex = 0;
             // 
@@ -827,6 +846,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV1.Location = new System.Drawing.Point(233, 6);
             this.text_ResultV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV1.Name = "text_ResultV1";
+            this.text_ResultV1.ReadOnly = true;
             this.text_ResultV1.Size = new System.Drawing.Size(100, 30);
             this.text_ResultV1.TabIndex = 0;
             // 
@@ -871,6 +891,7 @@ namespace LED_Handheld_Project.Forms
             this.text_TestResult.Location = new System.Drawing.Point(71, 82);
             this.text_TestResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_TestResult.Name = "text_TestResult";
+            this.text_TestResult.ReadOnly = true;
             this.text_TestResult.Size = new System.Drawing.Size(367, 38);
             this.text_TestResult.TabIndex = 14;
             // 
@@ -880,6 +901,7 @@ namespace LED_Handheld_Project.Forms
             this.text_VOut3.Location = new System.Drawing.Point(172, 6);
             this.text_VOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut3.Name = "text_VOut3";
+            this.text_VOut3.ReadOnly = true;
             this.text_VOut3.Size = new System.Drawing.Size(100, 30);
             this.text_VOut3.TabIndex = 13;
             // 
@@ -889,6 +911,7 @@ namespace LED_Handheld_Project.Forms
             this.text_VOut2.Location = new System.Drawing.Point(172, 6);
             this.text_VOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut2.Name = "text_VOut2";
+            this.text_VOut2.ReadOnly = true;
             this.text_VOut2.Size = new System.Drawing.Size(100, 30);
             this.text_VOut2.TabIndex = 12;
             // 
@@ -898,6 +921,7 @@ namespace LED_Handheld_Project.Forms
             this.text_VOut1.Location = new System.Drawing.Point(172, 6);
             this.text_VOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut1.Name = "text_VOut1";
+            this.text_VOut1.ReadOnly = true;
             this.text_VOut1.Size = new System.Drawing.Size(100, 30);
             this.text_VOut1.TabIndex = 11;
             // 
@@ -907,6 +931,7 @@ namespace LED_Handheld_Project.Forms
             this.text_VRef2.Location = new System.Drawing.Point(172, 6);
             this.text_VRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef2.Name = "text_VRef2";
+            this.text_VRef2.ReadOnly = true;
             this.text_VRef2.Size = new System.Drawing.Size(100, 30);
             this.text_VRef2.TabIndex = 10;
             // 
@@ -916,6 +941,7 @@ namespace LED_Handheld_Project.Forms
             this.text_VRef1.Location = new System.Drawing.Point(172, 6);
             this.text_VRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef1.Name = "text_VRef1";
+            this.text_VRef1.ReadOnly = true;
             this.text_VRef1.Size = new System.Drawing.Size(100, 30);
             this.text_VRef1.TabIndex = 9;
             // 
@@ -925,6 +951,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultVRef1.Location = new System.Drawing.Point(277, 6);
             this.text_ResultVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef1.Name = "text_ResultVRef1";
+            this.text_ResultVRef1.ReadOnly = true;
             this.text_ResultVRef1.Size = new System.Drawing.Size(100, 30);
             this.text_ResultVRef1.TabIndex = 9;
             // 
@@ -945,6 +972,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultVRef2.Location = new System.Drawing.Point(277, 6);
             this.text_ResultVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef2.Name = "text_ResultVRef2";
+            this.text_ResultVRef2.ReadOnly = true;
             this.text_ResultVRef2.Size = new System.Drawing.Size(100, 30);
             this.text_ResultVRef2.TabIndex = 10;
             // 
@@ -965,6 +993,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultVOut1.Location = new System.Drawing.Point(277, 6);
             this.text_ResultVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut1.Name = "text_ResultVOut1";
+            this.text_ResultVOut1.ReadOnly = true;
             this.text_ResultVOut1.Size = new System.Drawing.Size(100, 30);
             this.text_ResultVOut1.TabIndex = 11;
             // 
@@ -985,6 +1014,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultVOut2.Location = new System.Drawing.Point(277, 6);
             this.text_ResultVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut2.Name = "text_ResultVOut2";
+            this.text_ResultVOut2.ReadOnly = true;
             this.text_ResultVOut2.Size = new System.Drawing.Size(100, 30);
             this.text_ResultVOut2.TabIndex = 12;
             // 
@@ -1005,6 +1035,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultVOut3.Location = new System.Drawing.Point(277, 6);
             this.text_ResultVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut3.Name = "text_ResultVOut3";
+            this.text_ResultVOut3.ReadOnly = true;
             this.text_ResultVOut3.Size = new System.Drawing.Size(100, 30);
             this.text_ResultVOut3.TabIndex = 13;
             // 
