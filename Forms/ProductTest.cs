@@ -19,6 +19,7 @@ namespace LED_Handheld_Project.Forms
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
+
         sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
@@ -40,14 +41,14 @@ namespace LED_Handheld_Project.Forms
             ResetTable();
             if (cbLampTypes.Text == "V4.0")
             {
-                panel4.Show();
-                panel5.Show();
+                panel_voltage1.Show();
+                panel_voltage2.Show();
                 panel6.Hide();
             }
             else
             {
-                panel4.Show();
-                panel5.Show();
+                panel_voltage1.Show();
+                panel_voltage2.Show();
                 panel6.Show();
             }
         }

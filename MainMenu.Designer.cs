@@ -30,137 +30,127 @@ namespace LED_Handheld_Project
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnSettings = new FontAwesome.Sharp.IconButton();
-            this.BtnDevice = new FontAwesome.Sharp.IconButton();
-            this.btnLoadData = new FontAwesome.Sharp.IconButton();
-            this.btnProductionTest = new FontAwesome.Sharp.IconButton();
-            this.btnRealTime = new FontAwesome.Sharp.IconButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.lbTime = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnHome = new FontAwesome.Sharp.IconButton();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.lbTime = new System.Windows.Forms.Label();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.panelShadow = new System.Windows.Forms.Panel();
+            this.btnRealTime = new FontAwesome.Sharp.IconButton();
+            this.btnProductionTest = new FontAwesome.Sharp.IconButton();
+            this.btnLoadData = new FontAwesome.Sharp.IconButton();
+            this.BtnDevice = new FontAwesome.Sharp.IconButton();
+            this.btnSettings = new FontAwesome.Sharp.IconButton();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnUjiCoba = new FontAwesome.Sharp.IconButton();
-            this.panelMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
+            this.panel_clock = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            this.panelDesktop.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.panel_clock.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelMenu
+            // timer1
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.btnUjiCoba);
-            this.panelMenu.Controls.Add(this.btnSettings);
-            this.panelMenu.Controls.Add(this.BtnDevice);
-            this.panelMenu.Controls.Add(this.btnLoadData);
-            this.panelMenu.Controls.Add(this.btnProductionTest);
-            this.panelMenu.Controls.Add(this.btnRealTime);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 873);
-            this.panelMenu.TabIndex = 0;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnSettings
+            // panelShadow
             // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSettings.IconSize = 32;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 380);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSettings.Size = new System.Drawing.Size(220, 60);
-            this.btnSettings.TabIndex = 5;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(165, 65);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(2);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(896, 7);
+            this.panelShadow.TabIndex = 2;
             // 
-            // BtnDevice
+            // iconCurrentChildForm
             // 
-            this.BtnDevice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnDevice.FlatAppearance.BorderSize = 0;
-            this.BtnDevice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDevice.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnDevice.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
-            this.BtnDevice.IconColor = System.Drawing.Color.Gainsboro;
-            this.BtnDevice.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnDevice.IconSize = 32;
-            this.BtnDevice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDevice.Location = new System.Drawing.Point(0, 320);
-            this.BtnDevice.Name = "BtnDevice";
-            this.BtnDevice.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BtnDevice.Size = new System.Drawing.Size(220, 60);
-            this.BtnDevice.TabIndex = 4;
-            this.BtnDevice.Text = "Device";
-            this.BtnDevice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDevice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnDevice.UseVisualStyleBackColor = true;
-            this.BtnDevice.Click += new System.EventHandler(this.BtnDevice_Click);
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 38;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(12, 24);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(38, 41);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
             // 
-            // btnLoadData
+            // lblTitleChildForm
             // 
-            this.btnLoadData.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoadData.FlatAppearance.BorderSize = 0;
-            this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoadData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadData.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLoadData.IconChar = FontAwesome.Sharp.IconChar.FileCsv;
-            this.btnLoadData.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnLoadData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLoadData.IconSize = 32;
-            this.btnLoadData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoadData.Location = new System.Drawing.Point(0, 260);
-            this.btnLoadData.Name = "btnLoadData";
-            this.btnLoadData.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnLoadData.Size = new System.Drawing.Size(220, 60);
-            this.btnLoadData.TabIndex = 3;
-            this.btnLoadData.Text = "Load Data";
-            this.btnLoadData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoadData.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLoadData.UseVisualStyleBackColor = true;
-            this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(54, 29);
+            this.lblTitleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(64, 25);
+            this.lblTitleChildForm.TabIndex = 1;
+            this.lblTitleChildForm.Text = "Home";
             // 
-            // btnProductionTest
+            // lbTime
             // 
-            this.btnProductionTest.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProductionTest.FlatAppearance.BorderSize = 0;
-            this.btnProductionTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductionTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductionTest.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnProductionTest.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.btnProductionTest.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnProductionTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProductionTest.IconSize = 32;
-            this.btnProductionTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductionTest.Location = new System.Drawing.Point(0, 200);
-            this.btnProductionTest.Name = "btnProductionTest";
-            this.btnProductionTest.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnProductionTest.Size = new System.Drawing.Size(220, 60);
-            this.btnProductionTest.TabIndex = 2;
-            this.btnProductionTest.Text = "Production Test";
-            this.btnProductionTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductionTest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProductionTest.UseVisualStyleBackColor = true;
-            this.btnProductionTest.Click += new System.EventHandler(this.btnProductionTest_Click);
+            this.lbTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTime.AutoSize = true;
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.White;
+            this.lbTime.Location = new System.Drawing.Point(32, 24);
+            this.lbTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Size = new System.Drawing.Size(39, 20);
+            this.lbTime.TabIndex = 0;
+            this.lbTime.Text = "Jam";
+            this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.panel_clock);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(165, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(896, 65);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.btnHome);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(165, 114);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
+            this.btnHome.IconColor = System.Drawing.Color.White;
+            this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(9, 37);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(152, 52);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "LED Handheld";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnRealTime
             // 
@@ -174,10 +164,11 @@ namespace LED_Handheld_Project
             this.btnRealTime.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRealTime.IconSize = 32;
             this.btnRealTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRealTime.Location = new System.Drawing.Point(0, 140);
+            this.btnRealTime.Location = new System.Drawing.Point(0, 114);
+            this.btnRealTime.Margin = new System.Windows.Forms.Padding(2);
             this.btnRealTime.Name = "btnRealTime";
-            this.btnRealTime.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnRealTime.Size = new System.Drawing.Size(220, 60);
+            this.btnRealTime.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnRealTime.Size = new System.Drawing.Size(165, 49);
             this.btnRealTime.TabIndex = 1;
             this.btnRealTime.Text = "Real Time";
             this.btnRealTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,182 +176,182 @@ namespace LED_Handheld_Project
             this.btnRealTime.UseVisualStyleBackColor = true;
             this.btnRealTime.Click += new System.EventHandler(this.btnRealTime_Click);
             // 
-            // panelLogo
+            // btnProductionTest
             // 
-            this.panelLogo.Controls.Add(this.btnHome);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 140);
-            this.panelLogo.TabIndex = 0;
+            this.btnProductionTest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProductionTest.FlatAppearance.BorderSize = 0;
+            this.btnProductionTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductionTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductionTest.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProductionTest.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnProductionTest.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnProductionTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProductionTest.IconSize = 32;
+            this.btnProductionTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductionTest.Location = new System.Drawing.Point(0, 163);
+            this.btnProductionTest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductionTest.Name = "btnProductionTest";
+            this.btnProductionTest.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnProductionTest.Size = new System.Drawing.Size(165, 49);
+            this.btnProductionTest.TabIndex = 2;
+            this.btnProductionTest.Text = "Production Test";
+            this.btnProductionTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductionTest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProductionTest.UseVisualStyleBackColor = true;
+            this.btnProductionTest.Click += new System.EventHandler(this.btnProductionTest_Click);
             // 
-            // btnHome
+            // btnLoadData
             // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
-            this.btnHome.IconColor = System.Drawing.Color.White;
-            this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(12, 45);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(202, 64);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "LED Handheld";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnLoadData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoadData.FlatAppearance.BorderSize = 0;
+            this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoadData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadData.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLoadData.IconChar = FontAwesome.Sharp.IconChar.FileCsv;
+            this.btnLoadData.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnLoadData.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLoadData.IconSize = 32;
+            this.btnLoadData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoadData.Location = new System.Drawing.Point(0, 212);
+            this.btnLoadData.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLoadData.Name = "btnLoadData";
+            this.btnLoadData.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnLoadData.Size = new System.Drawing.Size(165, 49);
+            this.btnLoadData.TabIndex = 3;
+            this.btnLoadData.Text = "Load Data";
+            this.btnLoadData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoadData.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLoadData.UseVisualStyleBackColor = true;
+            this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
             // 
-            // panelTitleBar
+            // BtnDevice
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panelTitleBar.Controls.Add(this.lbTime);
-            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1162, 80);
-            this.panelTitleBar.TabIndex = 1;
+            this.BtnDevice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnDevice.FlatAppearance.BorderSize = 0;
+            this.BtnDevice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDevice.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnDevice.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
+            this.BtnDevice.IconColor = System.Drawing.Color.Gainsboro;
+            this.BtnDevice.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnDevice.IconSize = 32;
+            this.BtnDevice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDevice.Location = new System.Drawing.Point(0, 261);
+            this.BtnDevice.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDevice.Name = "BtnDevice";
+            this.BtnDevice.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.BtnDevice.Size = new System.Drawing.Size(165, 49);
+            this.BtnDevice.TabIndex = 4;
+            this.BtnDevice.Text = "Device";
+            this.BtnDevice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDevice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnDevice.UseVisualStyleBackColor = true;
+            this.BtnDevice.Click += new System.EventHandler(this.BtnDevice_Click);
             // 
-            // lbTime
+            // btnSettings
             // 
-            this.lbTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(1002, 29);
-            this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(50, 25);
-            this.lbTime.TabIndex = 0;
-            this.lbTime.Text = "Jam";
-            this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSettings.IconSize = 32;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 310);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
+            this.btnSettings.Size = new System.Drawing.Size(165, 49);
+            this.btnSettings.TabIndex = 5;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // lblTitleChildForm
+            // panelMenu
             // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(72, 36);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
-            this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Home";
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 50;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(16, 29);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(50, 50);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 80);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1162, 9);
-            this.panelShadow.TabIndex = 2;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnSettings);
+            this.panelMenu.Controls.Add(this.BtnDevice);
+            this.panelMenu.Controls.Add(this.btnLoadData);
+            this.panelMenu.Controls.Add(this.btnProductionTest);
+            this.panelMenu.Controls.Add(this.btnRealTime);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(165, 652);
+            this.panelMenu.TabIndex = 0;
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Controls.Add(this.label1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 89);
+            this.panelDesktop.Location = new System.Drawing.Point(165, 72);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1162, 784);
+            this.panelDesktop.Size = new System.Drawing.Size(896, 580);
             this.panelDesktop.TabIndex = 3;
             // 
-            // label1
+            // panel_clock
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 313);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnUjiCoba
-            // 
-            this.btnUjiCoba.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUjiCoba.FlatAppearance.BorderSize = 0;
-            this.btnUjiCoba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUjiCoba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUjiCoba.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnUjiCoba.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.btnUjiCoba.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnUjiCoba.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUjiCoba.IconSize = 32;
-            this.btnUjiCoba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUjiCoba.Location = new System.Drawing.Point(0, 440);
-            this.btnUjiCoba.Name = "btnUjiCoba";
-            this.btnUjiCoba.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnUjiCoba.Size = new System.Drawing.Size(220, 60);
-            this.btnUjiCoba.TabIndex = 6;
-            this.btnUjiCoba.Text = "Uji Coba Login";
-            this.btnUjiCoba.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUjiCoba.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUjiCoba.UseVisualStyleBackColor = true;
-            this.btnUjiCoba.Click += new System.EventHandler(this.btnUjiCoba_Click);
+            this.panel_clock.Controls.Add(this.lbTime);
+            this.panel_clock.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_clock.Location = new System.Drawing.Point(787, 0);
+            this.panel_clock.Name = "panel_clock";
+            this.panel_clock.Size = new System.Drawing.Size(109, 65);
+            this.panel_clock.TabIndex = 2;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 873);
+            this.AutoScroll = true;
+            this.AutoScrollMinSize = new System.Drawing.Size(1044, 648);
+            this.ClientSize = new System.Drawing.Size(1061, 652);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LED Handheld";
             this.Load += new System.EventHandler(this.MainMenu_Load);
-            this.panelMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            this.panelDesktop.ResumeLayout(false);
-            this.panelDesktop.PerformLayout();
+            this.panelLogo.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panel_clock.ResumeLayout(false);
+            this.panel_clock.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton btnSettings;
-        private FontAwesome.Sharp.IconButton BtnDevice;
-        private FontAwesome.Sharp.IconButton btnLoadData;
-        private FontAwesome.Sharp.IconButton btnProductionTest;
-        private FontAwesome.Sharp.IconButton btnRealTime;
-        private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton btnHome;
-        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelShadow;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label lblTitleChildForm;
-        private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label lbTime;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton btnUjiCoba;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Panel panelLogo;
+        private FontAwesome.Sharp.IconButton btnHome;
+        private FontAwesome.Sharp.IconButton btnRealTime;
+        private FontAwesome.Sharp.IconButton btnProductionTest;
+        private FontAwesome.Sharp.IconButton btnLoadData;
+        private FontAwesome.Sharp.IconButton BtnDevice;
+        private FontAwesome.Sharp.IconButton btnSettings;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Panel panel_clock;
     }
 }
 
