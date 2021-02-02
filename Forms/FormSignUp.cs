@@ -30,26 +30,32 @@ namespace LED_Handheld_Project.Forms
             this.Close();
         }
 
-        private async void btnSignup_Click(object sender, EventArgs e)
+        private /*async*/ void btnSignup_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbUsername.Text))
+            //if (string.IsNullOrEmpty(tbUsername.Text))
+            //{
+            //    MessageBox.Show("Please enter your username!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    tbUsername.Focus();
+            //    return;
+            //}
+            //if (tbPassword.Text != tbConfirmPass.Text)
+            //{
+            //    MessageBox.Show("Password and Confirm Password don't match!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            //IUserRepository repository = new UserRepository();
+            //bool result = await repository.Insert(new User() { username = tbUsername.Text, password = tbPassword.Text });
+            //if (result)
+            //    MessageBox.Show("You have successfully signed up!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //else
+            //    MessageBox.Show("Error !", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (tbConfirmPass.Text != string.Empty || tbPassword.Text != string.Empty || tbUsername.Text != string.Empty)
             {
-                MessageBox.Show("Please enter your username!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                tbUsername.Focus();
-                return;
+                if (tbPassword.Text == tbConfirmPass.Text)
+                {
+                    SqlCommand cmd = new SqlCommand("select ");
+                }
             }
-            if (tbPassword.Text != tbConfirmPass.Text)
-            {
-                MessageBox.Show("Password and Confirm Password don't match!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            IUserRepository repository = new UserRepository();
-            bool result = await repository.Insert(new User() { username = tbUsername.Text, password = tbPassword.Text });
-            if (result)
-                MessageBox.Show("You have successfully signed up!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-                MessageBox.Show("Error !", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
         }
     }
 }
