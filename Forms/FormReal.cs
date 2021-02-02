@@ -58,6 +58,7 @@ namespace LED_Handheld_Project.Forms
             LoadTheme();
             btnHold.Enabled = false;
             rtbSerialData.Visible = false;
+            hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
@@ -70,7 +71,43 @@ namespace LED_Handheld_Project.Forms
 
             } //chart naming and initializer*/
         }
-
+        private void cboxLampType_TextChanged(object sender, EventArgs e)
+        {
+            if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
+            {
+                for (int i = 0; i < 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
+            else if(cboxLampType.Text == "V4.0")
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+                for (int i = 2; i < 9; i++)
+                {
+                    label_V[i].Visible = false;
+                    cek_V[i].Visible = false;
+                }
+                for (int i = 9; i < 14; i++)
+                {
+                    label_V[i].Visible = true;
+                    cek_V[i].Visible = true;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 14; i++)
+                {
+                    label_V[i].Visible = false;
+                    cek_V[i].Visible = false;
+                }
+            }
+        }
         private void lamptype()
         {
             if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
@@ -173,7 +210,7 @@ namespace LED_Handheld_Project.Forms
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
 
                 //Display text
-                tbDate.Text = DateTime.Now.ToString("G");
+                tbDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
@@ -210,6 +247,7 @@ namespace LED_Handheld_Project.Forms
         {
             //btnStart.Enabled = false;
             btnHold.Enabled = true;
+            openVisible();
             try
             {
                 serialPort1.PortName = cbPort.Text;
@@ -225,6 +263,22 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show(error.Message);
 #endif
             }
+        }
+
+        private void openVisible()
+        {
+            tbHumidity.Visible = true;
+            tbTemperature.Visible = true;
+            lbTemperature.Visible = true;
+            lbHumidity.Visible = true;
+        }
+
+        private void hideVisible()
+        {
+            tbHumidity.Visible = false;
+            tbTemperature.Visible = false;
+            lbTemperature.Visible = false;
+            lbHumidity.Visible = false;
         }
 
         private void rtbSerialData_TextChanged(object sender, EventArgs e)

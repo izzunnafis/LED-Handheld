@@ -18,9 +18,6 @@ namespace LED_Handheld_Project.Forms
         //Fields
         string in_data;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
-
-        
-
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
 
         private void textBox32_TextChanged(object sender, EventArgs e)
@@ -543,7 +540,6 @@ namespace LED_Handheld_Project.Forms
                     tbFinalResult.BackColor = Color.Red;
                 }
         }
-
 
         private void btnSave_Click(object sender, EventArgs e)
         {

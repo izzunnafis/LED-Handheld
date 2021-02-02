@@ -20,12 +20,8 @@ namespace LED_Handheld_Project
         private Form currentChildForm;
         private SerialPort myport; // untuk ports
 
-        Form form_real = new Forms.FormReal();
-        Form form_production_test = new Forms.FormProduct();
-        Form form_real_time = new Forms.FormRealTime();
-        Form form_product_test = new Forms.ProductTest();
-        Form form_load_data = new Forms.FormLoadData();
-        
+        //Form real_time_form = new Forms.FormReal();
+        //Form product_test_form = new Forms.ProductTest();
 
         //Constructor
         public MainMenu()
@@ -39,62 +35,28 @@ namespace LED_Handheld_Project
             //this.ControlBox = false;
         }
 
-        
-
         private void MainMenu_Load(object sender, EventArgs e)
         {
             string[] ports = SerialPort.GetPortNames(); //untuk ports
             myport = new SerialPort();
             myport.Close();
-            LoadTheme();
             timer1.Start();
             //myport.BaudRate = 9600;
-        }
-
-        private void LoadTheme()
-        {
-            foreach (Control btns in this.Controls)
-            {
-                if (btns.GetType() == typeof(IconButton))
-                {
-                    IconButton btn = (IconButton)btns;
-                    btn.Size = new System.Drawing.Size(220, 60);
-                    btn.BackColor = Color.White;
-                    //btn.ForeColor = Color.White;
-                    //btn.FlatAppearance.BorderColor = Color.FromArgb(172, 126, 241);
-                }
-            }
-            panelMenu.Size = new System.Drawing.Size(220, 803);
-            panelLogo.Size = new System.Drawing.Size(220, 140);
-            panelTitleBar.Size = new System.Drawing.Size(1162, 80);
-            panelShadow.Size = new System.Drawing.Size(1162, 9);
-            panelDesktop.Size = new System.Drawing.Size(1162, 714);
-            ClientSize = new System.Drawing.Size(1382, 803);
-            btnSettings.Size = new System.Drawing.Size(220, 60);
-            BtnDevice.Size = new System.Drawing.Size(220, 60);
-            btnLoadData.Size = new System.Drawing.Size(220, 60);
-            btnProductionTest.Size = new System.Drawing.Size(220, 60);
-            btnRealTime.Size = new System.Drawing.Size(220, 60);
-            btnHome.Size = new System.Drawing.Size(200, 64);
-            iconCurrentChildForm.Size = new System.Drawing.Size(50,50);
-            panelShadow.Size = new System.Drawing.Size(1162, 9);
-
-
         }
 
         //Struct
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(24, 161, 251);
-            public static Color color6 = Color.FromArgb(249, 118, 176);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
+            public static Color color6 = Color.FromArgb(24, 161, 251);
         }
 
         //Method
-        private void ActivatedButton(object senderBtn,Color color)
+        private void ActivatedButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
             {
@@ -135,37 +97,38 @@ namespace LED_Handheld_Project
         private void btnRealTime_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color1);
-            OpenChildForm(form_real);
+            OpenChildForm(new Forms.FormReal());
+            //OpenChildForm(real_time_form);
         }
 
         private void btnProductionTest_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color2);
-            OpenChildForm(form_product_test);
+            OpenChildForm(new Forms.ProductTest());
+            //OpenChildForm(product_test_form);
         }
 
         private void btnLoadData_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color3);
-            OpenChildForm(form_load_data);
+            OpenChildForm(new Forms.FormRealTime());
         }
 
         private void BtnDevice_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color4);
-            OpenChildForm(form_real_time);
+            OpenChildForm(new Forms.FormRealTime());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color5);
-            OpenChildForm(form_production_test);
+            OpenChildForm(new Forms.FormProduct());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            //currentChildForm.Close();
-            panelDesktop.Controls.Clear();
+            currentChildForm.Close();
             Reset();
         }
 
@@ -176,10 +139,18 @@ namespace LED_Handheld_Project
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "Home";
+            //panelDesktop.Controls.Add(new MainMenu());
         }
 
         private void OpenChildForm(Form childForm)
         {
+            //open only form
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            //End
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -189,10 +160,11 @@ namespace LED_Handheld_Project
             childForm.Show();
             lblTitleChildForm.Text = childForm.Text;
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbTime.Text = DateTime.Now.ToString("T");
         }
     }
 }
+
+
