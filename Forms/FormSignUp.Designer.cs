@@ -34,6 +34,7 @@ namespace LED_Handheld_Project.Forms
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbShowPassword = new System.Windows.Forms.CheckBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.tbConfirmPass = new System.Windows.Forms.TextBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -105,6 +106,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.cbShowPassword);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.tbConfirmPass);
             this.panel3.Controls.Add(this.iconPictureBox5);
@@ -120,13 +122,25 @@ namespace LED_Handheld_Project.Forms
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Location = new System.Drawing.Point(28, 195);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(488, 436);
+            this.panel3.Size = new System.Drawing.Size(488, 416);
             this.panel3.TabIndex = 4;
+            // 
+            // cbShowPassword
+            // 
+            this.cbShowPassword.AutoSize = true;
+            this.cbShowPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbShowPassword.Location = new System.Drawing.Point(53, 276);
+            this.cbShowPassword.Name = "cbShowPassword";
+            this.cbShowPassword.Size = new System.Drawing.Size(129, 21);
+            this.cbShowPassword.TabIndex = 13;
+            this.cbShowPassword.Text = "Show Password";
+            this.cbShowPassword.UseVisualStyleBackColor = true;
+            this.cbShowPassword.CheckedChanged += new System.EventHandler(this.cbShowPassword_CheckedChanged);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(53, 305);
+            this.panel7.Location = new System.Drawing.Point(53, 258);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(432, 1);
             this.panel7.TabIndex = 12;
@@ -137,11 +151,14 @@ namespace LED_Handheld_Project.Forms
             this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConfirmPass.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbConfirmPass.Location = new System.Drawing.Point(53, 274);
+            this.tbConfirmPass.Location = new System.Drawing.Point(53, 227);
             this.tbConfirmPass.Name = "tbConfirmPass";
             this.tbConfirmPass.Size = new System.Drawing.Size(432, 23);
             this.tbConfirmPass.TabIndex = 11;
             this.tbConfirmPass.Text = "Confirm Password";
+            this.tbConfirmPass.Click += new System.EventHandler(this.tbConfirmPass_Click);
+            this.tbConfirmPass.TextChanged += new System.EventHandler(this.tbConfirmPass_TextChanged_1);
+            this.tbConfirmPass.Enter += new System.EventHandler(this.tbConfirmPass_Enter);
             // 
             // iconPictureBox5
             // 
@@ -150,7 +167,7 @@ namespace LED_Handheld_Project.Forms
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Lock;
             this.iconPictureBox5.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.Location = new System.Drawing.Point(15, 274);
+            this.iconPictureBox5.Location = new System.Drawing.Point(15, 227);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox5.TabIndex = 10;
@@ -159,7 +176,7 @@ namespace LED_Handheld_Project.Forms
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(53, 211);
+            this.panel6.Location = new System.Drawing.Point(53, 183);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(432, 1);
             this.panel6.TabIndex = 9;
@@ -170,11 +187,14 @@ namespace LED_Handheld_Project.Forms
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbPassword.Location = new System.Drawing.Point(53, 180);
+            this.tbPassword.Location = new System.Drawing.Point(53, 152);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(432, 23);
             this.tbPassword.TabIndex = 8;
             this.tbPassword.Text = "Password";
+            this.tbPassword.Click += new System.EventHandler(this.tbPassword_Click);
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
+            this.tbPassword.Enter += new System.EventHandler(this.tbPassword_Enter);
             // 
             // iconPictureBox4
             // 
@@ -183,7 +203,7 @@ namespace LED_Handheld_Project.Forms
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Lock;
             this.iconPictureBox4.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(15, 180);
+            this.iconPictureBox4.Location = new System.Drawing.Point(15, 152);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox4.TabIndex = 7;
@@ -200,7 +220,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSignup.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSignup.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignup.Location = new System.Drawing.Point(0, 378);
+            this.btnSignup.Location = new System.Drawing.Point(0, 358);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(488, 58);
             this.btnSignup.TabIndex = 6;
@@ -211,7 +231,7 @@ namespace LED_Handheld_Project.Forms
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(53, 126);
+            this.panel5.Location = new System.Drawing.Point(53, 111);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(432, 1);
             this.panel5.TabIndex = 5;
@@ -222,11 +242,13 @@ namespace LED_Handheld_Project.Forms
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbEmail.Location = new System.Drawing.Point(53, 95);
+            this.tbEmail.Location = new System.Drawing.Point(53, 80);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(432, 23);
             this.tbEmail.TabIndex = 4;
             this.tbEmail.Text = "Email";
+            this.tbEmail.Click += new System.EventHandler(this.tbEmail_Click);
+            this.tbEmail.Enter += new System.EventHandler(this.tbEmail_Enter);
             // 
             // panel4
             // 
@@ -243,7 +265,7 @@ namespace LED_Handheld_Project.Forms
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.EnvelopeSquare;
             this.iconPictureBox3.IconColor = System.Drawing.Color.Gainsboro;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.Location = new System.Drawing.Point(15, 95);
+            this.iconPictureBox3.Location = new System.Drawing.Point(15, 80);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox3.TabIndex = 3;
@@ -260,6 +282,7 @@ namespace LED_Handheld_Project.Forms
             this.tbUsername.Size = new System.Drawing.Size(432, 23);
             this.tbUsername.TabIndex = 1;
             this.tbUsername.Text = "Username";
+            this.tbUsername.Click += new System.EventHandler(this.tbUsername_Click);
             // 
             // iconPictureBox2
             // 
@@ -286,6 +309,7 @@ namespace LED_Handheld_Project.Forms
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSignUp";
             this.Load += new System.EventHandler(this.FormSignUp_Load);
             this.panel1.ResumeLayout(false);
@@ -322,5 +346,6 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox tbConfirmPass;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
+        private System.Windows.Forms.CheckBox cbShowPassword;
     }
 }

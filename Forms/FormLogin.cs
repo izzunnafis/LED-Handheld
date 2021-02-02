@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace LED_Handheld_Project.Forms
 {
@@ -36,15 +37,43 @@ namespace LED_Handheld_Project.Forms
             if (tbPassword.Text == "Password")
                 tbPassword.Clear();
         }
+        private void tbPassword_Enter(object sender, EventArgs e)
+        {
+            if (tbPassword.Text == "Password")
+                tbPassword.Clear();
+        }
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (cbShowPassword.Checked == false)
+                tbPassword.UseSystemPasswordChar = true;
+            else
+                tbPassword.UseSystemPasswordChar = false;
+        }
+        private void cbShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbShowPassword.Checked == false)
+                tbPassword.UseSystemPasswordChar = true;
+            else
+                tbPassword.UseSystemPasswordChar = false;
+        }
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Mahasiswa UGM\Kerja Praktik\Visual Studio\GitHub LED Handheld Project\Data Connection\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "Select * from LoginTable where username = '" + tbUsername.Text.Trim() + "' and password = '" + tbPassword.Text.Trim() + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            //SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Mahasiswa UGM\Kerja Praktik\Visual Studio\GitHub LED Handheld Project\LoginDB.mdf;Integrated Security=True;Connect Timeout=30");
+            string mainconn = ConfigurationManager.ConnectionStrings["LED_Handheld_Project.Properties.Settings.cn"].ConnectionString;
+            string query = "Select * from [dbo].[SignUpTable] where username = @username and password = @password";
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            sqlconn.Open();
+            SqlCommand sqlcomm = new SqlCommand(query, sqlconn);
+            sqlcomm.Parameters.AddWithValue("@username", tbUsername.Text);
+            sqlcomm.Parameters.AddWithValue("@password", tbPassword.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(sqlcomm);
+            //SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
-            if (dtbl.Rows.Count == 1)
+            sqlcomm.ExecuteNonQuery();
+            if (dtbl.Rows.Count > 0)
             {
                 UjicobaLogin UL = new UjicobaLogin();
                 this.Hide();

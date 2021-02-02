@@ -33,6 +33,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbShowPassword = new System.Windows.Forms.CheckBox();
             this.btnSignin = new FontAwesome.Sharp.IconButton();
             this.btnSignup = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -101,6 +102,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.cbShowPassword);
             this.panel3.Controls.Add(this.btnSignin);
             this.panel3.Controls.Add(this.btnSignup);
             this.panel3.Controls.Add(this.panel5);
@@ -111,8 +113,20 @@
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Location = new System.Drawing.Point(28, 195);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(488, 289);
+            this.panel3.Size = new System.Drawing.Size(488, 324);
             this.panel3.TabIndex = 3;
+            // 
+            // cbShowPassword
+            // 
+            this.cbShowPassword.AutoSize = true;
+            this.cbShowPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbShowPassword.Location = new System.Drawing.Point(53, 142);
+            this.cbShowPassword.Name = "cbShowPassword";
+            this.cbShowPassword.Size = new System.Drawing.Size(129, 21);
+            this.cbShowPassword.TabIndex = 8;
+            this.cbShowPassword.Text = "Show Password";
+            this.cbShowPassword.UseVisualStyleBackColor = true;
+            this.cbShowPassword.CheckedChanged += new System.EventHandler(this.cbShowPassword_CheckedChanged);
             // 
             // btnSignin
             // 
@@ -124,7 +138,7 @@
             this.btnSignin.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSignin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignin.Location = new System.Drawing.Point(0, 173);
+            this.btnSignin.Location = new System.Drawing.Point(0, 208);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(488, 58);
             this.btnSignin.TabIndex = 7;
@@ -143,7 +157,7 @@
             this.btnSignup.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSignup.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignup.Location = new System.Drawing.Point(0, 231);
+            this.btnSignup.Location = new System.Drawing.Point(0, 266);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(488, 58);
             this.btnSignup.TabIndex = 6;
@@ -171,6 +185,8 @@
             this.tbPassword.TabIndex = 4;
             this.tbPassword.Text = "Password";
             this.tbPassword.Click += new System.EventHandler(this.tbPassword_Click);
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
+            this.tbPassword.Enter += new System.EventHandler(this.tbPassword_Enter);
             // 
             // panel4
             // 
@@ -229,7 +245,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(198, 514);
+            this.iconButton3.Location = new System.Drawing.Point(198, 538);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(156, 30);
             this.iconButton3.TabIndex = 4;
@@ -244,7 +260,7 @@
             this.iconGoogle.IconColor = System.Drawing.Color.Gainsboro;
             this.iconGoogle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconGoogle.IconSize = 48;
-            this.iconGoogle.Location = new System.Drawing.Point(198, 550);
+            this.iconGoogle.Location = new System.Drawing.Point(198, 574);
             this.iconGoogle.Name = "iconGoogle";
             this.iconGoogle.Size = new System.Drawing.Size(48, 48);
             this.iconGoogle.TabIndex = 5;
@@ -258,7 +274,7 @@
             this.iconFacebook.IconColor = System.Drawing.Color.Gainsboro;
             this.iconFacebook.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFacebook.IconSize = 48;
-            this.iconFacebook.Location = new System.Drawing.Point(271, 550);
+            this.iconFacebook.Location = new System.Drawing.Point(271, 574);
             this.iconFacebook.Name = "iconFacebook";
             this.iconFacebook.Size = new System.Drawing.Size(48, 48);
             this.iconFacebook.TabIndex = 6;
@@ -278,6 +294,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.panel1.ResumeLayout(false);
@@ -312,5 +329,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconPictureBox iconGoogle;
         private FontAwesome.Sharp.IconPictureBox iconFacebook;
+        private System.Windows.Forms.CheckBox cbShowPassword;
     }
 }
