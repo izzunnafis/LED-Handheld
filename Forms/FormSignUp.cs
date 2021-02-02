@@ -56,7 +56,8 @@ namespace LED_Handheld_Project.Forms
                 if (tbPassword.Text == tbConfirmPass.Text)
                 {
                     SqlCommand cmd = new SqlCommand("select * from LoginTable where username = '" + tbUsername.Text + "'", conn);
-                    dr = cmd.ExecuteReader();
+                    //dr = cmd.ExecuteReader();
+                    
                 }
             }
         }
