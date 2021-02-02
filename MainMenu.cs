@@ -166,12 +166,6 @@ namespace LED_Handheld_Project
         {
             lbTime.Text = DateTime.Now.ToString("T");
         }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormLogin());
-        }
-
         private void btnUjiCoba_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormLogin());
