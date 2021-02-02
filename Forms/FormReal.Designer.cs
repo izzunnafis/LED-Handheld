@@ -30,22 +30,22 @@ namespace LED_Handheld_Project.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series50 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series51 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series52 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series53 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series54 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series55 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series56 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnStart = new System.Windows.Forms.Button();
             this.rtbSerialData = new System.Windows.Forms.RichTextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -100,6 +100,7 @@ namespace LED_Handheld_Project.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_date = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_temphumid = new System.Windows.Forms.Panel();
             this.panel_voltage = new System.Windows.Forms.Panel();
             this.panel_graph = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).BeginInit();
@@ -108,23 +109,24 @@ namespace LED_Handheld_Project.Forms
             this.panel1.SuspendLayout();
             this.panel_date.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel_temphumid.SuspendLayout();
             this.panel_voltage.SuspendLayout();
             this.panel_graph.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnStart.FlatAppearance.BorderSize = 0;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(44, 179);
+            this.btnStart.Location = new System.Drawing.Point(30, 179);
             this.btnStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(150, 49);
             this.btnStart.TabIndex = 34;
             this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // rtbSerialData
@@ -140,131 +142,131 @@ namespace LED_Handheld_Project.Forms
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(44, 285);
+            this.btnSave.Location = new System.Drawing.Point(30, 285);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 49);
             this.btnSave.TabIndex = 25;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // chartData
             // 
             this.chartData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.chartData.BorderlineWidth = 0;
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineWidth = 5;
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX2.MajorGrid.Enabled = false;
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.LineWidth = 5;
-            chartArea2.AxisY.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
-            chartArea2.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chartData.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.Transparent;
-            legend2.ForeColor = System.Drawing.Color.White;
-            legend2.Name = "Legend1";
-            this.chartData.Legends.Add(legend2);
+            chartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea4.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea4.AxisX.LineWidth = 5;
+            chartArea4.AxisX.MajorGrid.Enabled = false;
+            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea4.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea4.AxisX2.MajorGrid.Enabled = false;
+            chartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea4.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea4.AxisY.LineWidth = 5;
+            chartArea4.AxisY.MajorGrid.Enabled = false;
+            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea4.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
+            chartArea4.BackColor = System.Drawing.Color.Transparent;
+            chartArea4.Name = "ChartArea1";
+            this.chartData.ChartAreas.Add(chartArea4);
+            legend4.BackColor = System.Drawing.Color.Transparent;
+            legend4.ForeColor = System.Drawing.Color.White;
+            legend4.Name = "Legend1";
+            this.chartData.Legends.Add(legend4);
             this.chartData.Location = new System.Drawing.Point(2, 41);
             this.chartData.Margin = new System.Windows.Forms.Padding(2);
             this.chartData.Name = "chartData";
             this.chartData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series15.BorderWidth = 5;
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series15.Legend = "Legend1";
-            series15.Name = "V1";
-            series16.BorderWidth = 5;
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series16.Legend = "Legend1";
-            series16.Name = "V2";
-            series17.BorderWidth = 5;
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series17.Legend = "Legend1";
-            series17.Name = "V3";
-            series18.BorderWidth = 5;
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series18.Legend = "Legend1";
-            series18.Name = "V4";
-            series19.BorderWidth = 5;
-            series19.ChartArea = "ChartArea1";
-            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series19.Legend = "Legend1";
-            series19.Name = "V5";
-            series20.BorderWidth = 5;
-            series20.ChartArea = "ChartArea1";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series20.Legend = "Legend1";
-            series20.Name = "V6";
-            series21.BorderWidth = 5;
-            series21.ChartArea = "ChartArea1";
-            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series21.Legend = "Legend1";
-            series21.Name = "V7";
-            series22.BorderWidth = 5;
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series22.Legend = "Legend1";
-            series22.Name = "V8";
-            series23.BorderWidth = 5;
-            series23.ChartArea = "ChartArea1";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series23.Legend = "Legend1";
-            series23.Name = "V9";
-            series24.BorderWidth = 5;
-            series24.ChartArea = "ChartArea1";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series24.Legend = "Legend1";
-            series24.Name = "VRef1";
-            series25.BorderWidth = 5;
-            series25.ChartArea = "ChartArea1";
-            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series25.Legend = "Legend1";
-            series25.Name = "VRef2";
-            series26.BorderWidth = 5;
-            series26.ChartArea = "ChartArea1";
-            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series26.Legend = "Legend1";
-            series26.Name = "VOut1";
-            series27.BorderWidth = 5;
-            series27.ChartArea = "ChartArea1";
-            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series27.Legend = "Legend1";
-            series27.Name = "VOut2";
-            series28.BorderWidth = 5;
-            series28.ChartArea = "ChartArea1";
-            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series28.Legend = "Legend1";
-            series28.Name = "VOut3";
-            this.chartData.Series.Add(series15);
-            this.chartData.Series.Add(series16);
-            this.chartData.Series.Add(series17);
-            this.chartData.Series.Add(series18);
-            this.chartData.Series.Add(series19);
-            this.chartData.Series.Add(series20);
-            this.chartData.Series.Add(series21);
-            this.chartData.Series.Add(series22);
-            this.chartData.Series.Add(series23);
-            this.chartData.Series.Add(series24);
-            this.chartData.Series.Add(series25);
-            this.chartData.Series.Add(series26);
-            this.chartData.Series.Add(series27);
-            this.chartData.Series.Add(series28);
+            series43.BorderWidth = 5;
+            series43.ChartArea = "ChartArea1";
+            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series43.Legend = "Legend1";
+            series43.Name = "V1";
+            series44.BorderWidth = 5;
+            series44.ChartArea = "ChartArea1";
+            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series44.Legend = "Legend1";
+            series44.Name = "V2";
+            series45.BorderWidth = 5;
+            series45.ChartArea = "ChartArea1";
+            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series45.Legend = "Legend1";
+            series45.Name = "V3";
+            series46.BorderWidth = 5;
+            series46.ChartArea = "ChartArea1";
+            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series46.Legend = "Legend1";
+            series46.Name = "V4";
+            series47.BorderWidth = 5;
+            series47.ChartArea = "ChartArea1";
+            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series47.Legend = "Legend1";
+            series47.Name = "V5";
+            series48.BorderWidth = 5;
+            series48.ChartArea = "ChartArea1";
+            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series48.Legend = "Legend1";
+            series48.Name = "V6";
+            series49.BorderWidth = 5;
+            series49.ChartArea = "ChartArea1";
+            series49.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series49.Legend = "Legend1";
+            series49.Name = "V7";
+            series50.BorderWidth = 5;
+            series50.ChartArea = "ChartArea1";
+            series50.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series50.Legend = "Legend1";
+            series50.Name = "V8";
+            series51.BorderWidth = 5;
+            series51.ChartArea = "ChartArea1";
+            series51.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series51.Legend = "Legend1";
+            series51.Name = "V9";
+            series52.BorderWidth = 5;
+            series52.ChartArea = "ChartArea1";
+            series52.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series52.Legend = "Legend1";
+            series52.Name = "VRef1";
+            series53.BorderWidth = 5;
+            series53.ChartArea = "ChartArea1";
+            series53.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series53.Legend = "Legend1";
+            series53.Name = "VRef2";
+            series54.BorderWidth = 5;
+            series54.ChartArea = "ChartArea1";
+            series54.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series54.Legend = "Legend1";
+            series54.Name = "VOut1";
+            series55.BorderWidth = 5;
+            series55.ChartArea = "ChartArea1";
+            series55.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series55.Legend = "Legend1";
+            series55.Name = "VOut2";
+            series56.BorderWidth = 5;
+            series56.ChartArea = "ChartArea1";
+            series56.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series56.Legend = "Legend1";
+            series56.Name = "VOut3";
+            this.chartData.Series.Add(series43);
+            this.chartData.Series.Add(series44);
+            this.chartData.Series.Add(series45);
+            this.chartData.Series.Add(series46);
+            this.chartData.Series.Add(series47);
+            this.chartData.Series.Add(series48);
+            this.chartData.Series.Add(series49);
+            this.chartData.Series.Add(series50);
+            this.chartData.Series.Add(series51);
+            this.chartData.Series.Add(series52);
+            this.chartData.Series.Add(series53);
+            this.chartData.Series.Add(series54);
+            this.chartData.Series.Add(series55);
+            this.chartData.Series.Add(series56);
             this.chartData.Size = new System.Drawing.Size(608, 262);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
@@ -288,6 +290,7 @@ namespace LED_Handheld_Project.Forms
             // btnGridTable
             // 
             this.btnGridTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGridTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnGridTable.FlatAppearance.BorderSize = 0;
             this.btnGridTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGridTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -297,22 +300,22 @@ namespace LED_Handheld_Project.Forms
             this.btnGridTable.Size = new System.Drawing.Size(64, 32);
             this.btnGridTable.TabIndex = 69;
             this.btnGridTable.Text = "Grid OFF";
-            this.btnGridTable.UseVisualStyleBackColor = true;
+            this.btnGridTable.UseVisualStyleBackColor = false;
             this.btnGridTable.Click += new System.EventHandler(this.btnGridTable_Click);
             // 
             // btnHold
             // 
-            this.btnHold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnHold.FlatAppearance.BorderSize = 0;
-            this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHold.Location = new System.Drawing.Point(49, 232);
+            this.btnHold.Location = new System.Drawing.Point(30, 232);
             this.btnHold.Margin = new System.Windows.Forms.Padding(2);
             this.btnHold.Name = "btnHold";
             this.btnHold.Size = new System.Drawing.Size(150, 49);
             this.btnHold.TabIndex = 70;
             this.btnHold.Text = "Hold";
-            this.btnHold.UseVisualStyleBackColor = true;
+            this.btnHold.UseVisualStyleBackColor = false;
             // 
             // cekV1
             // 
@@ -321,12 +324,11 @@ namespace LED_Handheld_Project.Forms
             this.cekV1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.cekV1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cekV1.ForeColor = System.Drawing.Color.White;
-            this.cekV1.Location = new System.Drawing.Point(305, 22);
+            this.cekV1.Location = new System.Drawing.Point(305, 28);
             this.cekV1.Margin = new System.Windows.Forms.Padding(2);
             this.cekV1.Name = "cekV1";
-            this.cekV1.Size = new System.Drawing.Size(36, 17);
+            this.cekV1.Size = new System.Drawing.Size(12, 11);
             this.cekV1.TabIndex = 72;
-            this.cekV1.Text = "V1";
             this.cekV1.UseVisualStyleBackColor = true;
             // 
             // cekV2
@@ -758,10 +760,12 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbHumidity
             // 
-            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHumidity.Location = new System.Drawing.Point(0, 114);
+            this.lbHumidity.Location = new System.Drawing.Point(7, 74);
             this.lbHumidity.Margin = new System.Windows.Forms.Padding(2);
             this.lbHumidity.Multiline = true;
             this.lbHumidity.Name = "lbHumidity";
@@ -771,10 +775,12 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbHumidity
             // 
-            this.tbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(140, 114);
+            this.tbHumidity.Location = new System.Drawing.Point(147, 74);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(2);
             this.tbHumidity.Multiline = true;
             this.tbHumidity.Name = "tbHumidity";
@@ -784,10 +790,12 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbTemperature
             // 
-            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemperature.Location = new System.Drawing.Point(0, 77);
+            this.lbTemperature.Location = new System.Drawing.Point(7, 37);
             this.lbTemperature.Margin = new System.Windows.Forms.Padding(2);
             this.lbTemperature.Multiline = true;
             this.lbTemperature.Name = "lbTemperature";
@@ -797,10 +805,12 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbTemperature
             // 
-            this.tbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTemperature.Location = new System.Drawing.Point(140, 77);
+            this.tbTemperature.Location = new System.Drawing.Point(147, 37);
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(2);
             this.tbTemperature.Multiline = true;
             this.tbTemperature.Name = "tbTemperature";
@@ -936,18 +946,27 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel_temphumid);
             this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Controls.Add(this.lbHumidity);
             this.panel2.Controls.Add(this.btnStart);
-            this.panel2.Controls.Add(this.tbHumidity);
             this.panel2.Controls.Add(this.btnHold);
-            this.panel2.Controls.Add(this.lbTemperature);
-            this.panel2.Controls.Add(this.tbTemperature);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(660, 126);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(210, 483);
             this.panel2.TabIndex = 284;
+            // 
+            // panel_temphumid
+            // 
+            this.panel_temphumid.Controls.Add(this.lbTemperature);
+            this.panel_temphumid.Controls.Add(this.tbTemperature);
+            this.panel_temphumid.Controls.Add(this.lbHumidity);
+            this.panel_temphumid.Controls.Add(this.tbHumidity);
+            this.panel_temphumid.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_temphumid.Location = new System.Drawing.Point(0, 0);
+            this.panel_temphumid.Name = "panel_temphumid";
+            this.panel_temphumid.Size = new System.Drawing.Size(210, 143);
+            this.panel_temphumid.TabIndex = 277;
             // 
             // panel_voltage
             // 
@@ -1021,7 +1040,8 @@ namespace LED_Handheld_Project.Forms
             this.panel_date.ResumeLayout(false);
             this.panel_date.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel_temphumid.ResumeLayout(false);
+            this.panel_temphumid.PerformLayout();
             this.panel_voltage.ResumeLayout(false);
             this.panel_voltage.PerformLayout();
             this.panel_graph.ResumeLayout(false);
@@ -1087,5 +1107,6 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel_voltage;
         private System.Windows.Forms.Panel panel_graph;
+        private System.Windows.Forms.Panel panel_temphumid;
     }
 }
