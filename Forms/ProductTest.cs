@@ -25,6 +25,7 @@ namespace LED_Handheld_Project.Forms
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
         string[] sep_string = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P" };
         string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
+        Panel[] panel;
         TextBox[] text_res_V;
         TextBox[] text_V;
         
@@ -43,7 +44,10 @@ namespace LED_Handheld_Project.Forms
             {
                 panel_voltage1.Show();
                 panel_voltage2.Show();
-                panel6.Hide();
+                for (int i = 0; i < 7; i++)
+                {
+                    panel[i].Hide();
+                }
             }
             else
             {
@@ -55,7 +59,7 @@ namespace LED_Handheld_Project.Forms
 
         private void ProductTest_Load(object sender, EventArgs e)
         {
-            textTanggal.Text = DateTime.Now.ToString("G");
+            textTanggal.Text = DateTime.Now.ToString("D");
             btnStart.Enabled = true;
             btnStop.Enabled = false;
         }
@@ -399,6 +403,7 @@ namespace LED_Handheld_Project.Forms
             InitializeComponent();
             text_res_V = new TextBox[] { text_ResultV1, text_ResultV2, text_ResultV3, text_ResultV4, text_ResultV5, text_ResultV6, text_ResultV7, text_ResultV8, text_ResultV9, text_ResultVRef1, text_ResultVRef2, text_ResultVOut1, text_ResultVOut2, text_ResultVOut3 };
             text_V = new TextBox[] { text_V1, text_V2, text_V3, text_V4, text_V5, text_V6, text_V7, text_V8, text_V9, text_VRef1, text_VRef2, text_VOut1, text_VOut2, text_VOut3 };
+            panel = new Panel[] { panel7, panel8, panel9, panel10, panel11, panel12, panel13 };
         }
 
     }

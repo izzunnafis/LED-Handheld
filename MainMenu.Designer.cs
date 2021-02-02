@@ -100,7 +100,7 @@ namespace LED_Handheld_Project
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(43, 30);
+            this.lbTime.Location = new System.Drawing.Point(3, 30);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(50, 25);
             this.lbTime.TabIndex = 0;
