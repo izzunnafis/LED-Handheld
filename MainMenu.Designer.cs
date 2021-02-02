@@ -44,8 +44,9 @@ namespace LED_Handheld_Project
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnLogin = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -56,6 +57,7 @@ namespace LED_Handheld_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnLogin);
             this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.BtnDevice);
             this.panelMenu.Controls.Add(this.btnLoadData);
@@ -196,7 +198,7 @@ namespace LED_Handheld_Project
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
             this.btnHome.IconColor = System.Drawing.Color.White;
@@ -228,22 +230,22 @@ namespace LED_Handheld_Project
             // 
             this.lbTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Montserrat ExtraBold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
             this.lbTime.Location = new System.Drawing.Point(1002, 29);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(0, 27);
+            this.lbTime.Size = new System.Drawing.Size(0, 25);
             this.lbTime.TabIndex = 0;
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Montserrat ExtraBold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitleChildForm.Location = new System.Drawing.Point(72, 36);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(94, 35);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -280,10 +282,6 @@ namespace LED_Handheld_Project
             this.panelDesktop.Size = new System.Drawing.Size(1162, 784);
             this.panelDesktop.TabIndex = 3;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -292,6 +290,33 @@ namespace LED_Handheld_Project
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogin.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.btnLogin.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogin.IconSize = 32;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Location = new System.Drawing.Point(0, 440);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnLogin.Size = new System.Drawing.Size(220, 60);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "UjiCoba Login";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // MainMenu
             // 
@@ -334,6 +359,7 @@ namespace LED_Handheld_Project
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton btnLogin;
     }
 }
 
