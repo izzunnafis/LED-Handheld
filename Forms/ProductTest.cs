@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Globalization;
+using LED_Handheld_Project.Forms;
 
 namespace LED_Handheld_Project.Forms
 {
@@ -28,7 +29,7 @@ namespace LED_Handheld_Project.Forms
         Panel[] panel;
         TextBox[] text_res_V;
         TextBox[] text_V;
-        
+
         private void ResetTable()
         {
             for (int i = 0; i < 14; i++)
@@ -53,10 +54,12 @@ namespace LED_Handheld_Project.Forms
             {
                 panel_voltage1.Show();
                 panel_voltage2.Show();
-                panel6.Show();
+                for (int i = 0; i < 7; i++)
+                {
+                    panel[i].Show();
+                }
             }
         }
-
         private void ProductTest_Load(object sender, EventArgs e)
         {
             textTanggal.Text = DateTime.Now.ToString("D");
