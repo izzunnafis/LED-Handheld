@@ -119,7 +119,7 @@ namespace LED_Handheld_Project
         private void BtnDevice_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color4);
-            OpenChildForm(new Forms.FormRealTime());
+            OpenChildForm(new Forms.Device());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
