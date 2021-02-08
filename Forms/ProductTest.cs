@@ -102,13 +102,6 @@ namespace LED_Handheld_Project.Forms
                         contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
                     for (int i = 0; i < 5; i++)
                         contents[i + 9] = voltage_name[i+9] + "," + text_V[i+9].Text + "," + text_res_V[i+9].Text;
-                    //contents[7] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
-                    //contents[8] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
-                    //contents[9] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
-                    //contents[10] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
-                    //contents[11] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
-                    //contents[12] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
-                    //contents[13] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
                     contents[14] = "Test Result" + "," + text_TestResult.Text;
                     string location = saveFileDialog1.FileName;
                     System.IO.File.WriteAllLines(location, contents);
@@ -129,35 +122,6 @@ namespace LED_Handheld_Project.Forms
                     string location = saveFileDialog1.FileName;
                     System.IO.File.WriteAllLines(location, contents);
                 }
-                //string[] contents = new string[22];
-                //contents[0] = "Date" + "," + textTanggal.Text;
-                //contents[1] = "Module ID" + "," + textModuleID.Text;
-                //contents[2] = "Operator ID" + "," + textOperatorID.Text;
-                //contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
-                //contents[4] = "Temperature" + "," + text_Temp.Text; 
-                //contents[5] = "Humidity" + "," + text_Humid.Text;
-                //contents[6] = "" + "," + "Volts" +  "," + "Results";
-                //for (int i = 0; i < 14; i++)
-                //    contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
-                ////contents[6] = "V1" + "," + text_V1.Text + "," + text_ResultV1.Text;
-                ////contents[7] = "V2" + "," + text_V2.Text + "," + text_ResultV2.Text;
-                ////contents[8] = "V3" + "," + text_V3.Text + "," + text_ResultV3.Text;
-                ////contents[9] = "V4" + "," + text_V4.Text + "," + text_ResultV4.Text;
-                ////contents[10] = "V5" + "," + text_V5.Text + "," + text_ResultV5.Text;
-                ////contents[11] = "V6" + "," + text_V6.Text + "," + text_ResultV6.Text;
-                ////contents[12] = "V7" + "," + text_V7.Text + "," + text_ResultV7.Text;
-                ////contents[13] = "V8" + "," + text_V8.Text + "," + text_ResultV8.Text;
-                ////contents[14] = "V9" + "," + text_V9.Text + "," + text_ResultV9.Text;
-                ////contents[15] = "VRef1" + "," + text_VRef1.Text + "," + text_ResultVRef1.Text;
-                ////contents[16] = "VRef2" + "," + text_VRef2.Text + "," + text_ResultVRef2.Text;
-                ////contents[17] = "VOut1" + "," + text_VOut1.Text + "," + text_ResultVOut1.Text;
-                ////contents[18] = "VOut2" + "," + text_VOut2.Text + "," + text_ResultVOut2.Text;
-                ////contents[19] = "VOut3" + "," + text_VOut3.Text + "," + text_ResultVOut3.Text;
-                //contents[21] = "Test Result" + "," + text_TestResult.Text;
-                //string location = saveFileDialog1.FileName;
-                ////string datasave = DateTime.Now.ToString("dd/MM/yyyy") + "\r" + textModuleID.Text + "\r" + textOperatorID.Text + "\r";
-                //System.IO.File.WriteAllLines(location, contents);
-                ////MessageBox.Show("Data has been saved");
             }
         }
 

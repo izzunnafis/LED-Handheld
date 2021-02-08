@@ -32,6 +32,8 @@ namespace LED_Handheld_Project.Forms
         CheckBox[] cek_V;
         Label[] label_V;
 
+        int data_iter = 1;
+
         static kayChart serialDataChartV1, serialDataChartV2, serialDataChartV3, serialDataChartV4, serialDataChartV5,
             serialDataChartV6, serialDataChartV7, serialDataChartV8, serialDataChartV9,
             serialDataChartVRef1, serialDataChartVRef2,
@@ -222,7 +224,8 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13] + "\r"); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + ";" + time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13] + "\r"); });
+                data_iter++;
                 ProcessGraph();
             }
             catch (Exception error)
@@ -253,8 +256,10 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
+            serialPort1.Write("1");
             btnStart.Enabled = false;
             btnHold.Enabled = true;
+            data_iter = 1;
             openVisible();
             try
             {
@@ -295,14 +300,15 @@ namespace LED_Handheld_Project.Forms
             //lamptype();
             btnStart.Enabled = true;
             btnHold.Enabled = false;
-            try
+            serialPort1.Write("0");
+/*            try
                 {
                     serialPort1.Close();
                 }
                 catch (Exception error)
                 {
                     MessageBox.Show(error.Message);
-                }
+                }*/
         }
 
         /*private void btnClear_Click(object sender, EventArgs e)
@@ -328,10 +334,17 @@ namespace LED_Handheld_Project.Forms
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string location = saveFileDialog1.FileName;
-                string dataSave = DateTime.Now.ToString("yyyy/MM/dd") + "\r" + tbSerialNumber.Text + "\r" + tbOperator.Text + "\r" + rtbSerialData.Text + "\r"+rtbSerialData.Text;
+                string dataSave = "Date" + ";" + DateTime.Now.ToString("yyyy/MM/dd") + "\r" 
+                    + "Device Number" + ";" + tbSerialNumber.Text + "\r" 
+                    + "Operator Number" + ";" + tbOperator.Text + "\r" + "\r" 
+                    + "No" + ";" + "Timestamp" + ";" + "Temperature" + ";" + "Humidity" + ";" + "V1" + ";" + "V2" + ";" + "V3" + ";" 
+                    + "V4" + ";" + "V5" + ";" + "V6" + ";" + "V7" + ";" + "V8" + ";" + "V9" + ";" + "Vref1" + ";" + "V1ref2" 
+                    + ";" + "Vout1" + ";" + "Vout2" + ";" + "Vout3" + "\r"
+                    + rtbSerialData.Text + "\r"+rtbSerialData.Text;
                 System.IO.File.WriteAllText(location, dataSave);
                 MessageBox.Show("Data has been saved");
             }
+            data_iter = 1;
         }
 
         private void btnGridTable_Click(object sender, EventArgs e)
