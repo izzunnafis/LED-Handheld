@@ -73,6 +73,17 @@ namespace LED_Handheld_Project.Forms
                 chart_V[i].serieName = voltage_name[i];
             } //chart naming and initializer
         }
+
+        private void cbPort_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!serialPort1.IsOpen)
+            {
+                serialPort1.PortName = cbPort.Text;
+                serialPort1.BaudRate = 9600;
+                serialPort1.Open();
+            }
+        }
+
         private void cboxLampType_TextChanged(object sender, EventArgs e)
         {
             if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
@@ -224,7 +235,7 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + ";" + time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13] + "\r"); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + ";" + time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13]); });
                 data_iter++;
                 ProcessGraph();
             }
@@ -261,7 +272,7 @@ namespace LED_Handheld_Project.Forms
             btnHold.Enabled = true;
             data_iter = 1;
             openVisible();
-            try
+ /*           try
             {
                 serialPort1.PortName = cbPort.Text;
                 serialPort1.BaudRate = 9600;
@@ -270,7 +281,14 @@ namespace LED_Handheld_Project.Forms
             catch (Exception error)
             {
                 MessageBox.Show(error.Message);
-            }
+            }*/
+        }
+
+        private void btnHold_Click_1(object sender, EventArgs e)
+        {
+            btnStart.Enabled = true;
+            btnHold.Enabled = false;
+            serialPort1.Write("0");
         }
 
         private void openVisible()
@@ -298,9 +316,6 @@ namespace LED_Handheld_Project.Forms
         private void btnHold_Click(object sender, EventArgs e)
         {
             //lamptype();
-            btnStart.Enabled = true;
-            btnHold.Enabled = false;
-            serialPort1.Write("0");
 /*            try
                 {
                     serialPort1.Close();
@@ -340,7 +355,7 @@ namespace LED_Handheld_Project.Forms
                     + "No" + ";" + "Timestamp" + ";" + "Temperature" + ";" + "Humidity" + ";" + "V1" + ";" + "V2" + ";" + "V3" + ";" 
                     + "V4" + ";" + "V5" + ";" + "V6" + ";" + "V7" + ";" + "V8" + ";" + "V9" + ";" + "Vref1" + ";" + "V1ref2" 
                     + ";" + "Vout1" + ";" + "Vout2" + ";" + "Vout3" + "\r"
-                    + rtbSerialData.Text + "\r"+rtbSerialData.Text;
+                    + rtbSerialData.Text;
                 System.IO.File.WriteAllText(location, dataSave);
                 MessageBox.Show("Data has been saved");
             }
