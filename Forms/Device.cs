@@ -60,5 +60,16 @@ namespace LED_Handheld_Project.Forms
                 return;
             }
          }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.Write("2");
+            } catch
+            {
+                return; 
+            }
+        }
     }
 }
