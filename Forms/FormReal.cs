@@ -18,6 +18,7 @@ namespace LED_Handheld_Project.Forms
         //Fields
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
         string in_data;
+        string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
 
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
@@ -191,7 +192,7 @@ namespace LED_Handheld_Project.Forms
             try
             {
                 //convert nilai index
-                for (int i = 0; i < 16; i++)
+                /*for (int i = 0; i < 16; i++)
                     index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
 
                 //pembacaan nilai
@@ -200,6 +201,18 @@ namespace LED_Handheld_Project.Forms
 
                 for (int i = 0; i < 14; i++)
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
+                */
+                in_data_list = in_data.Split(';');
+                if(in_data_list.Length>=10)
+                {
+                    Temperature = in_data_list[2];
+                    Humidity = in_data_list[3];
+
+                    for(int i=0; i<14; i++)
+                    {
+                        voltages[i] = in_data_list[i + 4];
+                    }
+                }
 
                 //Display text
                 tbDateValue.Clear();
@@ -209,7 +222,7 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13] + "\r"); });
                 ProcessGraph();
             }
             catch (Exception error)
