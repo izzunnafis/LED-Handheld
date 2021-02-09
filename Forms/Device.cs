@@ -18,6 +18,12 @@ namespace LED_Handheld_Project.Forms
             InitializeComponent();
         }
 
+        private void Device_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            serialPort1.Write("0");
+            serialPort1.Close();
+        }
+
         private void cb_port_select_DropDown(object sender, EventArgs e)
         {
             string[] portlist = SerialPort.GetPortNames();
@@ -70,10 +76,6 @@ namespace LED_Handheld_Project.Forms
             }
         }
 
-        private void Device_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            serialPort1.Close();
-        }
 
         private void record_10s_Click(object sender, EventArgs e)
         {

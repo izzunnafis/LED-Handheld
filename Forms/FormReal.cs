@@ -58,6 +58,7 @@ namespace LED_Handheld_Project.Forms
 
         private void FormReal_FormClosing(object sender, FormClosingEventArgs e)
         {
+            serialPort1.Write("0");
             serialPort1.Close();
         }
 
