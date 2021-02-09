@@ -21,6 +21,7 @@ namespace LED_Handheld_Project.Forms
         string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
 
+
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
 
@@ -55,6 +56,11 @@ namespace LED_Handheld_Project.Forms
 
         }
 
+        private void FormReal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            serialPort1.Close();
+        }
+
         private void FormReal_Load(object sender, EventArgs e)
         {
             LoadTheme();
@@ -76,8 +82,9 @@ namespace LED_Handheld_Project.Forms
 
         private void cbPort_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!serialPort1.IsOpen)
+            if(serialPort1.PortName!=cbPort.Text)
             {
+                serialPort1.Close();
                 serialPort1.PortName = cbPort.Text;
                 serialPort1.BaudRate = 9600;
                 serialPort1.Open();

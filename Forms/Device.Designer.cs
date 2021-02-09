@@ -44,11 +44,13 @@ namespace LED_Handheld_Project.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.textBox_test = new System.Windows.Forms.TextBox();
-            this.textBox_test2 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.record_10s = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -211,19 +213,36 @@ namespace LED_Handheld_Project.Forms
             this.label4.TabIndex = 7;
             this.label4.Text = "Arduino SD Card Action";
             // 
-            // textBox_test
+            // panel4
             // 
-            this.textBox_test.Location = new System.Drawing.Point(44, 355);
-            this.textBox_test.Name = "textBox_test";
-            this.textBox_test.Size = new System.Drawing.Size(142, 20);
-            this.textBox_test.TabIndex = 8;
+            this.panel4.Controls.Add(this.record_10s);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(397, 372);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(354, 82);
+            this.panel4.TabIndex = 10;
             // 
-            // textBox_test2
+            // label5
             // 
-            this.textBox_test2.Location = new System.Drawing.Point(244, 355);
-            this.textBox_test2.Name = "textBox_test2";
-            this.textBox_test2.Size = new System.Drawing.Size(142, 20);
-            this.textBox_test2.TabIndex = 9;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(13, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Testing";
+            // 
+            // record_10s
+            // 
+            this.record_10s.Location = new System.Drawing.Point(93, 8);
+            this.record_10s.Name = "record_10s";
+            this.record_10s.Size = new System.Drawing.Size(200, 71);
+            this.record_10s.TabIndex = 5;
+            this.record_10s.Text = "Record 10 s";
+            this.record_10s.UseVisualStyleBackColor = true;
+            this.record_10s.Click += new System.EventHandler(this.record_10s_Click);
             // 
             // Device
             // 
@@ -231,20 +250,22 @@ namespace LED_Handheld_Project.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(812, 466);
-            this.Controls.Add(this.textBox_test2);
-            this.Controls.Add(this.textBox_test);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Device";
             this.Text = "Device";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Device_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +287,8 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.TextBox textBox_test;
-        private System.Windows.Forms.TextBox textBox_test2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button record_10s;
+        private System.Windows.Forms.Label label5;
     }
 }

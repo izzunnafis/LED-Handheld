@@ -17,9 +17,11 @@ namespace LED_Handheld_Project.Forms
     {
         //private DateTime datetime;
         string in_data;
+        string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
+
 
         sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
@@ -29,6 +31,12 @@ namespace LED_Handheld_Project.Forms
         Panel[] panel;
         TextBox[] text_res_V;
         TextBox[] text_V;
+
+
+        private void ProductTest_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            serialPort1.Close();
+        }
 
         private void ResetTable()
         {
@@ -128,35 +136,39 @@ namespace LED_Handheld_Project.Forms
         
         private void btnStop_Click(object sender, EventArgs e)
         {
-            try
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
+            serialPort1.Write("0");
+ /*           try
             {
                 serialPort1.Close();
-                btnStart.Enabled = true;
-                btnStop.Enabled = false;
+
             }
             catch (Exception error)
             {
                 MessageBox.Show(error.Message);
-            }
+            }*/
         }
 
         
         private void btnStart_Click(object sender, EventArgs e)
         {
-            try
-            {
-                serialPort1.PortName = comboBox1.Text;
-                serialPort1.BaudRate = 9600;
-                serialPort1.Open();
-                btnStart.Enabled = false;
-                btnStop.Enabled = true;
+            serialPort1.Write("1");
+            btnStart.Enabled = false;
+            btnStop.Enabled = true;
+            /*            try
+                        {
+                            serialPort1.PortName = comboBox1.Text;
+                            serialPort1.BaudRate = 9600;
+                            serialPort1.Open();
 
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
 
-            }
+                        }
+                        catch (Exception error)
+                        {
+                            MessageBox.Show(error.Message);
+
+                        }*/
         }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
@@ -260,7 +272,7 @@ namespace LED_Handheld_Project.Forms
             try
             {
                 //convert nilai index
-                for (int i = 0; i < 16; i++)
+ /*               for (int i = 0; i < 16; i++)
                     index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
 
                 //pembacaan nilai
@@ -268,6 +280,18 @@ namespace LED_Handheld_Project.Forms
                 Humid = in_data.Substring(index_sep[0] + 1, (index_sep[2] - index_sep[1]) - 1);
                 for (int i = 0; i < 14; i++)
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
+ */
+                in_data_list = in_data.Split(';');
+                if (in_data_list.Length >= 10)
+                {
+                    Temp = in_data_list[2];
+                    Humid = in_data_list[3];
+
+                    for (int i = 0; i < 14; i++)
+                    {
+                        voltages[i] = in_data_list[i + 4];
+                    }
+                }
 
                 //Display di textbox
                 text_Temp.Text = Temp + "°C";
@@ -364,6 +388,17 @@ namespace LED_Handheld_Project.Forms
             string[] portlists = SerialPort.GetPortNames();
             comboBox1.Items.Clear();
             comboBox1.Items.AddRange(portlists);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (serialPort1.PortName != comboBox1.Text)
+            {
+                serialPort1.Close();
+                serialPort1.PortName = comboBox1.Text;
+                serialPort1.BaudRate = 9600;
+                serialPort1.Open();
+            }
         }
         public ProductTest()
         {

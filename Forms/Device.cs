@@ -43,13 +43,11 @@ namespace LED_Handheld_Project.Forms
         {
             try
             {
-                serialPort1.Write("1");
+                serialPort1.Write("5");
                 SD_space_progress_bar.Minimum = 0;
                 String max_val = serialPort1.ReadLine();
-                textBox_test.Text = max_val;
                 SD_space_progress_bar.Maximum = 100;
                 String val = serialPort1.ReadLine();
-                textBox_test2.Text = val;
                 int bar_val = Convert.ToInt16(double.Parse(val) / double.Parse(max_val) * 100.0) ;
                 SD_space_progress_bar.Value = bar_val;
                 SD_space_progress_bar.SubscriptText = val + "/";
@@ -65,10 +63,27 @@ namespace LED_Handheld_Project.Forms
         {
             try
             {
-                serialPort1.Write("2");
+                serialPort1.Write("4");
             } catch
             {
                 return; 
+            }
+        }
+
+        private void Device_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            serialPort1.Close();
+        }
+
+        private void record_10s_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.Write("3");
+            }
+            catch
+            {
+                return;
             }
         }
     }

@@ -1046,6 +1046,7 @@ namespace LED_Handheld_Project.Forms
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReal";
             this.Text = "Real Time";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormReal_FormClosing);
             this.Load += new System.EventHandler(this.FormReal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).EndInit();
             this.panel_header.ResumeLayout(false);
@@ -1070,7 +1071,7 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartData;
         private System.Windows.Forms.ComboBox cbPort;
-        private System.IO.Ports.SerialPort serialPort1;
+        public System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Button btnGridTable;
         private System.Windows.Forms.Button btnHold;
         private System.Windows.Forms.CheckBox cekV1;

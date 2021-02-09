@@ -20,9 +20,10 @@ namespace LED_Handheld_Project
         private Form currentChildForm;
         private SerialPort myport; // untuk ports
 
-        //Form real_time_form = new Forms.FormReal();
-        //Form product_test_form = new Forms.ProductTest();
-        //Form realtime_form = new Forms.FormRealTime();
+        Form real_time_form = new Forms.FormReal();
+        Form product_test_form = new Forms.ProductTest();
+        Form realtime_form = new Forms.FormRealTime();
+        Form device_form = new Forms.Device();
 
         //Constructor
         public MainMenu()
@@ -119,6 +120,7 @@ namespace LED_Handheld_Project
         private void BtnDevice_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color4);
+            //OpenChildForm(device_form);
             OpenChildForm(new Forms.Device());
         }
 
@@ -126,6 +128,7 @@ namespace LED_Handheld_Project
         {
             ActivatedButton(sender, RGBColors.color5);
             OpenChildForm(new Forms.FormProduct());
+            //OpenChildForm(product_test_form);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
