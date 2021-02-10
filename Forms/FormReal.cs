@@ -242,7 +242,7 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + ";" + time + ";" + Temperature + ";" + Humidity + ";" + voltages[0] + ";" + voltages[1] + ";" + voltages[2] + ";" + voltages[3] + ";" + voltages[4] + ";" + voltages[5] + ";" + voltages[6] + ";" + voltages[7] + ";" + voltages[8] + ";" + voltages[9] + ";" + voltages[10] + ";" + voltages[11] + ";" + voltages[12] + ";" + voltages[13]); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + "," + time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] +"\r"); });
                 data_iter++;
                 ProcessGraph();
             }
@@ -356,15 +356,26 @@ namespace LED_Handheld_Project.Forms
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string location = saveFileDialog1.FileName;
-                string dataSave = "Date" + ";" + DateTime.Now.ToString("yyyy/MM/dd") + "\r" 
-                    + "Device Number" + ";" + tbSerialNumber.Text + "\r" 
-                    + "Operator Number" + ";" + tbOperator.Text + "\r" + "\r" 
-                    + "No" + ";" + "Timestamp" + ";" + "Temperature" + ";" + "Humidity" + ";" + "V1" + ";" + "V2" + ";" + "V3" + ";" 
-                    + "V4" + ";" + "V5" + ";" + "V6" + ";" + "V7" + ";" + "V8" + ";" + "V9" + ";" + "Vref1" + ";" + "V1ref2" 
-                    + ";" + "Vout1" + ";" + "Vout2" + ";" + "Vout3" + "\r"
-                    + rtbSerialData.Text;
-                System.IO.File.WriteAllText(location, dataSave);
+                string[] contents = new string[20];
+                contents[0] = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd");
+                contents[1] = "Device Number" + "," + tbSerialNumber.Text;
+                contents[2] = "Operator Number" + "," + tbOperator.Text;
+                contents[3] = "No" + "," + "Timestamp" + "," + "Temperature" + "," + "Humidity" + "," + "V1" + "," + "V2" + "," + "V3" + ","
+                    + "V4" + "," + "V5" + "," + "V6" + "," + "V7" + "," + "V8" + "," + "V9" + "," + "Vref1" + "," + "V1ref2"
+                    + "," + "Vout1" + "," + "Vout2" + "," + "Vout3";
+                contents[4] = rtbSerialData.Text;
+                System.IO.File.WriteAllLines(location, contents);
                 MessageBox.Show("Data has been saved");
+
+                //string dataSave = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd") + "\r" 
+                //    + "Device Number" + "," + tbSerialNumber.Text + "\r" 
+                //    + "Operator Number" + "," + tbOperator.Text + "\r" + "\r" 
+                //    + "No" + "," + "Timestamp" + "," + "Temperature" + "," + "Humidity" + "," + "V1" + "," + "V2" + "," + "V3" + "," 
+                //    + "V4" + "," + "V5" + "," + "V6" + "," + "V7" + "," + "V8" + "," + "V9" + "," + "Vref1" + "," + "V1ref2" 
+                //    + "," + "Vout1" + "," + "Vout2" + "," + "Vout3" + "\r"
+                //    + rtbSerialData.Text + "\r" ;
+                //System.IO.File.WriteAllText(location, dataSave);
+                //MessageBox.Show("Data has been saved");
             }
             data_iter = 1;
         }

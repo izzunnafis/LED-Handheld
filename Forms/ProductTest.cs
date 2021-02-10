@@ -21,8 +21,6 @@ namespace LED_Handheld_Project.Forms
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
-
-
         sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
@@ -70,7 +68,7 @@ namespace LED_Handheld_Project.Forms
         }
         private void ProductTest_Load(object sender, EventArgs e)
         {
-            textTanggal.Text = DateTime.Now.ToString("D");
+            textTanggal.Text = DateTime.Now.ToString("d");
             btnStart.Enabled = true;
             btnStop.Enabled = false;
         }
@@ -105,7 +103,7 @@ namespace LED_Handheld_Project.Forms
                     contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
                     contents[4] = "Temperature" + "," + text_Temp.Text;
                     contents[5] = "Humidity" + "," + text_Humid.Text;
-                    contents[6] = "" + "," + "Volts" + "," + "Results";
+                    contents[6] = "Name" + "," + "Volts" + "," + "Results";
                     for (int i = 0; i < 2; i++)
                         contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
                     for (int i = 0; i < 5; i++)
@@ -123,7 +121,7 @@ namespace LED_Handheld_Project.Forms
                     contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
                     contents[4] = "Temperature" + "," + text_Temp.Text;
                     contents[5] = "Humidity" + "," + text_Humid.Text;
-                    contents[6] = "" + "," + "Volts" + "," + "Results";
+                    contents[6] = "Name" + "," + "Volts" + "," + "Results";
                     for (int i = 0; i < 14; i++)
                         contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
                     contents[21] = "Test Result" + "," + text_TestResult.Text;
@@ -400,12 +398,14 @@ namespace LED_Handheld_Project.Forms
                 serialPort1.Open();
             }
         }
+
         public ProductTest()
         {
             InitializeComponent();
             text_res_V = new TextBox[] { text_ResultV1, text_ResultV2, text_ResultV3, text_ResultV4, text_ResultV5, text_ResultV6, text_ResultV7, text_ResultV8, text_ResultV9, text_ResultVRef1, text_ResultVRef2, text_ResultVOut1, text_ResultVOut2, text_ResultVOut3 };
             text_V = new TextBox[] { text_V1, text_V2, text_V3, text_V4, text_V5, text_V6, text_V7, text_V8, text_V9, text_VRef1, text_VRef2, text_VOut1, text_VOut2, text_VOut3 };
             panel = new Panel[] { panel7, panel8, panel9, panel10, panel11, panel12, panel13 };
+
         }
 
     }
