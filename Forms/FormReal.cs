@@ -88,6 +88,7 @@ namespace LED_Handheld_Project.Forms
                 serialPort1.PortName = cbPort.Text;
                 serialPort1.BaudRate = 9600;
                 serialPort1.Open();
+                btnHold_Click(sender, e);
             }
         }
 

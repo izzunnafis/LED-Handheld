@@ -396,6 +396,7 @@ namespace LED_Handheld_Project.Forms
                 serialPort1.PortName = comboBox1.Text;
                 serialPort1.BaudRate = 9600;
                 serialPort1.Open();
+                btnStop_Click(sender, e);
             }
         }
 
