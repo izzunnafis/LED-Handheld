@@ -320,20 +320,6 @@ namespace LED_Handheld_Project.Forms
             rtbSerialData.SelectionStart = rtbSerialData.Text.Length;
             rtbSerialData.ScrollToCaret();
         }
-
-        private void btnHold_Click(object sender, EventArgs e)
-        {
-            //lamptype();
-/*            try
-                {
-                    serialPort1.Close();
-                }
-                catch (Exception error)
-                {
-                    MessageBox.Show(error.Message);
-                }*/
-        }
-
         /*private void btnClear_Click(object sender, EventArgs e)
         {
             foreach(var series in chartData.Series)
