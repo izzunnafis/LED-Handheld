@@ -65,7 +65,7 @@ namespace LED_Handheld_Project.Forms
         {
             LoadTheme();
             btnHold.Enabled = false;
-            rtbSerialData.Visible = false;
+            rtbSerialData.Visible = true;
             tbDateValue.Visible = false;
             hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
@@ -356,7 +356,7 @@ namespace LED_Handheld_Project.Forms
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string location = saveFileDialog1.FileName;
-                string[] contents = new string[20];
+                string[] contents = new string[5];
                 contents[0] = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd");
                 contents[1] = "Device Number" + "," + tbSerialNumber.Text;
                 contents[2] = "Operator Number" + "," + tbOperator.Text;
