@@ -90,6 +90,7 @@ namespace LED_Handheld_Project.Forms
                 serialPort1.PortName = cbPort.Text;
                 serialPort1.BaudRate = 9600;
                 serialPort1.Open();
+                btnHold_Click_1(sender, e);
             }
         }
 
@@ -321,20 +322,6 @@ namespace LED_Handheld_Project.Forms
             rtbSerialData.SelectionStart = rtbSerialData.Text.Length;
             rtbSerialData.ScrollToCaret();
         }
-
-        private void btnHold_Click(object sender, EventArgs e)
-        {
-            //lamptype();
-/*            try
-                {
-                    serialPort1.Close();
-                }
-                catch (Exception error)
-                {
-                    MessageBox.Show(error.Message);
-                }*/
-        }
-
         /*private void btnClear_Click(object sender, EventArgs e)
         {
             foreach(var series in chartData.Series)
