@@ -145,7 +145,7 @@ namespace LED_Handheld_Project.Forms
             legend1.ForeColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
             this.chartData.Legends.Add(legend1);
-            this.chartData.Location = new System.Drawing.Point(3, 92);
+            this.chartData.Location = new System.Drawing.Point(3, 66);
             this.chartData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartData.Name = "chartData";
             this.chartData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
@@ -233,7 +233,7 @@ namespace LED_Handheld_Project.Forms
             this.chartData.Series.Add(series12);
             this.chartData.Series.Add(series13);
             this.chartData.Series.Add(series14);
-            this.chartData.Size = new System.Drawing.Size(1145, 280);
+            this.chartData.Size = new System.Drawing.Size(1145, 306);
             this.chartData.TabIndex = 24;
             this.chartData.Text = "chartData";
             // 
@@ -950,7 +950,7 @@ namespace LED_Handheld_Project.Forms
             this.lbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbTemperature.Multiline = true;
             this.lbTemperature.Name = "lbTemperature";
-            this.lbTemperature.Size = new System.Drawing.Size(133, 41);
+            this.lbTemperature.Size = new System.Drawing.Size(133, 28);
             this.lbTemperature.TabIndex = 278;
             this.lbTemperature.Text = "Temperature";
             // 
@@ -965,7 +965,7 @@ namespace LED_Handheld_Project.Forms
             this.tbTemperature.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTemperature.Multiline = true;
             this.tbTemperature.Name = "tbTemperature";
-            this.tbTemperature.Size = new System.Drawing.Size(99, 41);
+            this.tbTemperature.Size = new System.Drawing.Size(99, 28);
             this.tbTemperature.TabIndex = 277;
             this.tbTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -976,11 +976,11 @@ namespace LED_Handheld_Project.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHumidity.Location = new System.Drawing.Point(429, 47);
+            this.lbHumidity.Location = new System.Drawing.Point(429, 34);
             this.lbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbHumidity.Multiline = true;
             this.lbHumidity.Name = "lbHumidity";
-            this.lbHumidity.Size = new System.Drawing.Size(133, 41);
+            this.lbHumidity.Size = new System.Drawing.Size(133, 28);
             this.lbHumidity.TabIndex = 280;
             this.lbHumidity.Text = "Humidity";
             // 
@@ -991,11 +991,11 @@ namespace LED_Handheld_Project.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHumidity.Location = new System.Drawing.Point(568, 47);
+            this.tbHumidity.Location = new System.Drawing.Point(568, 34);
             this.tbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHumidity.Multiline = true;
             this.tbHumidity.Name = "tbHumidity";
-            this.tbHumidity.Size = new System.Drawing.Size(99, 41);
+            this.tbHumidity.Size = new System.Drawing.Size(99, 28);
             this.tbHumidity.TabIndex = 279;
             this.tbHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
