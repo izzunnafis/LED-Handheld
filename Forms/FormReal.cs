@@ -297,9 +297,7 @@ namespace LED_Handheld_Project.Forms
         }
         private void btnHold_Click_1(object sender, EventArgs e)
         {
-            btnStart.Enabled = true;
-            btnHold.Enabled = false;
-            serialPort1.Write("0");
+            
         }
 
         private void openVisible()
@@ -332,7 +330,13 @@ namespace LED_Handheld_Project.Forms
             }
         }*/
 
-        
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            btnStart.Enabled = true;
+            btnHold.Enabled = false;
+            serialPort1.Write("0");
+        }
+
         private void btnSave_Click_1(object sender, EventArgs e)
         {
             string time = DateTime.Now.ToString("yyyyMMddTHHmmss");
