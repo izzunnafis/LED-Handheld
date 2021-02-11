@@ -307,6 +307,7 @@ namespace LED_Handheld_Project.Forms
             tbTemperature.Visible = true;
             lbTemperature.Visible = true;
             lbHumidity.Visible = true;
+
         }
 
         private void hideVisible()
