@@ -21,6 +21,24 @@ namespace LED_Handheld_Project.Forms
         string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
 
+        private void btnStart_Click_1(object sender, EventArgs e)
+        {
+            serialPort1.Write("1");
+            btnStart.Enabled = false;
+            btnHold.Enabled = true;
+            data_iter = 1;
+            openVisible();
+            /*           try
+                       {
+                           serialPort1.PortName = cbPort.Text;
+                           serialPort1.BaudRate = 9600;
+                           serialPort1.Open();
+                       }
+                       catch (Exception error)
+                       {
+                           MessageBox.Show(error.Message);
+                       }*/
+        }
 
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
@@ -277,21 +295,7 @@ namespace LED_Handheld_Project.Forms
         //Button Method
         private void btnStart_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("1");
-            btnStart.Enabled = false;
-            btnHold.Enabled = true;
-            data_iter = 1;
-            openVisible();
- /*           try
-            {
-                serialPort1.PortName = cbPort.Text;
-                serialPort1.BaudRate = 9600;
-                serialPort1.Open();
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }*/
+            
         }
 
         private void btnHold_Click_1(object sender, EventArgs e)

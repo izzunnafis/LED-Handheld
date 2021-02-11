@@ -94,10 +94,10 @@ namespace LED_Handheld_Project.Forms
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel_date = new System.Windows.Forms.Panel();
             this.panel_voltage = new System.Windows.Forms.Panel();
-            this.panel_graph = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnHold = new System.Windows.Forms.Button();
+            this.panel_graph = new System.Windows.Forms.Panel();
             this.lbTemperature = new System.Windows.Forms.TextBox();
             this.tbTemperature = new System.Windows.Forms.TextBox();
             this.lbHumidity = new System.Windows.Forms.TextBox();
@@ -786,7 +786,7 @@ namespace LED_Handheld_Project.Forms
             this.panel_header.Controls.Add(this.panel_date);
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
-            this.panel_header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_header.Margin = new System.Windows.Forms.Padding(4);
             this.panel_header.Name = "panel_header";
             this.panel_header.Size = new System.Drawing.Size(1160, 155);
             this.panel_header.TabIndex = 283;
@@ -799,7 +799,7 @@ namespace LED_Handheld_Project.Forms
             this.panel_head_left.Controls.Add(this.tbSerialNumber);
             this.panel_head_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_head_left.Location = new System.Drawing.Point(619, 25);
-            this.panel_head_left.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_head_left.Margin = new System.Windows.Forms.Padding(4);
             this.panel_head_left.Name = "panel_head_left";
             this.panel_head_left.Size = new System.Drawing.Size(540, 130);
             this.panel_head_left.TabIndex = 286;
@@ -814,7 +814,7 @@ namespace LED_Handheld_Project.Forms
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(619, 130);
             this.panel1.TabIndex = 285;
@@ -836,7 +836,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.panel_date.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_date.Location = new System.Drawing.Point(0, 0);
-            this.panel_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_date.Margin = new System.Windows.Forms.Padding(4);
             this.panel_date.Name = "panel_date";
             this.panel_date.Size = new System.Drawing.Size(1160, 25);
             this.panel_date.TabIndex = 284;
@@ -876,26 +876,10 @@ namespace LED_Handheld_Project.Forms
             this.panel_voltage.Controls.Add(this.lbV2);
             this.panel_voltage.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_voltage.Location = new System.Drawing.Point(0, 558);
-            this.panel_voltage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_voltage.Margin = new System.Windows.Forms.Padding(4);
             this.panel_voltage.Name = "panel_voltage";
             this.panel_voltage.Size = new System.Drawing.Size(1160, 192);
             this.panel_voltage.TabIndex = 285;
-            // 
-            // panel_graph
-            // 
-            this.panel_graph.Controls.Add(this.lbTemperature);
-            this.panel_graph.Controls.Add(this.tbTemperature);
-            this.panel_graph.Controls.Add(this.lbHumidity);
-            this.panel_graph.Controls.Add(this.tbHumidity);
-            this.panel_graph.Controls.Add(this.btnGridTable);
-            this.panel_graph.Controls.Add(this.chartData);
-            this.panel_graph.Controls.Add(this.rtbSerialData);
-            this.panel_graph.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_graph.Location = new System.Drawing.Point(0, 155);
-            this.panel_graph.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel_graph.Name = "panel_graph";
-            this.panel_graph.Size = new System.Drawing.Size(1160, 403);
-            this.panel_graph.TabIndex = 286;
             // 
             // btnSave
             // 
@@ -924,6 +908,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.TabIndex = 101;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
             // 
             // btnHold
             // 
@@ -938,6 +923,22 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.TabIndex = 102;
             this.btnHold.Text = "Hold";
             this.btnHold.UseVisualStyleBackColor = false;
+            // 
+            // panel_graph
+            // 
+            this.panel_graph.Controls.Add(this.lbTemperature);
+            this.panel_graph.Controls.Add(this.tbTemperature);
+            this.panel_graph.Controls.Add(this.lbHumidity);
+            this.panel_graph.Controls.Add(this.tbHumidity);
+            this.panel_graph.Controls.Add(this.btnGridTable);
+            this.panel_graph.Controls.Add(this.chartData);
+            this.panel_graph.Controls.Add(this.rtbSerialData);
+            this.panel_graph.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_graph.Location = new System.Drawing.Point(0, 155);
+            this.panel_graph.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_graph.Name = "panel_graph";
+            this.panel_graph.Size = new System.Drawing.Size(1160, 403);
+            this.panel_graph.TabIndex = 286;
             // 
             // lbTemperature
             // 
