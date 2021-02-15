@@ -126,6 +126,33 @@ namespace LED_Handheld_Project.Forms
             this.panel_show = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -534,6 +561,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.panel44);
+            this.panel13.Controls.Add(this.panel45);
             this.panel13.Controls.Add(this.text_ResultV9);
             this.panel13.Controls.Add(this.text_V9);
             this.panel13.Controls.Add(this.label15);
@@ -546,8 +575,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV9
             // 
+            this.text_ResultV9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV9.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV9.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV9.Name = "text_ResultV9";
@@ -558,8 +589,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V9
             // 
+            this.text_V9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V9.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V9.Location = new System.Drawing.Point(127, 6);
             this.text_V9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V9.Name = "text_V9";
@@ -581,6 +614,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.panel42);
+            this.panel12.Controls.Add(this.panel43);
             this.panel12.Controls.Add(this.text_ResultV8);
             this.panel12.Controls.Add(this.text_V8);
             this.panel12.Controls.Add(this.label14);
@@ -593,8 +628,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV8
             // 
+            this.text_ResultV8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV8.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV8.Name = "text_ResultV8";
@@ -605,8 +642,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V8
             // 
+            this.text_V8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V8.Location = new System.Drawing.Point(127, 6);
             this.text_V8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V8.Name = "text_V8";
@@ -628,6 +667,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel11
             // 
+            this.panel11.Controls.Add(this.panel40);
+            this.panel11.Controls.Add(this.panel41);
             this.panel11.Controls.Add(this.text_ResultV7);
             this.panel11.Controls.Add(this.text_V7);
             this.panel11.Controls.Add(this.label13);
@@ -640,8 +681,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV7
             // 
+            this.text_ResultV7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV7.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV7.Name = "text_ResultV7";
@@ -652,8 +695,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V7
             // 
+            this.text_V7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V7.Location = new System.Drawing.Point(127, 6);
             this.text_V7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V7.Name = "text_V7";
@@ -675,6 +720,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.panel38);
+            this.panel10.Controls.Add(this.panel39);
             this.panel10.Controls.Add(this.text_ResultV6);
             this.panel10.Controls.Add(this.label12);
             this.panel10.Controls.Add(this.text_V6);
@@ -687,8 +734,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV6
             // 
+            this.text_ResultV6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV6.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV6.Name = "text_ResultV6";
@@ -710,8 +759,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V6
             // 
+            this.text_V6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V6.Location = new System.Drawing.Point(127, 6);
             this.text_V6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V6.Name = "text_V6";
@@ -722,6 +773,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.panel36);
+            this.panel9.Controls.Add(this.panel37);
             this.panel9.Controls.Add(this.text_ResultV5);
             this.panel9.Controls.Add(this.label11);
             this.panel9.Controls.Add(this.text_V5);
@@ -734,8 +787,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV5
             // 
+            this.text_ResultV5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV5.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV5.Name = "text_ResultV5";
@@ -757,8 +812,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V5
             // 
+            this.text_V5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V5.Location = new System.Drawing.Point(127, 6);
             this.text_V5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V5.Name = "text_V5";
@@ -769,6 +826,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.panel34);
+            this.panel8.Controls.Add(this.panel35);
             this.panel8.Controls.Add(this.text_ResultV4);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.text_V4);
@@ -781,8 +840,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV4
             // 
+            this.text_ResultV4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV4.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV4.Name = "text_ResultV4";
@@ -804,8 +865,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V4
             // 
+            this.text_V4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V4.Location = new System.Drawing.Point(127, 6);
             this.text_V4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V4.Name = "text_V4";
@@ -816,6 +879,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.panel32);
+            this.panel7.Controls.Add(this.panel33);
             this.panel7.Controls.Add(this.text_ResultV3);
             this.panel7.Controls.Add(this.text_V3);
             this.panel7.Controls.Add(this.label9);
@@ -828,8 +893,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV3
             // 
+            this.text_ResultV3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV3.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV3.Name = "text_ResultV3";
@@ -840,8 +907,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V3
             // 
+            this.text_V3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V3.Location = new System.Drawing.Point(127, 6);
             this.text_V3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V3.Name = "text_V3";
@@ -863,6 +932,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.panel30);
+            this.panel6.Controls.Add(this.panel31);
             this.panel6.Controls.Add(this.text_V2);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.text_ResultV2);
@@ -875,8 +946,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V2
             // 
+            this.text_V2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V2.Location = new System.Drawing.Point(127, 6);
             this.text_V2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V2.Name = "text_V2";
@@ -898,8 +971,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV2
             // 
+            this.text_ResultV2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV2.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV2.Name = "text_ResultV2";
@@ -927,6 +1002,7 @@ namespace LED_Handheld_Project.Forms
             this.text_V1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_V1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_V1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_V1.Location = new System.Drawing.Point(127, 6);
             this.text_V1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V1.Name = "text_V1";
@@ -940,6 +1016,7 @@ namespace LED_Handheld_Project.Forms
             this.text_ResultV1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultV1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultV1.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV1.Name = "text_ResultV1";
@@ -985,8 +1062,10 @@ namespace LED_Handheld_Project.Forms
             // 
             this.text_TestResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.text_TestResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_TestResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_TestResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_TestResult.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_TestResult.Location = new System.Drawing.Point(56, 67);
             this.text_TestResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_TestResult.Name = "text_TestResult";
@@ -997,8 +1076,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_VOut3
             // 
+            this.text_VOut3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_VOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_VOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_VOut3.Location = new System.Drawing.Point(172, 6);
             this.text_VOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut3.Name = "text_VOut3";
@@ -1009,8 +1090,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_VOut2
             // 
+            this.text_VOut2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_VOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_VOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_VOut2.Location = new System.Drawing.Point(172, 6);
             this.text_VOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut2.Name = "text_VOut2";
@@ -1021,8 +1104,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_VOut1
             // 
+            this.text_VOut1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_VOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_VOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_VOut1.Location = new System.Drawing.Point(172, 6);
             this.text_VOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut1.Name = "text_VOut1";
@@ -1033,8 +1118,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_VRef2
             // 
+            this.text_VRef2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_VRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_VRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VRef2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_VRef2.Location = new System.Drawing.Point(172, 6);
             this.text_VRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef2.Name = "text_VRef2";
@@ -1045,8 +1132,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_VRef1
             // 
+            this.text_VRef1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_VRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_VRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VRef1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_VRef1.Location = new System.Drawing.Point(172, 6);
             this.text_VRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef1.Name = "text_VRef1";
@@ -1057,8 +1146,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultVRef1
             // 
+            this.text_ResultVRef1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultVRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVRef1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultVRef1.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef1.Name = "text_ResultVRef1";
@@ -1080,8 +1171,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultVRef2
             // 
+            this.text_ResultVRef2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultVRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVRef2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultVRef2.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef2.Name = "text_ResultVRef2";
@@ -1103,8 +1196,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultVOut1
             // 
+            this.text_ResultVOut1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultVOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultVOut1.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut1.Name = "text_ResultVOut1";
@@ -1126,8 +1221,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultVOut2
             // 
+            this.text_ResultVOut2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultVOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultVOut2.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut2.Name = "text_ResultVOut2";
@@ -1149,8 +1246,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultVOut3
             // 
+            this.text_ResultVOut3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.text_ResultVOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_ResultVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.text_ResultVOut3.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut3.Name = "text_ResultVOut3";
@@ -1188,6 +1287,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel20
             // 
+            this.panel20.Controls.Add(this.panel56);
             this.panel20.Controls.Add(this.text_TestResult);
             this.panel20.Controls.Add(this.label21);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1199,6 +1299,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel19
             // 
+            this.panel19.Controls.Add(this.panel54);
+            this.panel19.Controls.Add(this.panel55);
             this.panel19.Controls.Add(this.text_ResultVOut3);
             this.panel19.Controls.Add(this.text_VOut3);
             this.panel19.Controls.Add(this.label20);
@@ -1211,6 +1313,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel18
             // 
+            this.panel18.Controls.Add(this.panel52);
+            this.panel18.Controls.Add(this.panel53);
             this.panel18.Controls.Add(this.text_ResultVOut2);
             this.panel18.Controls.Add(this.text_VOut2);
             this.panel18.Controls.Add(this.label19);
@@ -1223,6 +1327,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel17
             // 
+            this.panel17.Controls.Add(this.panel50);
+            this.panel17.Controls.Add(this.panel51);
             this.panel17.Controls.Add(this.text_ResultVOut1);
             this.panel17.Controls.Add(this.text_VOut1);
             this.panel17.Controls.Add(this.label18);
@@ -1235,6 +1341,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel16
             // 
+            this.panel16.Controls.Add(this.panel48);
+            this.panel16.Controls.Add(this.panel49);
             this.panel16.Controls.Add(this.text_ResultVRef2);
             this.panel16.Controls.Add(this.text_VRef2);
             this.panel16.Controls.Add(this.label17);
@@ -1247,6 +1355,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel15
             // 
+            this.panel15.Controls.Add(this.panel46);
+            this.panel15.Controls.Add(this.panel47);
             this.panel15.Controls.Add(this.text_ResultVRef1);
             this.panel15.Controls.Add(this.text_VRef1);
             this.panel15.Controls.Add(this.label16);
@@ -1292,6 +1402,222 @@ namespace LED_Handheld_Project.Forms
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(227, 1);
             this.panel29.TabIndex = 0;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.White;
+            this.panel30.Location = new System.Drawing.Point(208, 33);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(227, 1);
+            this.panel30.TabIndex = 16;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.White;
+            this.panel31.Location = new System.Drawing.Point(127, 33);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(61, 1);
+            this.panel31.TabIndex = 17;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.White;
+            this.panel32.Location = new System.Drawing.Point(208, 34);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(227, 1);
+            this.panel32.TabIndex = 17;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.White;
+            this.panel33.Location = new System.Drawing.Point(127, 34);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(61, 1);
+            this.panel33.TabIndex = 18;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.White;
+            this.panel34.Location = new System.Drawing.Point(208, 34);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(227, 1);
+            this.panel34.TabIndex = 18;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.White;
+            this.panel35.Location = new System.Drawing.Point(127, 34);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(61, 1);
+            this.panel35.TabIndex = 19;
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.White;
+            this.panel36.Location = new System.Drawing.Point(208, 33);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(227, 1);
+            this.panel36.TabIndex = 19;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Location = new System.Drawing.Point(127, 33);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(61, 1);
+            this.panel37.TabIndex = 20;
+            // 
+            // panel38
+            // 
+            this.panel38.BackColor = System.Drawing.Color.White;
+            this.panel38.Location = new System.Drawing.Point(208, 34);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(227, 1);
+            this.panel38.TabIndex = 20;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.White;
+            this.panel39.Location = new System.Drawing.Point(127, 34);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(61, 1);
+            this.panel39.TabIndex = 21;
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Location = new System.Drawing.Point(208, 34);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(227, 1);
+            this.panel40.TabIndex = 21;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.White;
+            this.panel41.Location = new System.Drawing.Point(127, 34);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(61, 1);
+            this.panel41.TabIndex = 22;
+            // 
+            // panel42
+            // 
+            this.panel42.BackColor = System.Drawing.Color.White;
+            this.panel42.Location = new System.Drawing.Point(208, 34);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(227, 1);
+            this.panel42.TabIndex = 22;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.White;
+            this.panel43.Location = new System.Drawing.Point(127, 34);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(61, 1);
+            this.panel43.TabIndex = 23;
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.White;
+            this.panel44.Location = new System.Drawing.Point(208, 34);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(227, 1);
+            this.panel44.TabIndex = 23;
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.Color.White;
+            this.panel45.Location = new System.Drawing.Point(127, 34);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(61, 1);
+            this.panel45.TabIndex = 24;
+            // 
+            // panel46
+            // 
+            this.panel46.BackColor = System.Drawing.Color.White;
+            this.panel46.Location = new System.Drawing.Point(253, 34);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(227, 1);
+            this.panel46.TabIndex = 24;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.White;
+            this.panel47.Location = new System.Drawing.Point(172, 34);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(61, 1);
+            this.panel47.TabIndex = 25;
+            // 
+            // panel48
+            // 
+            this.panel48.BackColor = System.Drawing.Color.White;
+            this.panel48.Location = new System.Drawing.Point(253, 33);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(227, 1);
+            this.panel48.TabIndex = 25;
+            // 
+            // panel49
+            // 
+            this.panel49.BackColor = System.Drawing.Color.White;
+            this.panel49.Location = new System.Drawing.Point(172, 33);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(61, 1);
+            this.panel49.TabIndex = 26;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Location = new System.Drawing.Point(253, 33);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(227, 1);
+            this.panel50.TabIndex = 26;
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.White;
+            this.panel51.Location = new System.Drawing.Point(172, 33);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(61, 1);
+            this.panel51.TabIndex = 27;
+            // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.White;
+            this.panel52.Location = new System.Drawing.Point(253, 34);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(227, 1);
+            this.panel52.TabIndex = 27;
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.White;
+            this.panel53.Location = new System.Drawing.Point(172, 34);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(61, 1);
+            this.panel53.TabIndex = 28;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Location = new System.Drawing.Point(253, 33);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(227, 1);
+            this.panel54.TabIndex = 28;
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.White;
+            this.panel55.Location = new System.Drawing.Point(172, 33);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(61, 1);
+            this.panel55.TabIndex = 29;
+            // 
+            // panel56
+            // 
+            this.panel56.BackColor = System.Drawing.Color.White;
+            this.panel56.Location = new System.Drawing.Point(56, 110);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(367, 1);
+            this.panel56.TabIndex = 29;
             // 
             // ProductTest
             // 
@@ -1450,5 +1776,32 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.Panel panel38;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Panel panel37;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Panel panel55;
+        private System.Windows.Forms.Panel panel52;
+        private System.Windows.Forms.Panel panel53;
+        private System.Windows.Forms.Panel panel50;
+        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.Panel panel48;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.Panel panel47;
+        private System.Windows.Forms.Panel panel56;
     }
 }
