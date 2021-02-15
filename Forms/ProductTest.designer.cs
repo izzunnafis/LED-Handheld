@@ -43,6 +43,9 @@ namespace LED_Handheld_Project.Forms
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.textModuleID = new System.Windows.Forms.TextBox();
             this.textOperatorID = new System.Windows.Forms.TextBox();
@@ -50,6 +53,8 @@ namespace LED_Handheld_Project.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.text_Temp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -119,6 +124,8 @@ namespace LED_Handheld_Project.Forms
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel_show = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -178,7 +185,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSave.Location = new System.Drawing.Point(0, 369);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -194,7 +201,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStop.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStop.FlatAppearance.BorderSize = 0;
             this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStop.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnStop.Location = new System.Drawing.Point(0, 305);
             this.btnStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -210,7 +217,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnStart.Location = new System.Drawing.Point(0, 241);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -236,7 +243,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // cbLampTypes
             // 
-            this.cbLampTypes.BackColor = System.Drawing.SystemColors.Control;
+            this.cbLampTypes.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.cbLampTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLampTypes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbLampTypes.FormattingEnabled = true;
@@ -264,7 +271,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBox1.FormattingEnabled = true;
@@ -304,6 +311,9 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel22
             // 
+            this.panel22.Controls.Add(this.panel25);
+            this.panel22.Controls.Add(this.panel24);
+            this.panel22.Controls.Add(this.panel23);
             this.panel22.Controls.Add(this.label4);
             this.panel22.Controls.Add(this.textModuleID);
             this.panel22.Controls.Add(this.textOperatorID);
@@ -317,13 +327,37 @@ namespace LED_Handheld_Project.Forms
             this.panel22.Size = new System.Drawing.Size(500, 176);
             this.panel22.TabIndex = 33;
             // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.White;
+            this.panel25.Location = new System.Drawing.Point(257, 147);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(208, 1);
+            this.panel25.TabIndex = 8;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.White;
+            this.panel24.Location = new System.Drawing.Point(257, 95);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(208, 1);
+            this.panel24.TabIndex = 7;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.White;
+            this.panel23.Location = new System.Drawing.Point(257, 50);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(208, 1);
+            this.panel23.TabIndex = 6;
+            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(108, 26);
+            this.label4.Location = new System.Drawing.Point(116, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 25);
             this.label4.TabIndex = 5;
@@ -333,36 +367,39 @@ namespace LED_Handheld_Project.Forms
             // 
             this.textModuleID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textModuleID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.textModuleID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textModuleID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textModuleID.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textModuleID.Location = new System.Drawing.Point(257, 70);
             this.textModuleID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textModuleID.Name = "textModuleID";
-            this.textModuleID.Size = new System.Drawing.Size(208, 30);
+            this.textModuleID.Size = new System.Drawing.Size(208, 23);
             this.textModuleID.TabIndex = 0;
             // 
             // textOperatorID
             // 
             this.textOperatorID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textOperatorID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.textOperatorID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textOperatorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textOperatorID.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textOperatorID.Location = new System.Drawing.Point(257, 121);
             this.textOperatorID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textOperatorID.Name = "textOperatorID";
-            this.textOperatorID.Size = new System.Drawing.Size(208, 30);
+            this.textOperatorID.Size = new System.Drawing.Size(208, 23);
             this.textOperatorID.TabIndex = 1;
             // 
             // textTanggal
             // 
             this.textTanggal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textTanggal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.textTanggal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textTanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTanggal.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textTanggal.Location = new System.Drawing.Point(257, 23);
             this.textTanggal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textTanggal.Name = "textTanggal";
-            this.textTanggal.Size = new System.Drawing.Size(208, 30);
+            this.textTanggal.Size = new System.Drawing.Size(208, 23);
             this.textTanggal.TabIndex = 4;
             // 
             // label2
@@ -371,7 +408,7 @@ namespace LED_Handheld_Project.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(108, 73);
+            this.label2.Location = new System.Drawing.Point(116, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 25);
             this.label2.TabIndex = 2;
@@ -383,7 +420,7 @@ namespace LED_Handheld_Project.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(108, 123);
+            this.label3.Location = new System.Drawing.Point(116, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 25);
             this.label3.TabIndex = 3;
@@ -391,6 +428,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel21
             // 
+            this.panel21.Controls.Add(this.panel27);
+            this.panel21.Controls.Add(this.panel26);
             this.panel21.Controls.Add(this.label6);
             this.panel21.Controls.Add(this.text_Temp);
             this.panel21.Controls.Add(this.label5);
@@ -402,6 +441,22 @@ namespace LED_Handheld_Project.Forms
             this.panel21.Size = new System.Drawing.Size(459, 176);
             this.panel21.TabIndex = 32;
             // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.White;
+            this.panel27.Location = new System.Drawing.Point(219, 116);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(165, 1);
+            this.panel27.TabIndex = 10;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.White;
+            this.panel26.Location = new System.Drawing.Point(219, 76);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(165, 1);
+            this.panel26.TabIndex = 7;
+            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -409,7 +464,7 @@ namespace LED_Handheld_Project.Forms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(87, 81);
+            this.label6.Location = new System.Drawing.Point(122, 92);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 25);
             this.label6.TabIndex = 9;
@@ -420,13 +475,14 @@ namespace LED_Handheld_Project.Forms
             this.text_Temp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.text_Temp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.text_Temp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_Temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_Temp.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.text_Temp.Location = new System.Drawing.Point(233, 36);
+            this.text_Temp.Location = new System.Drawing.Point(219, 47);
             this.text_Temp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_Temp.Name = "text_Temp";
             this.text_Temp.ReadOnly = true;
-            this.text_Temp.Size = new System.Drawing.Size(165, 30);
+            this.text_Temp.Size = new System.Drawing.Size(165, 23);
             this.text_Temp.TabIndex = 6;
             // 
             // label5
@@ -436,7 +492,7 @@ namespace LED_Handheld_Project.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(87, 39);
+            this.label5.Location = new System.Drawing.Point(122, 50);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 25);
             this.label5.TabIndex = 8;
@@ -447,13 +503,14 @@ namespace LED_Handheld_Project.Forms
             this.text_Humid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.text_Humid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.text_Humid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_Humid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_Humid.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.text_Humid.Location = new System.Drawing.Point(233, 79);
+            this.text_Humid.Location = new System.Drawing.Point(219, 89);
             this.text_Humid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_Humid.Name = "text_Humid";
             this.text_Humid.ReadOnly = true;
-            this.text_Humid.Size = new System.Drawing.Size(165, 30);
+            this.text_Humid.Size = new System.Drawing.Size(165, 23);
             this.text_Humid.TabIndex = 7;
             // 
             // panel_voltage1
@@ -489,32 +546,36 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV9
             // 
-            this.text_ResultV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV9.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV9.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV9.Name = "text_ResultV9";
             this.text_ResultV9.ReadOnly = true;
-            this.text_ResultV9.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV9.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV9.TabIndex = 8;
+            this.text_ResultV9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_V9
             // 
-            this.text_V9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V9.Location = new System.Drawing.Point(127, 6);
             this.text_V9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V9.Name = "text_V9";
             this.text_V9.ReadOnly = true;
-            this.text_V9.Size = new System.Drawing.Size(100, 30);
+            this.text_V9.Size = new System.Drawing.Size(61, 31);
             this.text_V9.TabIndex = 8;
+            this.text_V9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label15.Location = new System.Drawing.Point(80, 10);
+            this.label15.Location = new System.Drawing.Point(64, 10);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(33, 24);
+            this.label15.Size = new System.Drawing.Size(37, 25);
             this.label15.TabIndex = 22;
             this.label15.Text = "V9";
             // 
@@ -532,32 +593,36 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV8
             // 
-            this.text_ResultV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV8.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV8.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV8.Name = "text_ResultV8";
             this.text_ResultV8.ReadOnly = true;
-            this.text_ResultV8.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV8.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV8.TabIndex = 7;
+            this.text_ResultV8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_V8
             // 
-            this.text_V8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V8.Location = new System.Drawing.Point(127, 6);
             this.text_V8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V8.Name = "text_V8";
             this.text_V8.ReadOnly = true;
-            this.text_V8.Size = new System.Drawing.Size(100, 30);
+            this.text_V8.Size = new System.Drawing.Size(61, 31);
             this.text_V8.TabIndex = 7;
+            this.text_V8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label14.Location = new System.Drawing.Point(80, 10);
+            this.label14.Location = new System.Drawing.Point(64, 10);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 24);
+            this.label14.Size = new System.Drawing.Size(37, 25);
             this.label14.TabIndex = 21;
             this.label14.Text = "V8";
             // 
@@ -575,32 +640,36 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV7
             // 
-            this.text_ResultV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV7.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV7.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV7.Name = "text_ResultV7";
             this.text_ResultV7.ReadOnly = true;
-            this.text_ResultV7.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV7.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV7.TabIndex = 6;
+            this.text_ResultV7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_V7
             // 
-            this.text_V7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V7.Location = new System.Drawing.Point(127, 6);
             this.text_V7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V7.Name = "text_V7";
             this.text_V7.ReadOnly = true;
-            this.text_V7.Size = new System.Drawing.Size(100, 30);
+            this.text_V7.Size = new System.Drawing.Size(61, 31);
             this.text_V7.TabIndex = 6;
+            this.text_V7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label13.Location = new System.Drawing.Point(80, 10);
+            this.label13.Location = new System.Drawing.Point(64, 10);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 24);
+            this.label13.Size = new System.Drawing.Size(37, 25);
             this.label13.TabIndex = 20;
             this.label13.Text = "V7";
             // 
@@ -618,34 +687,38 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV6
             // 
-            this.text_ResultV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV6.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV6.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV6.Name = "text_ResultV6";
             this.text_ResultV6.ReadOnly = true;
-            this.text_ResultV6.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV6.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV6.TabIndex = 5;
+            this.text_ResultV6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label12.Location = new System.Drawing.Point(80, 10);
+            this.label12.Location = new System.Drawing.Point(64, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 24);
+            this.label12.Size = new System.Drawing.Size(37, 25);
             this.label12.TabIndex = 19;
             this.label12.Text = "V6";
             // 
             // text_V6
             // 
-            this.text_V6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V6.Location = new System.Drawing.Point(127, 6);
             this.text_V6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V6.Name = "text_V6";
             this.text_V6.ReadOnly = true;
-            this.text_V6.Size = new System.Drawing.Size(100, 30);
+            this.text_V6.Size = new System.Drawing.Size(61, 31);
             this.text_V6.TabIndex = 5;
+            this.text_V6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel9
             // 
@@ -661,34 +734,38 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV5
             // 
-            this.text_ResultV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV5.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV5.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV5.Name = "text_ResultV5";
             this.text_ResultV5.ReadOnly = true;
-            this.text_ResultV5.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV5.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV5.TabIndex = 4;
+            this.text_ResultV5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label11.Location = new System.Drawing.Point(80, 10);
+            this.label11.Location = new System.Drawing.Point(64, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 24);
+            this.label11.Size = new System.Drawing.Size(37, 25);
             this.label11.TabIndex = 18;
             this.label11.Text = "V5";
             // 
             // text_V5
             // 
-            this.text_V5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V5.Location = new System.Drawing.Point(127, 6);
             this.text_V5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V5.Name = "text_V5";
             this.text_V5.ReadOnly = true;
-            this.text_V5.Size = new System.Drawing.Size(100, 30);
+            this.text_V5.Size = new System.Drawing.Size(61, 31);
             this.text_V5.TabIndex = 4;
+            this.text_V5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel8
             // 
@@ -704,34 +781,38 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV4
             // 
-            this.text_ResultV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV4.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV4.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV4.Name = "text_ResultV4";
             this.text_ResultV4.ReadOnly = true;
-            this.text_ResultV4.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV4.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV4.TabIndex = 3;
+            this.text_ResultV4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label10.Location = new System.Drawing.Point(80, 10);
+            this.label10.Location = new System.Drawing.Point(64, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(33, 24);
+            this.label10.Size = new System.Drawing.Size(37, 25);
             this.label10.TabIndex = 17;
             this.label10.Text = "V4";
             // 
             // text_V4
             // 
-            this.text_V4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V4.Location = new System.Drawing.Point(127, 6);
             this.text_V4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V4.Name = "text_V4";
             this.text_V4.ReadOnly = true;
-            this.text_V4.Size = new System.Drawing.Size(100, 30);
+            this.text_V4.Size = new System.Drawing.Size(61, 31);
             this.text_V4.TabIndex = 3;
+            this.text_V4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel7
             // 
@@ -747,32 +828,36 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_ResultV3
             // 
-            this.text_ResultV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV3.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV3.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV3.Name = "text_ResultV3";
             this.text_ResultV3.ReadOnly = true;
-            this.text_ResultV3.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV3.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV3.TabIndex = 2;
+            this.text_ResultV3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_V3
             // 
-            this.text_V3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V3.Location = new System.Drawing.Point(127, 6);
             this.text_V3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V3.Name = "text_V3";
             this.text_V3.ReadOnly = true;
-            this.text_V3.Size = new System.Drawing.Size(100, 30);
+            this.text_V3.Size = new System.Drawing.Size(61, 31);
             this.text_V3.TabIndex = 2;
+            this.text_V3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(80, 10);
+            this.label9.Location = new System.Drawing.Point(64, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 24);
+            this.label9.Size = new System.Drawing.Size(37, 25);
             this.label9.TabIndex = 16;
             this.label9.Text = "V3";
             // 
@@ -790,37 +875,43 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V2
             // 
-            this.text_V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V2.Location = new System.Drawing.Point(127, 6);
             this.text_V2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V2.Name = "text_V2";
             this.text_V2.ReadOnly = true;
-            this.text_V2.Size = new System.Drawing.Size(100, 30);
+            this.text_V2.Size = new System.Drawing.Size(61, 31);
             this.text_V2.TabIndex = 1;
+            this.text_V2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(80, 10);
+            this.label8.Location = new System.Drawing.Point(64, 10);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 24);
+            this.label8.Size = new System.Drawing.Size(37, 25);
             this.label8.TabIndex = 15;
             this.label8.Text = "V2";
             // 
             // text_ResultV2
             // 
-            this.text_ResultV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV2.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV2.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV2.Name = "text_ResultV2";
             this.text_ResultV2.ReadOnly = true;
-            this.text_ResultV2.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV2.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV2.TabIndex = 1;
+            this.text_ResultV2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.panel29);
+            this.panel5.Controls.Add(this.panel28);
             this.panel5.Controls.Add(this.text_V1);
             this.panel5.Controls.Add(this.text_ResultV1);
             this.panel5.Controls.Add(this.label7);
@@ -833,32 +924,38 @@ namespace LED_Handheld_Project.Forms
             // 
             // text_V1
             // 
-            this.text_V1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_V1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.text_V1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_V1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_V1.Location = new System.Drawing.Point(127, 6);
             this.text_V1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_V1.Name = "text_V1";
             this.text_V1.ReadOnly = true;
-            this.text_V1.Size = new System.Drawing.Size(100, 30);
+            this.text_V1.Size = new System.Drawing.Size(61, 31);
             this.text_V1.TabIndex = 0;
+            this.text_V1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_ResultV1
             // 
-            this.text_ResultV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultV1.Location = new System.Drawing.Point(233, 6);
+            this.text_ResultV1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.text_ResultV1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultV1.Location = new System.Drawing.Point(208, 6);
             this.text_ResultV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultV1.Name = "text_ResultV1";
             this.text_ResultV1.ReadOnly = true;
-            this.text_ResultV1.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultV1.Size = new System.Drawing.Size(227, 31);
             this.text_ResultV1.TabIndex = 0;
+            this.text_ResultV1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(80, 10);
+            this.label7.Location = new System.Drawing.Point(64, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 24);
+            this.label7.Size = new System.Drawing.Size(37, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "V1";
             // 
@@ -888,166 +985,188 @@ namespace LED_Handheld_Project.Forms
             // 
             this.text_TestResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.text_TestResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_TestResult.Location = new System.Drawing.Point(71, 82);
+            this.text_TestResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_TestResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_TestResult.Location = new System.Drawing.Point(56, 67);
             this.text_TestResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_TestResult.Name = "text_TestResult";
             this.text_TestResult.ReadOnly = true;
             this.text_TestResult.Size = new System.Drawing.Size(367, 38);
             this.text_TestResult.TabIndex = 14;
+            this.text_TestResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_VOut3
             // 
-            this.text_VOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_VOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_VOut3.Location = new System.Drawing.Point(172, 6);
             this.text_VOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut3.Name = "text_VOut3";
             this.text_VOut3.ReadOnly = true;
-            this.text_VOut3.Size = new System.Drawing.Size(100, 30);
+            this.text_VOut3.Size = new System.Drawing.Size(61, 31);
             this.text_VOut3.TabIndex = 13;
+            this.text_VOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_VOut2
             // 
-            this.text_VOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_VOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_VOut2.Location = new System.Drawing.Point(172, 6);
             this.text_VOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut2.Name = "text_VOut2";
             this.text_VOut2.ReadOnly = true;
-            this.text_VOut2.Size = new System.Drawing.Size(100, 30);
+            this.text_VOut2.Size = new System.Drawing.Size(61, 31);
             this.text_VOut2.TabIndex = 12;
+            this.text_VOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_VOut1
             // 
-            this.text_VOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_VOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_VOut1.Location = new System.Drawing.Point(172, 6);
             this.text_VOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VOut1.Name = "text_VOut1";
             this.text_VOut1.ReadOnly = true;
-            this.text_VOut1.Size = new System.Drawing.Size(100, 30);
+            this.text_VOut1.Size = new System.Drawing.Size(61, 31);
             this.text_VOut1.TabIndex = 11;
+            this.text_VOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_VRef2
             // 
-            this.text_VRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_VRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_VRef2.Location = new System.Drawing.Point(172, 6);
             this.text_VRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef2.Name = "text_VRef2";
             this.text_VRef2.ReadOnly = true;
-            this.text_VRef2.Size = new System.Drawing.Size(100, 30);
+            this.text_VRef2.Size = new System.Drawing.Size(61, 31);
             this.text_VRef2.TabIndex = 10;
+            this.text_VRef2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_VRef1
             // 
-            this.text_VRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_VRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_VRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_VRef1.Location = new System.Drawing.Point(172, 6);
             this.text_VRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_VRef1.Name = "text_VRef1";
             this.text_VRef1.ReadOnly = true;
-            this.text_VRef1.Size = new System.Drawing.Size(100, 30);
+            this.text_VRef1.Size = new System.Drawing.Size(61, 31);
             this.text_VRef1.TabIndex = 9;
+            this.text_VRef1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // text_ResultVRef1
             // 
-            this.text_ResultVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultVRef1.Location = new System.Drawing.Point(277, 6);
+            this.text_ResultVRef1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVRef1.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVRef1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef1.Name = "text_ResultVRef1";
             this.text_ResultVRef1.ReadOnly = true;
-            this.text_ResultVRef1.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultVRef1.Size = new System.Drawing.Size(227, 31);
             this.text_ResultVRef1.TabIndex = 9;
+            this.text_ResultVRef1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label16.Location = new System.Drawing.Point(103, 10);
+            this.label16.Location = new System.Drawing.Point(87, 10);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 24);
+            this.label16.Size = new System.Drawing.Size(66, 25);
             this.label16.TabIndex = 23;
             this.label16.Text = "VRef1";
             // 
             // text_ResultVRef2
             // 
-            this.text_ResultVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultVRef2.Location = new System.Drawing.Point(277, 6);
+            this.text_ResultVRef2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVRef2.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVRef2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVRef2.Name = "text_ResultVRef2";
             this.text_ResultVRef2.ReadOnly = true;
-            this.text_ResultVRef2.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultVRef2.Size = new System.Drawing.Size(227, 31);
             this.text_ResultVRef2.TabIndex = 10;
+            this.text_ResultVRef2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label17.Location = new System.Drawing.Point(103, 9);
+            this.label17.Location = new System.Drawing.Point(87, 9);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(61, 24);
+            this.label17.Size = new System.Drawing.Size(66, 25);
             this.label17.TabIndex = 24;
             this.label17.Text = "VRef2";
             // 
             // text_ResultVOut1
             // 
-            this.text_ResultVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultVOut1.Location = new System.Drawing.Point(277, 6);
+            this.text_ResultVOut1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut1.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut1.Name = "text_ResultVOut1";
             this.text_ResultVOut1.ReadOnly = true;
-            this.text_ResultVOut1.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultVOut1.Size = new System.Drawing.Size(227, 31);
             this.text_ResultVOut1.TabIndex = 11;
+            this.text_ResultVOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label18.Location = new System.Drawing.Point(103, 9);
+            this.label18.Location = new System.Drawing.Point(87, 9);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(63, 24);
+            this.label18.Size = new System.Drawing.Size(69, 25);
             this.label18.TabIndex = 25;
             this.label18.Text = "VOut1";
             // 
             // text_ResultVOut2
             // 
-            this.text_ResultVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultVOut2.Location = new System.Drawing.Point(277, 6);
+            this.text_ResultVOut2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut2.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut2.Name = "text_ResultVOut2";
             this.text_ResultVOut2.ReadOnly = true;
-            this.text_ResultVOut2.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultVOut2.Size = new System.Drawing.Size(227, 31);
             this.text_ResultVOut2.TabIndex = 12;
+            this.text_ResultVOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label19.Location = new System.Drawing.Point(103, 10);
+            this.label19.Location = new System.Drawing.Point(87, 10);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 24);
+            this.label19.Size = new System.Drawing.Size(69, 25);
             this.label19.TabIndex = 26;
             this.label19.Text = "VOut2";
             // 
             // text_ResultVOut3
             // 
-            this.text_ResultVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_ResultVOut3.Location = new System.Drawing.Point(277, 6);
+            this.text_ResultVOut3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_ResultVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_ResultVOut3.Location = new System.Drawing.Point(253, 6);
             this.text_ResultVOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_ResultVOut3.Name = "text_ResultVOut3";
             this.text_ResultVOut3.ReadOnly = true;
-            this.text_ResultVOut3.Size = new System.Drawing.Size(100, 30);
+            this.text_ResultVOut3.Size = new System.Drawing.Size(227, 31);
             this.text_ResultVOut3.TabIndex = 13;
+            this.text_ResultVOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label20.Location = new System.Drawing.Point(103, 9);
+            this.label20.Location = new System.Drawing.Point(87, 9);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(63, 24);
+            this.label20.Size = new System.Drawing.Size(69, 25);
             this.label20.TabIndex = 27;
             this.label20.Text = "VOut3";
             // 
@@ -1157,6 +1276,22 @@ namespace LED_Handheld_Project.Forms
             this.panel_show.Name = "panel_show";
             this.panel_show.Size = new System.Drawing.Size(959, 574);
             this.panel_show.TabIndex = 29;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.White;
+            this.panel28.Location = new System.Drawing.Point(127, 34);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(61, 1);
+            this.panel28.TabIndex = 0;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.White;
+            this.panel29.Location = new System.Drawing.Point(208, 34);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(227, 1);
+            this.panel29.TabIndex = 0;
             // 
             // ProductTest
             // 
@@ -1308,5 +1443,12 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel28;
     }
 }
