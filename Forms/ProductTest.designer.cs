@@ -61,38 +61,56 @@ namespace LED_Handheld_Project.Forms
             this.text_Humid = new System.Windows.Forms.TextBox();
             this.panel_voltage1 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
             this.text_ResultV9 = new System.Windows.Forms.TextBox();
             this.text_V9 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
             this.text_ResultV8 = new System.Windows.Forms.TextBox();
             this.text_V8 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
             this.text_ResultV7 = new System.Windows.Forms.TextBox();
             this.text_V7 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.panel39 = new System.Windows.Forms.Panel();
             this.text_ResultV6 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.text_V6 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
             this.text_ResultV5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.text_V5 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.panel35 = new System.Windows.Forms.Panel();
             this.text_ResultV4 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.text_V4 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.panel33 = new System.Windows.Forms.Panel();
             this.text_ResultV3 = new System.Windows.Forms.TextBox();
             this.text_V3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
             this.text_V2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.text_ResultV2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
             this.text_V1 = new System.Windows.Forms.TextBox();
             this.text_ResultV1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -117,42 +135,24 @@ namespace LED_Handheld_Project.Forms
             this.label20 = new System.Windows.Forms.Label();
             this.panel_voltage2 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel_show = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.panel53 = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.panel55 = new System.Windows.Forms.Panel();
-            this.panel56 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel_show = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -573,6 +573,22 @@ namespace LED_Handheld_Project.Forms
             this.panel13.Size = new System.Drawing.Size(459, 48);
             this.panel13.TabIndex = 39;
             // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.White;
+            this.panel44.Location = new System.Drawing.Point(208, 34);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(227, 1);
+            this.panel44.TabIndex = 23;
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.Color.White;
+            this.panel45.Location = new System.Drawing.Point(127, 34);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(61, 1);
+            this.panel45.TabIndex = 24;
+            // 
             // text_ResultV9
             // 
             this.text_ResultV9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -625,6 +641,22 @@ namespace LED_Handheld_Project.Forms
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(459, 48);
             this.panel12.TabIndex = 38;
+            // 
+            // panel42
+            // 
+            this.panel42.BackColor = System.Drawing.Color.White;
+            this.panel42.Location = new System.Drawing.Point(208, 34);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(227, 1);
+            this.panel42.TabIndex = 22;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.White;
+            this.panel43.Location = new System.Drawing.Point(127, 34);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(61, 1);
+            this.panel43.TabIndex = 23;
             // 
             // text_ResultV8
             // 
@@ -679,6 +711,22 @@ namespace LED_Handheld_Project.Forms
             this.panel11.Size = new System.Drawing.Size(459, 48);
             this.panel11.TabIndex = 37;
             // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.White;
+            this.panel40.Location = new System.Drawing.Point(208, 34);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(227, 1);
+            this.panel40.TabIndex = 21;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.White;
+            this.panel41.Location = new System.Drawing.Point(127, 34);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(61, 1);
+            this.panel41.TabIndex = 22;
+            // 
             // text_ResultV7
             // 
             this.text_ResultV7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -731,6 +779,22 @@ namespace LED_Handheld_Project.Forms
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(459, 48);
             this.panel10.TabIndex = 36;
+            // 
+            // panel38
+            // 
+            this.panel38.BackColor = System.Drawing.Color.White;
+            this.panel38.Location = new System.Drawing.Point(208, 34);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(227, 1);
+            this.panel38.TabIndex = 20;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.White;
+            this.panel39.Location = new System.Drawing.Point(127, 34);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(61, 1);
+            this.panel39.TabIndex = 21;
             // 
             // text_ResultV6
             // 
@@ -785,6 +849,22 @@ namespace LED_Handheld_Project.Forms
             this.panel9.Size = new System.Drawing.Size(459, 48);
             this.panel9.TabIndex = 35;
             // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.White;
+            this.panel36.Location = new System.Drawing.Point(208, 33);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(227, 1);
+            this.panel36.TabIndex = 19;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.Location = new System.Drawing.Point(127, 33);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(61, 1);
+            this.panel37.TabIndex = 20;
+            // 
             // text_ResultV5
             // 
             this.text_ResultV5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -837,6 +917,22 @@ namespace LED_Handheld_Project.Forms
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(459, 48);
             this.panel8.TabIndex = 34;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.White;
+            this.panel34.Location = new System.Drawing.Point(208, 34);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(227, 1);
+            this.panel34.TabIndex = 18;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.White;
+            this.panel35.Location = new System.Drawing.Point(127, 34);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(61, 1);
+            this.panel35.TabIndex = 19;
             // 
             // text_ResultV4
             // 
@@ -891,6 +987,22 @@ namespace LED_Handheld_Project.Forms
             this.panel7.Size = new System.Drawing.Size(459, 48);
             this.panel7.TabIndex = 33;
             // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.White;
+            this.panel32.Location = new System.Drawing.Point(208, 34);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(227, 1);
+            this.panel32.TabIndex = 17;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.White;
+            this.panel33.Location = new System.Drawing.Point(127, 34);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(61, 1);
+            this.panel33.TabIndex = 18;
+            // 
             // text_ResultV3
             // 
             this.text_ResultV3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -944,6 +1056,22 @@ namespace LED_Handheld_Project.Forms
             this.panel6.Size = new System.Drawing.Size(459, 48);
             this.panel6.TabIndex = 32;
             // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.White;
+            this.panel30.Location = new System.Drawing.Point(208, 33);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(227, 1);
+            this.panel30.TabIndex = 16;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.White;
+            this.panel31.Location = new System.Drawing.Point(127, 33);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(61, 1);
+            this.panel31.TabIndex = 17;
+            // 
             // text_V2
             // 
             this.text_V2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
@@ -996,6 +1124,22 @@ namespace LED_Handheld_Project.Forms
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(459, 48);
             this.panel5.TabIndex = 30;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.White;
+            this.panel29.Location = new System.Drawing.Point(208, 34);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(227, 1);
+            this.panel29.TabIndex = 0;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.White;
+            this.panel28.Location = new System.Drawing.Point(127, 34);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(61, 1);
+            this.panel28.TabIndex = 0;
             // 
             // text_V1
             // 
@@ -1066,7 +1210,7 @@ namespace LED_Handheld_Project.Forms
             this.text_TestResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text_TestResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_TestResult.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.text_TestResult.Location = new System.Drawing.Point(56, 67);
+            this.text_TestResult.Location = new System.Drawing.Point(56, 82);
             this.text_TestResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text_TestResult.Name = "text_TestResult";
             this.text_TestResult.ReadOnly = true;
@@ -1297,6 +1441,14 @@ namespace LED_Handheld_Project.Forms
             this.panel20.Size = new System.Drawing.Size(495, 188);
             this.panel20.TabIndex = 38;
             // 
+            // panel56
+            // 
+            this.panel56.BackColor = System.Drawing.Color.White;
+            this.panel56.Location = new System.Drawing.Point(56, 116);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(367, 1);
+            this.panel56.TabIndex = 29;
+            // 
             // panel19
             // 
             this.panel19.Controls.Add(this.panel54);
@@ -1310,6 +1462,22 @@ namespace LED_Handheld_Project.Forms
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(495, 48);
             this.panel19.TabIndex = 37;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Location = new System.Drawing.Point(253, 33);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(227, 1);
+            this.panel54.TabIndex = 28;
+            // 
+            // panel55
+            // 
+            this.panel55.BackColor = System.Drawing.Color.White;
+            this.panel55.Location = new System.Drawing.Point(172, 33);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(61, 1);
+            this.panel55.TabIndex = 29;
             // 
             // panel18
             // 
@@ -1325,6 +1493,22 @@ namespace LED_Handheld_Project.Forms
             this.panel18.Size = new System.Drawing.Size(495, 48);
             this.panel18.TabIndex = 36;
             // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.White;
+            this.panel52.Location = new System.Drawing.Point(253, 34);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(227, 1);
+            this.panel52.TabIndex = 27;
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.White;
+            this.panel53.Location = new System.Drawing.Point(172, 34);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(61, 1);
+            this.panel53.TabIndex = 28;
+            // 
             // panel17
             // 
             this.panel17.Controls.Add(this.panel50);
@@ -1338,6 +1522,22 @@ namespace LED_Handheld_Project.Forms
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(495, 48);
             this.panel17.TabIndex = 35;
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Location = new System.Drawing.Point(253, 33);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(227, 1);
+            this.panel50.TabIndex = 26;
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.White;
+            this.panel51.Location = new System.Drawing.Point(172, 33);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(61, 1);
+            this.panel51.TabIndex = 27;
             // 
             // panel16
             // 
@@ -1353,6 +1553,22 @@ namespace LED_Handheld_Project.Forms
             this.panel16.Size = new System.Drawing.Size(495, 48);
             this.panel16.TabIndex = 34;
             // 
+            // panel48
+            // 
+            this.panel48.BackColor = System.Drawing.Color.White;
+            this.panel48.Location = new System.Drawing.Point(253, 33);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(227, 1);
+            this.panel48.TabIndex = 25;
+            // 
+            // panel49
+            // 
+            this.panel49.BackColor = System.Drawing.Color.White;
+            this.panel49.Location = new System.Drawing.Point(172, 33);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(61, 1);
+            this.panel49.TabIndex = 26;
+            // 
             // panel15
             // 
             this.panel15.Controls.Add(this.panel46);
@@ -1366,6 +1582,22 @@ namespace LED_Handheld_Project.Forms
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(495, 48);
             this.panel15.TabIndex = 33;
+            // 
+            // panel46
+            // 
+            this.panel46.BackColor = System.Drawing.Color.White;
+            this.panel46.Location = new System.Drawing.Point(253, 34);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(227, 1);
+            this.panel46.TabIndex = 24;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.White;
+            this.panel47.Location = new System.Drawing.Point(172, 34);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(61, 1);
+            this.panel47.TabIndex = 25;
             // 
             // panel14
             // 
@@ -1386,238 +1618,6 @@ namespace LED_Handheld_Project.Forms
             this.panel_show.Name = "panel_show";
             this.panel_show.Size = new System.Drawing.Size(959, 574);
             this.panel_show.TabIndex = 29;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.White;
-            this.panel28.Location = new System.Drawing.Point(127, 34);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(61, 1);
-            this.panel28.TabIndex = 0;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.White;
-            this.panel29.Location = new System.Drawing.Point(208, 34);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(227, 1);
-            this.panel29.TabIndex = 0;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.White;
-            this.panel30.Location = new System.Drawing.Point(208, 33);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(227, 1);
-            this.panel30.TabIndex = 16;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.White;
-            this.panel31.Location = new System.Drawing.Point(127, 33);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(61, 1);
-            this.panel31.TabIndex = 17;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.White;
-            this.panel32.Location = new System.Drawing.Point(208, 34);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(227, 1);
-            this.panel32.TabIndex = 17;
-            // 
-            // panel33
-            // 
-            this.panel33.BackColor = System.Drawing.Color.White;
-            this.panel33.Location = new System.Drawing.Point(127, 34);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(61, 1);
-            this.panel33.TabIndex = 18;
-            // 
-            // panel34
-            // 
-            this.panel34.BackColor = System.Drawing.Color.White;
-            this.panel34.Location = new System.Drawing.Point(208, 34);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(227, 1);
-            this.panel34.TabIndex = 18;
-            // 
-            // panel35
-            // 
-            this.panel35.BackColor = System.Drawing.Color.White;
-            this.panel35.Location = new System.Drawing.Point(127, 34);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(61, 1);
-            this.panel35.TabIndex = 19;
-            // 
-            // panel36
-            // 
-            this.panel36.BackColor = System.Drawing.Color.White;
-            this.panel36.Location = new System.Drawing.Point(208, 33);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(227, 1);
-            this.panel36.TabIndex = 19;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.Location = new System.Drawing.Point(127, 33);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(61, 1);
-            this.panel37.TabIndex = 20;
-            // 
-            // panel38
-            // 
-            this.panel38.BackColor = System.Drawing.Color.White;
-            this.panel38.Location = new System.Drawing.Point(208, 34);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(227, 1);
-            this.panel38.TabIndex = 20;
-            // 
-            // panel39
-            // 
-            this.panel39.BackColor = System.Drawing.Color.White;
-            this.panel39.Location = new System.Drawing.Point(127, 34);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(61, 1);
-            this.panel39.TabIndex = 21;
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.White;
-            this.panel40.Location = new System.Drawing.Point(208, 34);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(227, 1);
-            this.panel40.TabIndex = 21;
-            // 
-            // panel41
-            // 
-            this.panel41.BackColor = System.Drawing.Color.White;
-            this.panel41.Location = new System.Drawing.Point(127, 34);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(61, 1);
-            this.panel41.TabIndex = 22;
-            // 
-            // panel42
-            // 
-            this.panel42.BackColor = System.Drawing.Color.White;
-            this.panel42.Location = new System.Drawing.Point(208, 34);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(227, 1);
-            this.panel42.TabIndex = 22;
-            // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.White;
-            this.panel43.Location = new System.Drawing.Point(127, 34);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(61, 1);
-            this.panel43.TabIndex = 23;
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.Color.White;
-            this.panel44.Location = new System.Drawing.Point(208, 34);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(227, 1);
-            this.panel44.TabIndex = 23;
-            // 
-            // panel45
-            // 
-            this.panel45.BackColor = System.Drawing.Color.White;
-            this.panel45.Location = new System.Drawing.Point(127, 34);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(61, 1);
-            this.panel45.TabIndex = 24;
-            // 
-            // panel46
-            // 
-            this.panel46.BackColor = System.Drawing.Color.White;
-            this.panel46.Location = new System.Drawing.Point(253, 34);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(227, 1);
-            this.panel46.TabIndex = 24;
-            // 
-            // panel47
-            // 
-            this.panel47.BackColor = System.Drawing.Color.White;
-            this.panel47.Location = new System.Drawing.Point(172, 34);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(61, 1);
-            this.panel47.TabIndex = 25;
-            // 
-            // panel48
-            // 
-            this.panel48.BackColor = System.Drawing.Color.White;
-            this.panel48.Location = new System.Drawing.Point(253, 33);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(227, 1);
-            this.panel48.TabIndex = 25;
-            // 
-            // panel49
-            // 
-            this.panel49.BackColor = System.Drawing.Color.White;
-            this.panel49.Location = new System.Drawing.Point(172, 33);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(61, 1);
-            this.panel49.TabIndex = 26;
-            // 
-            // panel50
-            // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.Location = new System.Drawing.Point(253, 33);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(227, 1);
-            this.panel50.TabIndex = 26;
-            // 
-            // panel51
-            // 
-            this.panel51.BackColor = System.Drawing.Color.White;
-            this.panel51.Location = new System.Drawing.Point(172, 33);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(61, 1);
-            this.panel51.TabIndex = 27;
-            // 
-            // panel52
-            // 
-            this.panel52.BackColor = System.Drawing.Color.White;
-            this.panel52.Location = new System.Drawing.Point(253, 34);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(227, 1);
-            this.panel52.TabIndex = 27;
-            // 
-            // panel53
-            // 
-            this.panel53.BackColor = System.Drawing.Color.White;
-            this.panel53.Location = new System.Drawing.Point(172, 34);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(61, 1);
-            this.panel53.TabIndex = 28;
-            // 
-            // panel54
-            // 
-            this.panel54.BackColor = System.Drawing.Color.White;
-            this.panel54.Location = new System.Drawing.Point(253, 33);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(227, 1);
-            this.panel54.TabIndex = 28;
-            // 
-            // panel55
-            // 
-            this.panel55.BackColor = System.Drawing.Color.White;
-            this.panel55.Location = new System.Drawing.Point(172, 33);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(61, 1);
-            this.panel55.TabIndex = 29;
-            // 
-            // panel56
-            // 
-            this.panel56.BackColor = System.Drawing.Color.White;
-            this.panel56.Location = new System.Drawing.Point(56, 110);
-            this.panel56.Name = "panel56";
-            this.panel56.Size = new System.Drawing.Size(367, 1);
-            this.panel56.TabIndex = 29;
             // 
             // ProductTest
             // 
