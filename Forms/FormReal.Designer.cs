@@ -112,6 +112,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // rtbSerialData
             // 
+            this.rtbSerialData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbSerialData.Location = new System.Drawing.Point(11, 363);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -894,7 +895,7 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.TabIndex = 100;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnStart
             // 
@@ -909,7 +910,7 @@ namespace LED_Handheld_Project.Forms
             this.btnStart.TabIndex = 101;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
             // 
             // btnHold
             // 
@@ -924,7 +925,7 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.TabIndex = 102;
             this.btnHold.Text = "Hold";
             this.btnHold.UseVisualStyleBackColor = false;
-            this.btnHold.Click += new System.EventHandler(this.btnHold_Click_1);
+            this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // panel_graph
             // 
@@ -944,9 +945,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbTemperature
             // 
-            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTemperature.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemperature.Location = new System.Drawing.Point(429, 2);
@@ -959,9 +958,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbTemperature
             // 
-            this.tbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbTemperature.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTemperature.Location = new System.Drawing.Point(568, 2);
@@ -974,9 +971,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbHumidity
             // 
-            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHumidity.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHumidity.Location = new System.Drawing.Point(429, 34);
@@ -989,9 +984,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbHumidity
             // 
-            this.tbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbHumidity.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHumidity.Location = new System.Drawing.Point(568, 34);

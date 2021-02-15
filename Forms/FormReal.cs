@@ -21,6 +21,7 @@ namespace LED_Handheld_Project.Forms
         string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
 
+        
 
         sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
@@ -275,30 +276,28 @@ namespace LED_Handheld_Project.Forms
         }
 
         //Button Method
-        private void btnStart_Click(object sender, EventArgs e)
+        
+        private void btnStart_Click_1(object sender, EventArgs e)
         {
             serialPort1.Write("1");
             btnStart.Enabled = false;
             btnHold.Enabled = true;
             data_iter = 1;
             openVisible();
- /*           try
-            {
-                serialPort1.PortName = cbPort.Text;
-                serialPort1.BaudRate = 9600;
-                serialPort1.Open();
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }*/
+            /*           try
+                       {
+                           serialPort1.PortName = cbPort.Text;
+                           serialPort1.BaudRate = 9600;
+                           serialPort1.Open();
+                       }
+                       catch (Exception error)
+                       {
+                           MessageBox.Show(error.Message);
+                       }*/
         }
-
         private void btnHold_Click_1(object sender, EventArgs e)
         {
-            btnStart.Enabled = true;
-            btnHold.Enabled = false;
-            serialPort1.Write("0");
+            
         }
 
         private void openVisible()
@@ -331,7 +330,14 @@ namespace LED_Handheld_Project.Forms
             }
         }*/
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            btnStart.Enabled = true;
+            btnHold.Enabled = false;
+            serialPort1.Write("0");
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             string time = DateTime.Now.ToString("yyyyMMddTHHmmss");
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -369,7 +375,6 @@ namespace LED_Handheld_Project.Forms
             }
             data_iter = 1;
         }
-
         private void btnGridTable_Click(object sender, EventArgs e)
         {
             if (chartData.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled == false)
