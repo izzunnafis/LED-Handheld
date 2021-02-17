@@ -40,13 +40,13 @@ namespace LED_Handheld_Project.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_import = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.record_10s = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -154,7 +154,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.button_import);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(41, 167);
             this.panel3.Name = "panel3";
@@ -180,14 +180,15 @@ namespace LED_Handheld_Project.Forms
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // button_import
             // 
-            this.button1.Location = new System.Drawing.Point(3, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 71);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Import Data";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_import.Location = new System.Drawing.Point(3, 68);
+            this.button_import.Name = "button_import";
+            this.button_import.Size = new System.Drawing.Size(100, 71);
+            this.button_import.TabIndex = 4;
+            this.button_import.Text = "Import Data";
+            this.button_import.UseVisualStyleBackColor = true;
+            this.button_import.Click += new System.EventHandler(this.button_import_Click);
             // 
             // label1
             // 
@@ -222,6 +223,16 @@ namespace LED_Handheld_Project.Forms
             this.panel4.Size = new System.Drawing.Size(354, 82);
             this.panel4.TabIndex = 10;
             // 
+            // record_10s
+            // 
+            this.record_10s.Location = new System.Drawing.Point(93, 8);
+            this.record_10s.Name = "record_10s";
+            this.record_10s.Size = new System.Drawing.Size(200, 71);
+            this.record_10s.TabIndex = 5;
+            this.record_10s.Text = "Record 10 s";
+            this.record_10s.UseVisualStyleBackColor = true;
+            this.record_10s.Click += new System.EventHandler(this.record_10s_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -233,16 +244,6 @@ namespace LED_Handheld_Project.Forms
             this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Testing";
-            // 
-            // record_10s
-            // 
-            this.record_10s.Location = new System.Drawing.Point(93, 8);
-            this.record_10s.Name = "record_10s";
-            this.record_10s.Size = new System.Drawing.Size(200, 71);
-            this.record_10s.TabIndex = 5;
-            this.record_10s.Text = "Record 10 s";
-            this.record_10s.UseVisualStyleBackColor = true;
-            this.record_10s.Click += new System.EventHandler(this.record_10s_Click);
             // 
             // Device
             // 
@@ -284,7 +285,7 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_import;
         private System.Windows.Forms.Label label4;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Panel panel4;
