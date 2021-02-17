@@ -66,7 +66,7 @@ namespace LED_Handheld_Project.Forms
                 sqlcomm.Parameters.AddWithValue("@password", tbPassword.Text);
                 sqlcomm.Parameters.AddWithValue("@email", tbEmail.Text);
                 sqlcomm.ExecuteNonQuery();
-                MessageBox.Show("User" + tbUsername.Text + "is successfully registered");
+                MessageBox.Show("User " + tbUsername.Text + " is successfully registered");
                 sqlconn.Close();
                 this.Close();
                 FormLogin FL = new FormLogin();
