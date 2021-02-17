@@ -56,7 +56,8 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show("Please enter the same password");
             else
             {
-                string mainconn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Mahasiswa UGM\Kerja Praktik\Visual Studio\GitHub LED Handheld Project\LoginDB.mdf;Integrated Security=True;Connect Timeout=30";
+                string mainconn = ConfigurationManager.ConnectionStrings["LED_Handheld_Project.Properties.Settings.cn"].ConnectionString;
+                //string mainconn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Mahasiswa UGM\Kerja Praktik\Visual Studio\GitHub LED Handheld Project\LoginDB.mdf;Integrated Security=True;Connect Timeout=30";
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 string queary = "Insert into [dbo].[SignUpTable] values (@username, @password, @email)";
                 sqlconn.Open();
@@ -65,7 +66,7 @@ namespace LED_Handheld_Project.Forms
                 sqlcomm.Parameters.AddWithValue("@password", tbPassword.Text);
                 sqlcomm.Parameters.AddWithValue("@email", tbEmail.Text);
                 sqlcomm.ExecuteNonQuery();
-                MessageBox.Show("User" + tbUsername.Text + "is successfully registered");
+                MessageBox.Show("User " + tbUsername.Text + " is successfully registered");
                 sqlconn.Close();
                 this.Close();
                 FormLogin FL = new FormLogin();

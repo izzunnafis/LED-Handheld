@@ -112,6 +112,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // rtbSerialData
             // 
+            this.rtbSerialData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.rtbSerialData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbSerialData.Location = new System.Drawing.Point(11, 363);
             this.rtbSerialData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -471,11 +472,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV1.AutoSize = true;
             this.lbV1.BackColor = System.Drawing.Color.Transparent;
-            this.lbV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV1.ForeColor = System.Drawing.Color.White;
-            this.lbV1.Location = new System.Drawing.Point(427, 6);
+            this.lbV1.Location = new System.Drawing.Point(427, 9);
             this.lbV1.Name = "lbV1";
-            this.lbV1.Size = new System.Drawing.Size(55, 36);
+            this.lbV1.Size = new System.Drawing.Size(49, 31);
             this.lbV1.TabIndex = 86;
             this.lbV1.Text = "V1";
             this.lbV1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -485,11 +486,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV2.AutoSize = true;
             this.lbV2.BackColor = System.Drawing.Color.Transparent;
-            this.lbV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV2.ForeColor = System.Drawing.Color.White;
-            this.lbV2.Location = new System.Drawing.Point(427, 68);
+            this.lbV2.Location = new System.Drawing.Point(427, 71);
             this.lbV2.Name = "lbV2";
-            this.lbV2.Size = new System.Drawing.Size(55, 36);
+            this.lbV2.Size = new System.Drawing.Size(49, 31);
             this.lbV2.TabIndex = 87;
             this.lbV2.Text = "V2";
             this.lbV2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -499,11 +500,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV3.AutoSize = true;
             this.lbV3.BackColor = System.Drawing.Color.Transparent;
-            this.lbV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV3.ForeColor = System.Drawing.Color.White;
-            this.lbV3.Location = new System.Drawing.Point(427, 130);
+            this.lbV3.Location = new System.Drawing.Point(427, 133);
             this.lbV3.Name = "lbV3";
-            this.lbV3.Size = new System.Drawing.Size(55, 36);
+            this.lbV3.Size = new System.Drawing.Size(49, 31);
             this.lbV3.TabIndex = 88;
             this.lbV3.Text = "V3";
             this.lbV3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -513,11 +514,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV6.AutoSize = true;
             this.lbV6.BackColor = System.Drawing.Color.Transparent;
-            this.lbV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV6.ForeColor = System.Drawing.Color.White;
-            this.lbV6.Location = new System.Drawing.Point(567, 130);
+            this.lbV6.Location = new System.Drawing.Point(567, 133);
             this.lbV6.Name = "lbV6";
-            this.lbV6.Size = new System.Drawing.Size(55, 36);
+            this.lbV6.Size = new System.Drawing.Size(49, 31);
             this.lbV6.TabIndex = 91;
             this.lbV6.Text = "V6";
             this.lbV6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -527,11 +528,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV5.AutoSize = true;
             this.lbV5.BackColor = System.Drawing.Color.Transparent;
-            this.lbV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV5.ForeColor = System.Drawing.Color.White;
-            this.lbV5.Location = new System.Drawing.Point(567, 68);
+            this.lbV5.Location = new System.Drawing.Point(567, 71);
             this.lbV5.Name = "lbV5";
-            this.lbV5.Size = new System.Drawing.Size(55, 36);
+            this.lbV5.Size = new System.Drawing.Size(49, 31);
             this.lbV5.TabIndex = 90;
             this.lbV5.Text = "V5";
             this.lbV5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -541,11 +542,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV4.AutoSize = true;
             this.lbV4.BackColor = System.Drawing.Color.Transparent;
-            this.lbV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV4.ForeColor = System.Drawing.Color.White;
-            this.lbV4.Location = new System.Drawing.Point(567, 6);
+            this.lbV4.Location = new System.Drawing.Point(567, 9);
             this.lbV4.Name = "lbV4";
-            this.lbV4.Size = new System.Drawing.Size(55, 36);
+            this.lbV4.Size = new System.Drawing.Size(49, 31);
             this.lbV4.TabIndex = 89;
             this.lbV4.Text = "V4";
             this.lbV4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -555,11 +556,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV9.AutoSize = true;
             this.lbV9.BackColor = System.Drawing.Color.Transparent;
-            this.lbV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV9.ForeColor = System.Drawing.Color.White;
-            this.lbV9.Location = new System.Drawing.Point(711, 130);
+            this.lbV9.Location = new System.Drawing.Point(711, 133);
             this.lbV9.Name = "lbV9";
-            this.lbV9.Size = new System.Drawing.Size(55, 36);
+            this.lbV9.Size = new System.Drawing.Size(49, 31);
             this.lbV9.TabIndex = 94;
             this.lbV9.Text = "V9";
             this.lbV9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -569,11 +570,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV8.AutoSize = true;
             this.lbV8.BackColor = System.Drawing.Color.Transparent;
-            this.lbV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV8.ForeColor = System.Drawing.Color.White;
-            this.lbV8.Location = new System.Drawing.Point(711, 68);
+            this.lbV8.Location = new System.Drawing.Point(711, 71);
             this.lbV8.Name = "lbV8";
-            this.lbV8.Size = new System.Drawing.Size(55, 36);
+            this.lbV8.Size = new System.Drawing.Size(49, 31);
             this.lbV8.TabIndex = 93;
             this.lbV8.Text = "V8";
             this.lbV8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -583,11 +584,11 @@ namespace LED_Handheld_Project.Forms
             this.lbV7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbV7.AutoSize = true;
             this.lbV7.BackColor = System.Drawing.Color.Transparent;
-            this.lbV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbV7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbV7.ForeColor = System.Drawing.Color.White;
-            this.lbV7.Location = new System.Drawing.Point(711, 6);
+            this.lbV7.Location = new System.Drawing.Point(711, 9);
             this.lbV7.Name = "lbV7";
-            this.lbV7.Size = new System.Drawing.Size(55, 36);
+            this.lbV7.Size = new System.Drawing.Size(49, 31);
             this.lbV7.TabIndex = 92;
             this.lbV7.Text = "V7";
             this.lbV7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -597,11 +598,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut3.AutoSize = true;
             this.lbVOut3.BackColor = System.Drawing.Color.Transparent;
-            this.lbVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut3.ForeColor = System.Drawing.Color.White;
-            this.lbVOut3.Location = new System.Drawing.Point(29, 135);
+            this.lbVOut3.Location = new System.Drawing.Point(29, 138);
             this.lbVOut3.Name = "lbVOut3";
-            this.lbVOut3.Size = new System.Drawing.Size(123, 36);
+            this.lbVOut3.Size = new System.Drawing.Size(112, 31);
             this.lbVOut3.TabIndex = 97;
             this.lbVOut3.Text = "VOut3  ";
             this.lbVOut3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -611,11 +612,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut2.AutoSize = true;
             this.lbVOut2.BackColor = System.Drawing.Color.Transparent;
-            this.lbVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut2.ForeColor = System.Drawing.Color.White;
-            this.lbVOut2.Location = new System.Drawing.Point(29, 71);
+            this.lbVOut2.Location = new System.Drawing.Point(29, 74);
             this.lbVOut2.Name = "lbVOut2";
-            this.lbVOut2.Size = new System.Drawing.Size(123, 36);
+            this.lbVOut2.Size = new System.Drawing.Size(112, 31);
             this.lbVOut2.TabIndex = 96;
             this.lbVOut2.Text = "VOut2  ";
             this.lbVOut2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -625,11 +626,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVOut1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVOut1.AutoSize = true;
             this.lbVOut1.BackColor = System.Drawing.Color.Transparent;
-            this.lbVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVOut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVOut1.ForeColor = System.Drawing.Color.White;
-            this.lbVOut1.Location = new System.Drawing.Point(29, 11);
+            this.lbVOut1.Location = new System.Drawing.Point(29, 14);
             this.lbVOut1.Name = "lbVOut1";
-            this.lbVOut1.Size = new System.Drawing.Size(114, 36);
+            this.lbVOut1.Size = new System.Drawing.Size(104, 31);
             this.lbVOut1.TabIndex = 95;
             this.lbVOut1.Text = "VOut1 ";
             this.lbVOut1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -639,11 +640,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVRef2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVRef2.AutoSize = true;
             this.lbVRef2.BackColor = System.Drawing.Color.Transparent;
-            this.lbVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVRef2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVRef2.ForeColor = System.Drawing.Color.White;
-            this.lbVRef2.Location = new System.Drawing.Point(225, 74);
+            this.lbVRef2.Location = new System.Drawing.Point(225, 77);
             this.lbVRef2.Name = "lbVRef2";
-            this.lbVRef2.Size = new System.Drawing.Size(122, 36);
+            this.lbVRef2.Size = new System.Drawing.Size(111, 31);
             this.lbVRef2.TabIndex = 99;
             this.lbVRef2.Text = "VRef2  ";
             this.lbVRef2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -653,11 +654,11 @@ namespace LED_Handheld_Project.Forms
             this.lbVRef1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbVRef1.AutoSize = true;
             this.lbVRef1.BackColor = System.Drawing.Color.Transparent;
-            this.lbVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVRef1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVRef1.ForeColor = System.Drawing.Color.White;
-            this.lbVRef1.Location = new System.Drawing.Point(225, 11);
+            this.lbVRef1.Location = new System.Drawing.Point(225, 14);
             this.lbVRef1.Name = "lbVRef1";
-            this.lbVRef1.Size = new System.Drawing.Size(113, 36);
+            this.lbVRef1.Size = new System.Drawing.Size(103, 31);
             this.lbVRef1.TabIndex = 98;
             this.lbVRef1.Text = "VRef1 ";
             this.lbVRef1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -883,6 +884,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -894,9 +896,11 @@ namespace LED_Handheld_Project.Forms
             this.btnSave.TabIndex = 100;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -912,6 +916,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // btnHold
             // 
+            this.btnHold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnHold.FlatAppearance.BorderSize = 0;
             this.btnHold.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -923,6 +928,7 @@ namespace LED_Handheld_Project.Forms
             this.btnHold.TabIndex = 102;
             this.btnHold.Text = "Hold";
             this.btnHold.UseVisualStyleBackColor = false;
+            this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // panel_graph
             // 
@@ -942,9 +948,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbTemperature
             // 
-            this.lbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTemperature.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemperature.Location = new System.Drawing.Point(429, 2);
@@ -957,9 +961,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbTemperature
             // 
-            this.tbTemperature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbTemperature.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTemperature.Location = new System.Drawing.Point(568, 2);
@@ -972,9 +974,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // lbHumidity
             // 
-            this.lbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHumidity.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHumidity.Location = new System.Drawing.Point(429, 34);
@@ -987,9 +987,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // tbHumidity
             // 
-            this.tbHumidity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbHumidity.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHumidity.Location = new System.Drawing.Point(568, 34);
