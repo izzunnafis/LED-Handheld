@@ -70,7 +70,7 @@ namespace LED_Handheld_Project.Forms
         }
         private void ProductTest_Load(object sender, EventArgs e)
         {
-            textTanggal.Text = DateTime.Now.ToString("ddd, dd MMM yyyy");
+            textTanggal.Text = DateTime.Now.ToString("dddd, dd MMM yyyy");
             btnStart.Enabled = true;
             btnStop.Enabled = false;
         }
