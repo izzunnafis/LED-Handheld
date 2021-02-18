@@ -761,7 +761,7 @@ namespace LED_Handheld_Project.Forms
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(189, 25);
             this.textBox5.TabIndex = 282;
-            this.textBox5.Text = "Lamp Type";
+            this.textBox5.Text = "Version";
             // 
             // cboxLampType
             // 

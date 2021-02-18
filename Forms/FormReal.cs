@@ -241,7 +241,7 @@ namespace LED_Handheld_Project.Forms
                 //Display text
                 tbDateValue.Clear();
                 tbDateValue.Visible = true;
-                tbDateValue.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                tbDateValue.Text = DateTime.Now.ToString("ddd, dd MMM yyyy");
                 tbDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
