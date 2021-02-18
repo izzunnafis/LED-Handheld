@@ -89,5 +89,37 @@ namespace LED_Handheld_Project.Forms
                 return;
             }
         }
+
+        private void button_import_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.Write("6");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+
+        private void import_state()
+        {
+            int data;
+            if(int.TryParse(serialPort1.ReadLine(),out data))
+            {
+                switch (data)
+                {
+                    case 1:
+
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                }
+            }
+        }
     }
 }
