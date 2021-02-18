@@ -292,9 +292,9 @@ namespace LED_Handheld_Project.Forms
             this.label22.ForeColor = System.Drawing.Color.Gainsboro;
             this.label22.Location = new System.Drawing.Point(23, 167);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(114, 24);
+            this.label22.Size = new System.Drawing.Size(75, 24);
             this.label22.TabIndex = 3;
-            this.label22.Text = "Lamp Types";
+            this.label22.Text = "Version";
             // 
             // comboBox1
             // 
