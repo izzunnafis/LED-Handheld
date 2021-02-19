@@ -66,11 +66,24 @@ namespace LED_Handheld_Project.Forms
             }
          }
 
+        
+        void clear_event_wait()
+        {
+            int data = 0;
+            while (data != 1)
+            {
+                data = int.Parse(serialPort1.ReadLine());
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             try
             {
                 serialPort1.Write("4");
+                using(Form_progress frm = new Form_progress(clear_event_wait))
+                {
+                    frm.ShowDialog(this);
+                }
             } catch
             {
                 return; 
