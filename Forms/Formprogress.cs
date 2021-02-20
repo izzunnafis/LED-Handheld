@@ -17,7 +17,7 @@ namespace LED_Handheld_Project.Forms
         public Form_progress(Action worker)
         {
             InitializeComponent();
-            if (Worker == null)
+            if (worker == null)
                 throw new ArgumentNullException();
             Worker = worker;
         }

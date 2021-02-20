@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Diagnostics;
 
 namespace LED_Handheld_Project.Forms
 {
     public partial class Device : Form
     {
+        int bar_val;
+        System.Globalization.CultureInfo culture = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
         public Device()
         {
             InitializeComponent();
@@ -46,25 +49,66 @@ namespace LED_Handheld_Project.Forms
             }
         }
 
+
+        void sd_space_event_wait()
+        {
+            int data = 0;
+            double free_space_val=0.0;
+            double max_space_val=100.0;
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            while (data!=3)
+            {
+                if (int.TryParse(serialPort1.ReadLine(),out data))
+                {
+                    while(data == 1)
+                    {
+                        if (double.TryParse(serialPort1.ReadLine(), System.Globalization.NumberStyles.Any, culture, out free_space_val) && free_space_val!=1)
+                        {
+                            break;
+                        }
+                    }
+                    while(data == 2)
+                    {
+                        if (double.TryParse(serialPort1.ReadLine(), System.Globalization.NumberStyles.Any, culture,out max_space_val)&& max_space_val !=1)
+                        {
+                            if(free_space_val>max_space_val)
+                            {
+                                free_space_val = max_space_val;
+                            }
+                            break;
+                        }
+                    }
+                }
+/*                else
+                {
+                    if (sw.ElapsedMilliseconds > 10000)
+                        break;
+                }*/
+            }
+            bar_val = Convert.ToInt16(free_space_val / max_space_val * 100.0);
+            SD_space_progress_bar.Minimum = 0;
+            SD_space_progress_bar.Maximum = 100;
+            SD_space_progress_bar.SubscriptText = free_space_val + "/";
+            SD_space_progress_bar.SuperscriptText = max_space_val + "GB";
+        }
+
         private void SD_space_button_Click(object sender, EventArgs e)
         {
             try
             {
-                serialPort1.Write("5");
-                SD_space_progress_bar.Minimum = 0;
-                String max_val = serialPort1.ReadLine();
-                SD_space_progress_bar.Maximum = 100;
-                String val = serialPort1.ReadLine();
-                int bar_val = Convert.ToInt16(double.Parse(val) / double.Parse(max_val) * 100.0) ;
+                serialPort1.WriteLine("5");
+                using (Form_progress frm = new Form_progress(sd_space_event_wait))
+                {
+                    frm.ShowDialog(this);
+                }
                 SD_space_progress_bar.Value = bar_val;
-                SD_space_progress_bar.SubscriptText = val + "/";
-                SD_space_progress_bar.SuperscriptText = max_val + "GB";
-
-            } catch
-            {
-                return;
             }
-         }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
 
         
         void clear_event_wait()
@@ -72,7 +116,7 @@ namespace LED_Handheld_Project.Forms
             int data = 0;
             while (data != 1)
             {
-                data = int.Parse(serialPort1.ReadLine());
+                int.TryParse(serialPort1.ReadLine(), out data);
             }
         }
         private void button2_Click(object sender, EventArgs e)
