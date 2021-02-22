@@ -30,15 +30,35 @@ namespace LED_Handheld_Project.Forms
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelAbout = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(201, 144);
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.Location = new System.Drawing.Point(51, 108);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(1084, 471);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Test";
+            this.textBox1.Text = "This software is made for Kerja Praktik PT LEN Industri. This project is de";
+            // 
+            // labelAbout
+            // 
+            this.labelAbout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelAbout.AutoSize = true;
+            this.labelAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAbout.ForeColor = System.Drawing.Color.White;
+            this.labelAbout.Location = new System.Drawing.Point(453, 24);
+            this.labelAbout.Name = "labelAbout";
+            this.labelAbout.Size = new System.Drawing.Size(282, 31);
+            this.labelAbout.TabIndex = 1;
+            this.labelAbout.Text = "LED Handheld Project";
             // 
             // About
             // 
@@ -46,6 +66,7 @@ namespace LED_Handheld_Project.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1177, 666);
+            this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.textBox1);
             this.Name = "About";
             this.Text = "About";
@@ -57,5 +78,6 @@ namespace LED_Handheld_Project.Forms
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelAbout;
     }
 }
