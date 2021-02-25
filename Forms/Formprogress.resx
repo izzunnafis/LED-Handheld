@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>This software is made for an internship program at PT LEN Industri. It is developed by Nama  , (...) and (...) using C# on Visual Studio. The primary role of this application is to serve as an interface of human-machine interaction with Arduino.</value>
-  </data>
-  <data name="textBox3.Text" xml:space="preserve">
-    <value>Credits : 
-Icons Character with FontAwesome.Sharp by Awesome Incremented and Contributors
-Ploting Chart NuGet with kayChart.dll by Szymon Chmielewski
-Fonts used Microsoft Sans Serif by Microsoft Corp. and Montserrat by lieta Ulanovsky, Sol Matas, Juan Pablo del Peral and Jacques Le Bailly</value>
-  </data>
 </root>

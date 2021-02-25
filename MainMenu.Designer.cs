@@ -45,9 +45,9 @@ namespace LED_Handheld_Project
             this.BtnDevice = new FontAwesome.Sharp.IconButton();
             this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnAbout = new FontAwesome.Sharp.IconButton();
             this.btnUjiCoba = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnAbout = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.panel_clock.SuspendLayout();
@@ -300,6 +300,30 @@ namespace LED_Handheld_Project
             this.panelMenu.Size = new System.Drawing.Size(220, 802);
             this.panelMenu.TabIndex = 0;
             // 
+            // btnAbout
+            // 
+            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAbout.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
+            this.btnAbout.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnAbout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAbout.IconSize = 32;
+            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.Location = new System.Drawing.Point(0, 500);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnAbout.Size = new System.Drawing.Size(220, 60);
+            this.btnAbout.TabIndex = 8;
+            this.btnAbout.Text = "About";
+            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            // 
             // btnUjiCoba
             // 
             this.btnUjiCoba.Dock = System.Windows.Forms.DockStyle.Top;
@@ -333,29 +357,6 @@ namespace LED_Handheld_Project
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1195, 713);
             this.panelDesktop.TabIndex = 3;
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAbout.FlatAppearance.BorderSize = 0;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAbout.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
-            this.btnAbout.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnAbout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAbout.IconSize = 32;
-            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 500);
-            this.btnAbout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.btnAbout.Size = new System.Drawing.Size(220, 60);
-            this.btnAbout.TabIndex = 8;
-            this.btnAbout.Text = "About";
-            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAbout.UseVisualStyleBackColor = true;
             // 
             // MainMenu
             // 
