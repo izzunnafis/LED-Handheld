@@ -68,7 +68,7 @@ namespace LED_Handheld_Project.Forms
         {
             LoadTheme();
             btnHold.Enabled = false;
-            rtbSerialData.Visible = true;
+            rtbSerialData.Visible = false;
             tbDateValue.Visible = false;
             hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
