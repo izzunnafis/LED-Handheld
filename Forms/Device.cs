@@ -9,12 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using System.Diagnostics;
+using System.IO;
 
 namespace LED_Handheld_Project.Forms
 {
     public partial class Device : Form
     {
         int bar_val;
+        int data;
+        string save_path;
+        string save_path_buff;
+        string content;
+        string[] contents;
+        string data_path;
+        string data_file;
+        Stopwatch s = new Stopwatch();
+
+
         System.Globalization.CultureInfo culture = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
         public Device()
         {
@@ -80,11 +91,6 @@ namespace LED_Handheld_Project.Forms
                         }
                     }
                 }
-/*                else
-                {
-                    if (sw.ElapsedMilliseconds > 10000)
-                        break;
-                }*/
             }
             bar_val = Convert.ToInt16(free_space_val / max_space_val * 100.0);
             SD_space_progress_bar.Minimum = 0;
@@ -119,7 +125,7 @@ namespace LED_Handheld_Project.Forms
                 int.TryParse(serialPort1.ReadLine(), out data);
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button_clear_Click(object sender, EventArgs e)
         {
             try
             {
@@ -147,11 +153,45 @@ namespace LED_Handheld_Project.Forms
             }
         }
 
+
+        void import_event_wait()
+        {
+            while(data!=5)
+            {
+                int data_buff;
+                string data_in = serialPort1.ReadLine();
+                if (!int.TryParse(data_in, out data_buff))
+                {
+                    import_state(data, data_in);
+                }
+                else if (data == 4)
+                {
+                    import_state(data, data_in);
+                    data = data_buff;
+                }
+                else
+                    data = data_buff;
+            }
+            serialPort1.Write("0");
+        }
         private void button_import_Click(object sender, EventArgs e)
         {
             try
             {
+                FolderBrowserDialog folderDlg = new FolderBrowserDialog();
+                folderDlg.ShowNewFolderButton = true;
+                // Show the FolderBrowserDialog.  
+                DialogResult result = folderDlg.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    save_path = folderDlg.SelectedPath;
+                    Environment.SpecialFolder root = folderDlg.RootFolder;
+                }
                 serialPort1.Write("6");
+                using (Form_progress frm = new Form_progress(import_event_wait))
+                {
+                    frm.ShowDialog(this);
+                }
             }
             catch (Exception error)
             {
@@ -159,24 +199,76 @@ namespace LED_Handheld_Project.Forms
             }
         }
 
-        private void import_state()
+        private void import_state(int data, string data_in)
         {
-            int data;
-            if(int.TryParse(serialPort1.ReadLine(),out data))
+            switch (data)
             {
-                switch (data)
-                {
-                    case 1:
+                case 1:
+                    try
+                    {
+                        /*                        data_path = serialPort1.ReadLine();
+                                                if(data_path.Length>0)
+                                                {
+                                                    save_path_buff = save_path + data_path;
+                                                    if (!Directory.Exists(save_path_buff))
+                                                    {
+                                                        Directory.CreateDirectory(save_path_buff);
+                                                    }
+                                                }*/
+                        if (data_in.Length > 0)
+                        {
+                            save_path_buff = save_path + data_in;
+                            if (!Directory.Exists(save_path_buff.Replace("\n", "").Replace("\r", "")))
+                            {
+                                Directory.CreateDirectory(save_path_buff.Replace("\n", "").Replace("\r", ""));
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
 
-                        break;
-                    case 2:
+                    }
+                    break;
+                case 2:
+                    try
+                    {
+                        //data_file = serialPort1.ReadLine();
+                        data_file = data_in;
+                    } catch(Exception)
+                    {
 
-                        break;
-                    case 3:
+                    }
+                    break;
+                case 3:
+                    //content.Append(serialPort1.ReadLine());    
+                    content += data_in;
+//                    try
+//                    {
+//                        MessageBox.Show("3");
+//                    }
+//                    catch (Exception error)
+//                    {
+ //                       MessageBox.Show(error.Message);
+//                    }
+                    break;
+                case 4:
+                    try
+                    {
+                        string file_save_path = save_path_buff + "\\" + data_file;
+                        File.WriteAllText(file_save_path.Replace("\n", "").Replace("\r", ""), content);
+                        content = "";
+                    } catch(Exception)
+                    {
 
-                        break;
-                }
+                    }
+                    break;
             }
+        }
+
+        private void button_import_clear_Click(object sender, EventArgs e)
+        {
+            button_import_Click(sender, e);
+            button_clear_Click(sender, e);
         }
     }
 }
