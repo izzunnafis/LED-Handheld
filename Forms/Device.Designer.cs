@@ -38,8 +38,8 @@ namespace LED_Handheld_Project.Forms
             this.cb_port_select = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_import_clear = new System.Windows.Forms.Button();
+            this.button_clear = new System.Windows.Forms.Button();
             this.button_import = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -152,8 +152,8 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button_import_clear);
+            this.panel3.Controls.Add(this.button_clear);
             this.panel3.Controls.Add(this.button_import);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(41, 167);
@@ -161,24 +161,25 @@ namespace LED_Handheld_Project.Forms
             this.panel3.Size = new System.Drawing.Size(331, 167);
             this.panel3.TabIndex = 3;
             // 
-            // button3
+            // button_import_clear
             // 
-            this.button3.Location = new System.Drawing.Point(221, 69);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 70);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Import and Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_import_clear.Location = new System.Drawing.Point(221, 69);
+            this.button_import_clear.Name = "button_import_clear";
+            this.button_import_clear.Size = new System.Drawing.Size(110, 70);
+            this.button_import_clear.TabIndex = 6;
+            this.button_import_clear.Text = "Import and Clear";
+            this.button_import_clear.UseVisualStyleBackColor = true;
+            this.button_import_clear.Click += new System.EventHandler(this.button_import_clear_Click);
             // 
-            // button2
+            // button_clear
             // 
-            this.button2.Location = new System.Drawing.Point(107, 69);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 70);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Clear data";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_clear.Location = new System.Drawing.Point(107, 69);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(110, 70);
+            this.button_clear.TabIndex = 5;
+            this.button_clear.Text = "Clear data";
+            this.button_clear.UseVisualStyleBackColor = true;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
             // button_import
             // 
@@ -283,8 +284,8 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_import_clear;
+        private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.Button button_import;
         private System.Windows.Forms.Label label4;
         private System.IO.Ports.SerialPort serialPort1;
