@@ -153,6 +153,7 @@
     <Compile Include="Forms\ProductTest.designer.cs">
       <DependentUpon>ProductTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\Read.cs" />
     <Compile Include="Forms\UjicobaLogin.cs">
       <SubType>Form</SubType>
     </Compile>

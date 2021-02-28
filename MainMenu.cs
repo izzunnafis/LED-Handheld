@@ -179,6 +179,11 @@ namespace LED_Handheld_Project
             ActivatedButton(sender, RGBColors.color6);
             OpenChildForm(new Forms.About());
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormLoadData());
+        }
     }
 }
 
