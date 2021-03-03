@@ -18,15 +18,7 @@ namespace LED_Handheld_Project.Forms
         //Fields
         static string Temperature, Humidity, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
         string in_data;
-        string[] in_data_list;
-        static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI, indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
-
-        
-
-        sbyte[] index_sep = new sbyte[] { indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
-            indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
-
-        string[] sep_string = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"};
+        string[] in_data_list;      
 
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3};
         string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
@@ -178,7 +170,6 @@ namespace LED_Handheld_Project.Forms
                     btn.BackColor = Color.FromArgb(172, 126, 241);
                     btn.ForeColor = Color.White;
                     btn.FlatAppearance.BorderColor = Color.FromArgb(172, 126, 241);
-                    //btn.Size= new System.Drawing.Size(100, 40);
                 }
             }
             foreach (Control labs in this.Controls)
@@ -190,11 +181,6 @@ namespace LED_Handheld_Project.Forms
                     lab.ForeColor = Color.White;
                 }
             }
-            /*tbOperator.BackColor= Color.FromArgb(172, 126, 241);
-            tbOperator.ForeColor = Color.White;
-            tbSerialNumber.BackColor = Color.FromArgb(172, 126, 241);
-            tbSerialNumber.ForeColor = Color.White;
-            //lbPort.ForeColor = Color.White;*/
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -215,17 +201,6 @@ namespace LED_Handheld_Project.Forms
             //lamptype();
             try
             {
-                //convert nilai index
-                /*for (int i = 0; i < 16; i++)
-                    index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
-
-                //pembacaan nilai
-                Temperature = in_data.Substring(0, index_sep[0]);
-                Humidity = in_data.Substring(index_sep[0] + 1, (index_sep[2] - index_sep[1]) - 1);
-
-                for (int i = 0; i < 14; i++)
-                    voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
-                */
                 in_data_list = in_data.Split(',');
                 if(in_data_list.Length>=10)
                 {
@@ -279,21 +254,18 @@ namespace LED_Handheld_Project.Forms
         
         private void btnStart_Click_1(object sender, EventArgs e)
         {
-            serialPort1.Write("1");
-            btnStart.Enabled = false;
-            btnHold.Enabled = true;
-            data_iter = 1;
-            openVisible();
-            /*           try
-                       {
-                           serialPort1.PortName = cbPort.Text;
-                           serialPort1.BaudRate = 9600;
-                           serialPort1.Open();
-                       }
-                       catch (Exception error)
-                       {
-                           MessageBox.Show(error.Message);
-                       }*/
+            try
+            {
+                serialPort1.Write("1");
+                btnStart.Enabled = false;
+                btnHold.Enabled = true;
+                data_iter = 1;
+                openVisible();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
         private void btnHold_Click_1(object sender, EventArgs e)
         {
@@ -322,19 +294,19 @@ namespace LED_Handheld_Project.Forms
             rtbSerialData.SelectionStart = rtbSerialData.Text.Length;
             rtbSerialData.ScrollToCaret();
         }
-        /*private void btnClear_Click(object sender, EventArgs e)
-        {
-            foreach(var series in chartData.Series)
-            {
-                series.Points.Clear();
-            }
-        }*/
 
         private void btnHold_Click(object sender, EventArgs e)
         {
-            btnStart.Enabled = true;
-            btnHold.Enabled = false;
-            serialPort1.Write("0");
+            try
+            {
+                btnStart.Enabled = true;
+                btnHold.Enabled = false;
+                serialPort1.Write("0");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
 
         private void btnSave_Click_1(object sender, EventArgs e)
@@ -363,15 +335,6 @@ namespace LED_Handheld_Project.Forms
                 System.IO.File.WriteAllLines(location, contents);
                 MessageBox.Show("Data has been saved");
 
-                //string dataSave = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd") + "\r" 
-                //    + "Device Number" + "," + tbSerialNumber.Text + "\r" 
-                //    + "Operator Number" + "," + tbOperator.Text + "\r" + "\r" 
-                //    + "No" + "," + "Timestamp" + "," + "Temperature" + "," + "Humidity" + "," + "V1" + "," + "V2" + "," + "V3" + "," 
-                //    + "V4" + "," + "V5" + "," + "V6" + "," + "V7" + "," + "V8" + "," + "V9" + "," + "Vref1" + "," + "V1ref2" 
-                //    + "," + "Vout1" + "," + "Vout2" + "," + "Vout3" + "\r"
-                //    + rtbSerialData.Text + "\r" ;
-                //System.IO.File.WriteAllText(location, dataSave);
-                //MessageBox.Show("Data has been saved");
             }
             data_iter = 1;
         }

@@ -28,5 +28,9 @@ namespace LED_Handheld_Project.Forms
             Task.Factory.StartNew(Worker).ContinueWith(t => { this.Close(); }, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            throw new ArgumentException("Process canceled");
+        }
     }
 }

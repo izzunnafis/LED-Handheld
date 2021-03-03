@@ -20,8 +20,6 @@ namespace LED_Handheld_Project.Forms
         string save_path;
         string save_path_buff;
         string content;
-        string[] contents;
-        string data_path;
         string data_file;
         Stopwatch s = new Stopwatch();
 
@@ -134,9 +132,9 @@ namespace LED_Handheld_Project.Forms
                 {
                     frm.ShowDialog(this);
                 }
-            } catch
+            } catch (Exception error)
             {
-                return; 
+                MessageBox.Show(error.Message);
             }
         }
 
@@ -147,9 +145,9 @@ namespace LED_Handheld_Project.Forms
             {
                 serialPort1.Write("3");
             }
-            catch
+            catch (Exception error)
             {
-                return;
+                MessageBox.Show(error.Message);
             }
         }
 
@@ -178,6 +176,7 @@ namespace LED_Handheld_Project.Forms
         {
             try
             {
+                serialPort1.Write("");
                 FolderBrowserDialog folderDlg = new FolderBrowserDialog();
                 folderDlg.ShowNewFolderButton = true;
                 // Show the FolderBrowserDialog.  
@@ -206,15 +205,6 @@ namespace LED_Handheld_Project.Forms
                 case 1:
                     try
                     {
-                        /*                        data_path = serialPort1.ReadLine();
-                                                if(data_path.Length>0)
-                                                {
-                                                    save_path_buff = save_path + data_path;
-                                                    if (!Directory.Exists(save_path_buff))
-                                                    {
-                                                        Directory.CreateDirectory(save_path_buff);
-                                                    }
-                                                }*/
                         if (data_in.Length > 0)
                         {
                             save_path_buff = save_path + data_in;
@@ -232,7 +222,6 @@ namespace LED_Handheld_Project.Forms
                 case 2:
                     try
                     {
-                        //data_file = serialPort1.ReadLine();
                         data_file = data_in;
                     } catch(Exception)
                     {
@@ -240,16 +229,7 @@ namespace LED_Handheld_Project.Forms
                     }
                     break;
                 case 3:
-                    //content.Append(serialPort1.ReadLine());    
                     content += data_in;
-//                    try
-//                    {
-//                        MessageBox.Show("3");
-//                    }
-//                    catch (Exception error)
-//                    {
- //                       MessageBox.Show(error.Message);
-//                    }
                     break;
                 case 4:
                     try
@@ -259,7 +239,6 @@ namespace LED_Handheld_Project.Forms
                         content = "";
                     } catch(Exception)
                     {
-
                     }
                     break;
             }

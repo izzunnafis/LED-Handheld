@@ -15,16 +15,13 @@ namespace LED_Handheld_Project.Forms
 {
     public partial class ProductTest : Form
     {
-        //private DateTime datetime;
+
         string in_data;
         string[] in_data_list;
         static sbyte indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
             indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP;
         static string Temp, Humid, V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3;
-        sbyte[] index_sep = new sbyte[] {indexOfA, indexOfB, indexOfC, indexOfD, indexOfE, indexOfF, indexOfG, indexOfH, indexOfI,
-            indexOfJ, indexOfK, indexOfL, indexOfM, indexOfN, indexOfO, indexOfP};
         string[] voltages = new string[] { V1, V2, V3, V4, V5, V6, V7, V8, V9, VRef1, VRef2, VOut1, VOut2, VOut3 };
-        string[] sep_string = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P" };
         string[] voltage_name = new string[] { "V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "VRef1", "VRef2", "VOut1", "VOut2", "VOut3" };
         Panel[] panel;
         TextBox[] text_res_V;
@@ -46,6 +43,7 @@ namespace LED_Handheld_Project.Forms
                 text_res_V[i].Clear();
             }
         }
+
         private void cbLampTypes_TextChanged(object sender, EventArgs e)
         {
             ResetTable();
@@ -68,6 +66,7 @@ namespace LED_Handheld_Project.Forms
                 }
             }
         }
+
         private void ProductTest_Load(object sender, EventArgs e)
         {
             textTanggal.Text = DateTime.Now.ToString("ddd, dd MMM yyyy");
@@ -79,7 +78,6 @@ namespace LED_Handheld_Project.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            serialPort1.Close();
         }
 
         
@@ -138,37 +136,23 @@ namespace LED_Handheld_Project.Forms
         {
             btnStart.Enabled = true;
             btnStop.Enabled = false;
-            serialPort1.Write("0");
- /*           try
-            {
-                serialPort1.Close();
-
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }*/
+            if(serialPort1.IsOpen)
+                serialPort1.Write("0");
         }
 
         
         private void btnStart_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("1");
-            btnStart.Enabled = false;
-            btnStop.Enabled = true;
-            /*            try
-                        {
-                            serialPort1.PortName = comboBox1.Text;
-                            serialPort1.BaudRate = 9600;
-                            serialPort1.Open();
-
-
-                        }
-                        catch (Exception error)
-                        {
-                            MessageBox.Show(error.Message);
-
-                        }*/
+            if(serialPort1.IsOpen)
+            {
+                serialPort1.Write("1");
+                btnStart.Enabled = false;
+                btnStop.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Please select the Serial port");
+            }
         }
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
@@ -182,6 +166,7 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show(error.Message);
             }
         }
+
         private void ProcessOkNok()
         {
             double error_V;
@@ -257,37 +242,35 @@ namespace LED_Handheld_Project.Forms
                 }
             }
             //Final Result
-            text_TestResult.Text = "Success";
-            text_TestResult.BackColor = Color.Green;
+            bool is_succes = true;
 
             for (int i = 0; i < 14; i++)
-                if (text_res_V[i].Text == "NOK")
-                {
-                    text_TestResult.Text = "Failed";
-                    text_TestResult.BackColor = Color.Red;
-                }
+            {
+                is_succes &= text_res_V[i].Text == "OK";
+            }
+            if(is_succes)
+            {
+                text_TestResult.Text = "Success";
+                text_TestResult.BackColor = Color.Green;
+            }
+            else
+            {
+                text_TestResult.Text = "Failed";
+                text_TestResult.BackColor = Color.Red;
+            }    
         }
+
         private void ProcessData(object sender, EventArgs e)
         {
             try
             {
-                //convert nilai index
- /*               for (int i = 0; i < 16; i++)
-                    index_sep[i] = Convert.ToSByte(in_data.IndexOf(sep_string[i]));
-
-                //pembacaan nilai
-                Temp = in_data.Substring(0, index_sep[0]);
-                Humid = in_data.Substring(index_sep[0] + 1, (index_sep[2] - index_sep[1]) - 1);
-                for (int i = 0; i < 14; i++)
-                    voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
- */
-                in_data_list = in_data.Split(';');
-                if (in_data_list.Length >= 10)
+                in_data_list = in_data.Split(',');
+                if (in_data_list.Length >= 4)
                 {
                     Temp = in_data_list[2];
                     Humid = in_data_list[3];
 
-                    for (int i = 0; i < 14; i++)
+                    for (int i = 0; i < in_data_list.Length-4; i++)
                     {
                         voltages[i] = in_data_list[i + 4];
                     }
@@ -301,81 +284,6 @@ namespace LED_Handheld_Project.Forms
 
                 //NOK or OK
                 ProcessOkNok();
-                //for (int i = 0; i < 9; i++)
-                //{
-                //    float volt_val = float.Parse(voltages[i]);
-                //    if (volt_val >= 11.8 && volt_val <= 12.2)
-                //    {
-                //        text_res_V[i].Text = "OK";
-                //        text_res_V[i].BackColor = Color.Green;
-                //    }
-                //    else
-                //    {
-                //        text_res_V[i].Text = "NOK";
-                //        text_res_V[i].BackColor = Color.Red;
-                //    }
-                //}
-                ////for (int i = 9; i < 11; i++)
-                ////{
-                ////    float volt_val = float.Parse(voltages[i]);
-                ////    if (volt_val >= 6.3 && volt_val <= 6.7)
-                ////    {
-                ////        text_res_V[i].Text = "OK";
-                ////        text_res_V[i].BackColor = Color.Green;
-                ////    }
-                ////    else
-                ////    {
-                ////        text_res_V[i].Text = "NOK";
-                ////        text_res_V[i].BackColor = Color.Red;
-                ////    }
-                ////}
-                //float volt_valref1 = float.Parse(voltages[9]);
-                //if (volt_valref1 >= 6.3 && volt_valref1 <= 6.7)
-                //{
-                //    text_res_V[9].Text = "OK";
-                //    text_res_V[9].BackColor = Color.Green;
-                //}
-                //else
-                //{
-                //    text_res_V[9].Text = "NOK";
-                //    text_res_V[9].BackColor = Color.Red;
-                //}
-                //float volt_valref2 = float.Parse(voltages[10]);
-                //if (volt_valref2 >= 5.3 && volt_valref2 <= 5.7)
-                //{
-                //    text_res_V[10].Text = "OK";
-                //    text_res_V[10].BackColor = Color.Green;
-                //}
-                //else
-                //{
-                //    text_res_V[10].Text = "NOK";
-                //    text_res_V[10].BackColor = Color.Red;
-                //}
-                //for (int i = 11; i < 14; i++)
-                //{
-                //    float volt_val = float.Parse(voltages[i]);
-                //    if (volt_val >= 7.8 && volt_val <= 8.2)
-                //    {
-                //        text_res_V[i].Text = "OK";
-                //        text_res_V[i].BackColor = Color.Green;
-                //    }
-                //    else
-                //    {
-                //        text_res_V[i].Text = "NOK";
-                //        text_res_V[i].BackColor = Color.Red;
-                //    }
-                //}
-                ////Hasil results
-                //text_TestResult.Text = "Success";
-                //text_TestResult.BackColor = Color.Green;
-
-                //for (int i = 0; i < 14; i++)
-                //    if (text_res_V[i].Text == "NOK")
-                //    {
-                //        text_TestResult.Text = "Failed";
-                //        text_TestResult.BackColor = Color.Red;
-                //    }
-
             }
             catch (Exception error)
             {
