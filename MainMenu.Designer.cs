@@ -46,11 +46,14 @@ namespace LED_Handheld_Project
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnAbout = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.panel_clock.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -274,12 +277,23 @@ namespace LED_Handheld_Project
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 89);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1151, 661);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(357, 126);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(453, 499);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainMenu
             // 
@@ -305,6 +319,8 @@ namespace LED_Handheld_Project
             this.panel_clock.PerformLayout();
             this.panelLogo.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,6 +342,7 @@ namespace LED_Handheld_Project
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panel_clock;
         private FontAwesome.Sharp.IconButton btnAbout;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
