@@ -31,14 +31,15 @@ namespace LED_Handheld_Project.Forms
         static kayChart serialDataChartV1, serialDataChartV2, serialDataChartV3, serialDataChartV4, serialDataChartV5,
             serialDataChartV6, serialDataChartV7, serialDataChartV8, serialDataChartV9,
             serialDataChartVRef1, serialDataChartVRef2,
-            serialDataChartVOut1, serialDataChartVOut2, serialDataChartVOut3; // untuk Grafik
+            serialDataChartVOut1, serialDataChartVOut2, serialDataChartVOut3, dummy_chart; // untuk Grafik
 
         kayChart[] chart_V = new kayChart[]
         {serialDataChartV1, serialDataChartV2, serialDataChartV3, serialDataChartV4, serialDataChartV5,
             serialDataChartV6, serialDataChartV7, serialDataChartV8, serialDataChartV9,
             serialDataChartVRef1, serialDataChartVRef2,
-            serialDataChartVOut1, serialDataChartVOut2, serialDataChartVOut3
+            serialDataChartVOut1, serialDataChartVOut2, serialDataChartVOut3, dummy_chart
         };
+
 
         public FormReal()
         {
@@ -64,7 +65,7 @@ namespace LED_Handheld_Project.Forms
             btnHold.Enabled = false;
             rtbSerialData.Visible = false;
             tbDateValue.Visible = false;
-            hideVisible();
+            //hideVisible();
             string[] ports = SerialPort.GetPortNames(); // untuk ports
             cbPort.Items.AddRange(ports); // untuk ports
             //untuk grafik
@@ -75,6 +76,10 @@ namespace LED_Handheld_Project.Forms
                 chart_V[i] = new kayChart(chartData, 150);
                 chart_V[i].serieName = voltage_name[i];
             } //chart naming and initializer
+            chart_V[14] = new kayChart(chartData, 150);
+            chart_V[14].serieName = "Bar List";
+            chart_V[14].TriggeredUpdate(0.0);
+            
         }
 
         private void cbPort_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,7 +90,6 @@ namespace LED_Handheld_Project.Forms
                 serialPort1.PortName = cbPort.Text;
                 serialPort1.BaudRate = 9600;
                 serialPort1.Open();
-                btnHold_Click_1(sender, e);
             }
         }
 
@@ -110,6 +114,7 @@ namespace LED_Handheld_Project.Forms
                 {
                     label_V[i].Visible = false;
                     cek_V[i].Visible = false;
+                    cek_V[i].Checked = false;
                 }
                 for (int i = 9; i < 14; i++)
                 {
@@ -123,38 +128,11 @@ namespace LED_Handheld_Project.Forms
                 {
                     label_V[i].Visible = false;
                     cek_V[i].Visible = false;
+                    cek_V[i].Checked = false;
                 }
             }
         }
-        private void lamptype()
-        {
-            if (cboxLampType.Text == "V3.0" || cboxLampType.Text == "V3.1")
-            {
-                for(int i=0; i< 14; i++)
-                {
-                    label_V[i].Visible = true;
-                    cek_V[i].Visible = true;
-                }
-            }
-            else
-            {
-                for (int i = 0; i < 2; i++)
-                {
-                    label_V[i].Visible = true;
-                    cek_V[i].Visible = true;
-                }
-                for (int i = 2; i < 9; i++)
-                {
-                    label_V[i].Visible = false;
-                    cek_V[i].Visible = false;
-                }
-                for (int i = 9; i < 14; i++)
-                {
-                    label_V[i].Visible = true;
-                    cek_V[i].Visible = true;
-                }
-            }
-        }
+
 
         private void ResetGraph()
         {
@@ -200,7 +178,6 @@ namespace LED_Handheld_Project.Forms
 
         private void ProcessData(object sender, EventArgs e)
         {
-            //lamptype();
             try
             {
                 in_data_list = in_data.Split(',');
@@ -269,10 +246,6 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show(error.Message);
             }
         }
-        private void btnHold_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         private void openVisible()
         {
@@ -323,21 +296,27 @@ namespace LED_Handheld_Project.Forms
             saveFileDialog1.Filter = "Text files (*.csv)|*.txt|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 2;
             saveFileDialog1.RestoreDirectory = true;
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if(rtbSerialData.Text.Length>0)
             {
-                string location = saveFileDialog1.FileName;
-                string[] contents = new string[5];
-                contents[0] = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd");
-                contents[1] = "Device Number" + "," + tbSerialNumber.Text;
-                contents[2] = "Operator Number" + "," + tbOperator.Text;
-                contents[3] = "No" + "," + "Timestamp" + "," + "Temperature" + "," + "Humidity" + "," + "V1" + "," + "V2" + "," + "V3" + ","
-                    + "V4" + "," + "V5" + "," + "V6" + "," + "V7" + "," + "V8" + "," + "V9" + "," + "Vref1" + "," + "V1ref2"
-                    + "," + "Vout1" + "," + "Vout2" + "," + "Vout3";
-                contents[4] = rtbSerialData.Text;
-                System.IO.File.WriteAllLines(location, contents);
-                MessageBox.Show("Data has been saved");
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string location = saveFileDialog1.FileName;
+                    string[] contents = new string[5];
+                    contents[0] = "Date" + "," + DateTime.Now.ToString("yyyy/MM/dd");
+                    contents[1] = "Device Number" + "," + tbSerialNumber.Text;
+                    contents[2] = "Operator Number" + "," + tbOperator.Text;
+                    contents[3] = "No" + "," + "Timestamp" + "," + "Temperature" + "," + "Humidity" + "," + "V1" + "," + "V2" + "," + "V3" + ","
+                        + "V4" + "," + "V5" + "," + "V6" + "," + "V7" + "," + "V8" + "," + "V9" + "," + "Vref1" + "," + "V1ref2"
+                        + "," + "Vout1" + "," + "Vout2" + "," + "Vout3";
+                    contents[4] = rtbSerialData.Text;
+                    rtbSerialData.Text="";
+                    System.IO.File.WriteAllLines(location, contents);
+                    MessageBox.Show("Data has been saved");
 
+                }
             }
+            else
+                MessageBox.Show("Data is Empty");
             data_iter = 1;
         }
         private void btnGridTable_Click(object sender, EventArgs e)

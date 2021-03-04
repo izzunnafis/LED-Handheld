@@ -76,8 +76,8 @@ namespace LED_Handheld_Project.Forms
             if (dtbl.Rows.Count > 0)
             {
                 UjicobaLogin UL = new UjicobaLogin();
-                this.Hide();
-                UL.Show();
+                this.Close();
+                DialogResult = DialogResult.OK;
             }
             else
             {

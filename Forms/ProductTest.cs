@@ -31,8 +31,10 @@ namespace LED_Handheld_Project.Forms
         private void ProductTest_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (serialPort1.IsOpen)
+            {
                 serialPort1.Write("0");
-            serialPort1.Close();
+                serialPort1.Close();
+            }
         }
 
         private void ResetTable()
@@ -92,43 +94,51 @@ namespace LED_Handheld_Project.Forms
             saveFileDialog1.Filter = "Text files (*.csv)|*.txt|All files (*.*)|*.*";
             saveFileDialog1.FilterIndex = 2;
             saveFileDialog1.RestoreDirectory = true;
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            if(!string.IsNullOrEmpty(in_data))
             {
-                if (cbLampTypes.Text == "V4.0")
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    string[] contents = new string[15];
-                    contents[0] = "Date" + "," + textTanggal.Text;
-                    contents[1] = "Module ID" + "," + textModuleID.Text;
-                    contents[2] = "Operator ID" + "," + textOperatorID.Text;
-                    contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
-                    contents[4] = "Temperature" + "," + text_Temp.Text;
-                    contents[5] = "Humidity" + "," + text_Humid.Text;
-                    contents[6] = "Name" + "," + "Volts" + "," + "Results";
-                    for (int i = 0; i < 2; i++)
-                        contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
-                    for (int i = 0; i < 5; i++)
-                        contents[i + 9] = voltage_name[i+9] + "," + text_V[i+9].Text + "," + text_res_V[i+9].Text;
-                    contents[14] = "Test Result" + "," + text_TestResult.Text;
-                    string location = saveFileDialog1.FileName;
-                    System.IO.File.WriteAllLines(location, contents);
-                }
-                else
-                {
-                    string[] contents = new string[22];
-                    contents[0] = "Date" + "," + textTanggal.Text;
-                    contents[1] = "Module ID" + "," + textModuleID.Text;
-                    contents[2] = "Operator ID" + "," + textOperatorID.Text;
-                    contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
-                    contents[4] = "Temperature" + "," + text_Temp.Text;
-                    contents[5] = "Humidity" + "," + text_Humid.Text;
-                    contents[6] = "Name" + "," + "Volts" + "," + "Results";
-                    for (int i = 0; i < 14; i++)
-                        contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
-                    contents[21] = "Test Result" + "," + text_TestResult.Text;
-                    string location = saveFileDialog1.FileName;
-                    System.IO.File.WriteAllLines(location, contents);
+                    if (cbLampTypes.Text == "V4.0")
+                    {
+                        string[] contents = new string[15];
+                        contents[0] = "Date" + "," + textTanggal.Text;
+                        contents[1] = "Module ID" + "," + textModuleID.Text;
+                        contents[2] = "Operator ID" + "," + textOperatorID.Text;
+                        contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
+                        contents[4] = "Temperature" + "," + text_Temp.Text;
+                        contents[5] = "Humidity" + "," + text_Humid.Text;
+                        contents[6] = "Name" + "," + "Volts" + "," + "Results";
+                        for (int i = 0; i < 2; i++)
+                            contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
+                        for (int i = 0; i < 5; i++)
+                            contents[i + 9] = voltage_name[i + 9] + "," + text_V[i + 9].Text + "," + text_res_V[i + 9].Text;
+                        contents[14] = "Test Result" + "," + text_TestResult.Text;
+                        string location = saveFileDialog1.FileName;
+                        System.IO.File.WriteAllLines(location, contents);
+                    }
+                    else
+                    {
+                        string[] contents = new string[22];
+                        contents[0] = "Date" + "," + textTanggal.Text;
+                        contents[1] = "Module ID" + "," + textModuleID.Text;
+                        contents[2] = "Operator ID" + "," + textOperatorID.Text;
+                        contents[3] = "Lamp Type" + "," + cbLampTypes.Text;
+                        contents[4] = "Temperature" + "," + text_Temp.Text;
+                        contents[5] = "Humidity" + "," + text_Humid.Text;
+                        contents[6] = "Name" + "," + "Volts" + "," + "Results";
+                        for (int i = 0; i < 14; i++)
+                            contents[i + 7] = voltage_name[i] + "," + text_V[i].Text + "," + text_res_V[i].Text;
+                        contents[21] = "Test Result" + "," + text_TestResult.Text;
+                        string location = saveFileDialog1.FileName;
+                        System.IO.File.WriteAllLines(location, contents);
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Data is empty");
+            }
+
         }
 
         

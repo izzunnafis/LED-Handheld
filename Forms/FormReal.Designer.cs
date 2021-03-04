@@ -46,6 +46,7 @@ namespace LED_Handheld_Project.Forms
             System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.rtbSerialData = new System.Windows.Forms.RichTextBox();
             this.chartData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cbPort = new System.Windows.Forms.ComboBox();
@@ -220,6 +221,12 @@ namespace LED_Handheld_Project.Forms
             series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series14.Legend = "Legend1";
             series14.Name = "VOut3";
+            series15.BorderWidth = 1;
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series15.Legend = "Legend1";
+            series15.Name = "Bar List";
+            this.chartData.Series.Add(series15);
             this.chartData.Series.Add(series1);
             this.chartData.Series.Add(series2);
             this.chartData.Series.Add(series3);

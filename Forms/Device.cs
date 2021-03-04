@@ -33,8 +33,10 @@ namespace LED_Handheld_Project.Forms
         private void Device_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (serialPort1.IsOpen)
+            {
                 serialPort1.Write("0");
-            serialPort1.Close();
+                serialPort1.Close();
+            }
         }
 
         private void cb_port_select_DropDown(object sender, EventArgs e)

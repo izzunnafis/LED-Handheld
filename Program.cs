@@ -11,12 +11,19 @@ namespace LED_Handheld_Project
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.EnableVisualStyles();
+
+            Form flogin = new Forms.FormLogin();
+
+            if (flogin.ShowDialog() == DialogResult.OK)
+                Application.Run(new MainMenu());
+            else
+                Application.Exit();
         }
     }
 }
