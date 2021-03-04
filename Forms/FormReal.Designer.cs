@@ -744,7 +744,7 @@ namespace LED_Handheld_Project.Forms
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(189, 25);
             this.textBox3.TabIndex = 279;
-            this.textBox3.Text = "Operator";
+            this.textBox3.Text = "Operator ID";
             // 
             // textBox4
             // 
