@@ -247,7 +247,7 @@ namespace LED_Handheld_Project
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 888);
+            this.panelMenu.Size = new System.Drawing.Size(220, 802);
             this.panelMenu.TabIndex = 0;
             // 
             // btnAbout
@@ -282,14 +282,14 @@ namespace LED_Handheld_Project
             this.panelDesktop.Location = new System.Drawing.Point(220, 89);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1195, 799);
+            this.panelDesktop.Size = new System.Drawing.Size(1195, 713);
             this.panelDesktop.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(379, 195);
+            this.pictureBox1.Location = new System.Drawing.Point(379, 152);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(453, 499);
             this.pictureBox1.TabIndex = 0;
@@ -301,7 +301,7 @@ namespace LED_Handheld_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1044, 648);
-            this.ClientSize = new System.Drawing.Size(1415, 888);
+            this.ClientSize = new System.Drawing.Size(1415, 802);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
