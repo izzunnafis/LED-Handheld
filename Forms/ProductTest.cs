@@ -281,7 +281,7 @@ namespace LED_Handheld_Project.Forms
                 for (int i = 0; i < 14; i++)
                     voltages[i] = in_data.Substring(index_sep[i + 1] + 1, (index_sep[i + 2] - index_sep[i + 1]) - 1);
  */
-                in_data_list = in_data.Split(';');
+                in_data_list = in_data.Split(',');
                 if (in_data_list.Length >= 10)
                 {
                     Temp = in_data_list[2];

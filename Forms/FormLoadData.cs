@@ -46,18 +46,18 @@ namespace LED_Handheld_Project.Forms
             openFileDialog1.RestoreDirectory = true;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                string filename = openFileDialog1.FileName;
-                string[] raw_text = System.IO.File.ReadAllLines(filename);
+                //string filename = openFileDialog1.FileName;
+                //string[] raw_text = System.IO.File.ReadAllLines(filename);
                 string[] datacol = null;
                 int x = 0;
-                foreach(string text_line in raw_text)
-                {
-                    datacol = text_line.Split(',');
-                    foreach (string column in datacol)
-                    {
+                //foreach(string text_line in raw_text)
+                //{
+                //    datacol = text_line.Split(',');
+                //    foreach (string column in datacol)
+                //    {
                         
-                    }
-                }
+                //    }
+                //}
                 this.Controls.Add(dataGridView1);
             }
             //DataTable data = new DataTable();
