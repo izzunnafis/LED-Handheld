@@ -60,10 +60,10 @@ namespace LED_Handheld_Project
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(165, 65);
-            this.panelShadow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelShadow.Location = new System.Drawing.Point(220, 80);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(879, 7);
+            this.panelShadow.Size = new System.Drawing.Size(1195, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // iconCurrentChildForm
@@ -73,11 +73,11 @@ namespace LED_Handheld_Project
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 38;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(12, 24);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconCurrentChildForm.IconSize = 50;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(16, 30);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(38, 41);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(51, 50);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
@@ -86,10 +86,9 @@ namespace LED_Handheld_Project
             this.lblTitleChildForm.AutoSize = true;
             this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(54, 29);
-            this.lblTitleChildForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(72, 36);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(64, 25);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -99,10 +98,9 @@ namespace LED_Handheld_Project
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(2, 24);
-            this.lbTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTime.Location = new System.Drawing.Point(3, 30);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(39, 20);
+            this.lbTime.Size = new System.Drawing.Size(50, 25);
             this.lbTime.TabIndex = 0;
             this.lbTime.Text = "Jam";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,19 +112,20 @@ namespace LED_Handheld_Project
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(165, 0);
-            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(879, 65);
+            this.panelTitleBar.Size = new System.Drawing.Size(1195, 80);
             this.panelTitleBar.TabIndex = 1;
             // 
             // panel_clock
             // 
             this.panel_clock.Controls.Add(this.lbTime);
             this.panel_clock.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel_clock.Location = new System.Drawing.Point(770, 0);
+            this.panel_clock.Location = new System.Drawing.Point(1050, 0);
+            this.panel_clock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_clock.Name = "panel_clock";
-            this.panel_clock.Size = new System.Drawing.Size(109, 65);
+            this.panel_clock.Size = new System.Drawing.Size(145, 80);
             this.panel_clock.TabIndex = 2;
             // 
             // panelLogo
@@ -134,9 +133,9 @@ namespace LED_Handheld_Project
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(165, 114);
+            this.panelLogo.Size = new System.Drawing.Size(220, 140);
             this.panelLogo.TabIndex = 0;
             // 
             // btnHome
@@ -149,10 +148,10 @@ namespace LED_Handheld_Project
             this.btnHome.IconColor = System.Drawing.Color.White;
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(9, 37);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHome.Location = new System.Drawing.Point(12, 46);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(152, 52);
+            this.btnHome.Size = new System.Drawing.Size(203, 64);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "LED Handheld";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,11 +171,11 @@ namespace LED_Handheld_Project
             this.btnRealTime.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRealTime.IconSize = 32;
             this.btnRealTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRealTime.Location = new System.Drawing.Point(0, 114);
-            this.btnRealTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRealTime.Location = new System.Drawing.Point(0, 140);
+            this.btnRealTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRealTime.Name = "btnRealTime";
-            this.btnRealTime.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnRealTime.Size = new System.Drawing.Size(165, 49);
+            this.btnRealTime.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnRealTime.Size = new System.Drawing.Size(220, 60);
             this.btnRealTime.TabIndex = 1;
             this.btnRealTime.Text = "Real Time";
             this.btnRealTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,11 +195,11 @@ namespace LED_Handheld_Project
             this.btnProductionTest.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProductionTest.IconSize = 32;
             this.btnProductionTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductionTest.Location = new System.Drawing.Point(0, 163);
-            this.btnProductionTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductionTest.Location = new System.Drawing.Point(0, 200);
+            this.btnProductionTest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProductionTest.Name = "btnProductionTest";
-            this.btnProductionTest.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnProductionTest.Size = new System.Drawing.Size(165, 49);
+            this.btnProductionTest.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnProductionTest.Size = new System.Drawing.Size(220, 60);
             this.btnProductionTest.TabIndex = 2;
             this.btnProductionTest.Text = "Production Test";
             this.btnProductionTest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,11 +219,11 @@ namespace LED_Handheld_Project
             this.BtnDevice.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnDevice.IconSize = 32;
             this.BtnDevice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDevice.Location = new System.Drawing.Point(0, 212);
-            this.BtnDevice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnDevice.Location = new System.Drawing.Point(0, 260);
+            this.BtnDevice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDevice.Name = "BtnDevice";
-            this.BtnDevice.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.BtnDevice.Size = new System.Drawing.Size(165, 49);
+            this.BtnDevice.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.BtnDevice.Size = new System.Drawing.Size(220, 60);
             this.BtnDevice.TabIndex = 4;
             this.BtnDevice.Text = "Device";
             this.BtnDevice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,9 +241,9 @@ namespace LED_Handheld_Project
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(165, 648);
+            this.panelMenu.Size = new System.Drawing.Size(220, 802);
             this.panelMenu.TabIndex = 0;
             // 
             // btnAbout
@@ -259,11 +258,11 @@ namespace LED_Handheld_Project
             this.btnAbout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAbout.IconSize = 32;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(0, 261);
-            this.btnAbout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbout.Location = new System.Drawing.Point(0, 320);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Padding = new System.Windows.Forms.Padding(8, 0, 15, 0);
-            this.btnAbout.Size = new System.Drawing.Size(165, 49);
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnAbout.Size = new System.Drawing.Size(220, 60);
             this.btnAbout.TabIndex = 8;
             this.btnAbout.Text = "About";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -275,24 +274,24 @@ namespace LED_Handheld_Project
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(165, 72);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDesktop.Location = new System.Drawing.Point(220, 89);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(879, 576);
+            this.panelDesktop.Size = new System.Drawing.Size(1195, 713);
             this.panelDesktop.TabIndex = 3;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1044, 648);
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1415, 802);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LED Handheld";
