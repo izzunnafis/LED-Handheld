@@ -58,9 +58,10 @@ namespace LED_Handheld_Project.Forms
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.SD_space_button);
             this.panel1.Controls.Add(this.SD_space_progress_bar);
-            this.panel1.Location = new System.Drawing.Point(397, 83);
+            this.panel1.Location = new System.Drawing.Point(529, 102);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(354, 254);
+            this.panel1.Size = new System.Drawing.Size(472, 313);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -69,18 +70,20 @@ namespace LED_Handheld_Project.Forms
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(13, 8);
+            this.label2.Location = new System.Drawing.Point(17, 10);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
+            this.label2.Size = new System.Drawing.Size(183, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Available SD space";
             // 
             // SD_space_button
             // 
             this.SD_space_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SD_space_button.Location = new System.Drawing.Point(154, 228);
+            this.SD_space_button.Location = new System.Drawing.Point(194, 283);
+            this.SD_space_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SD_space_button.Name = "SD_space_button";
-            this.SD_space_button.Size = new System.Drawing.Size(75, 23);
+            this.SD_space_button.Size = new System.Drawing.Size(100, 28);
             this.SD_space_button.TabIndex = 1;
             this.SD_space_button.Text = "Check!";
             this.SD_space_button.UseVisualStyleBackColor = true;
@@ -96,7 +99,8 @@ namespace LED_Handheld_Project.Forms
             this.SD_space_progress_bar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.SD_space_progress_bar.InnerMargin = 2;
             this.SD_space_progress_bar.InnerWidth = -1;
-            this.SD_space_progress_bar.Location = new System.Drawing.Point(84, 30);
+            this.SD_space_progress_bar.Location = new System.Drawing.Point(124, 39);
+            this.SD_space_progress_bar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SD_space_progress_bar.MarqueeAnimationSpeed = 2000;
             this.SD_space_progress_bar.Name = "SD_space_progress_bar";
             this.SD_space_progress_bar.OuterColor = System.Drawing.Color.Black;
@@ -106,7 +110,7 @@ namespace LED_Handheld_Project.Forms
             this.SD_space_progress_bar.ProgressWidth = 25;
             this.SD_space_progress_bar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SD_space_progress_bar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.SD_space_progress_bar.Size = new System.Drawing.Size(209, 192);
+            this.SD_space_progress_bar.Size = new System.Drawing.Size(240, 240);
             this.SD_space_progress_bar.StartAngle = 270;
             this.SD_space_progress_bar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.SD_space_progress_bar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -123,17 +127,19 @@ namespace LED_Handheld_Project.Forms
             // 
             this.panel2.Controls.Add(this.cb_port_select);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(41, 85);
+            this.panel2.Location = new System.Drawing.Point(55, 105);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(331, 62);
+            this.panel2.Size = new System.Drawing.Size(441, 76);
             this.panel2.TabIndex = 2;
             // 
             // cb_port_select
             // 
             this.cb_port_select.FormattingEnabled = true;
-            this.cb_port_select.Location = new System.Drawing.Point(190, 22);
+            this.cb_port_select.Location = new System.Drawing.Point(253, 27);
+            this.cb_port_select.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_port_select.Name = "cb_port_select";
-            this.cb_port_select.Size = new System.Drawing.Size(121, 21);
+            this.cb_port_select.Size = new System.Drawing.Size(160, 24);
             this.cb_port_select.TabIndex = 1;
             this.cb_port_select.DropDown += new System.EventHandler(this.cb_port_select_DropDown);
             this.cb_port_select.SelectedIndexChanged += new System.EventHandler(this.cb_port_select_SelectedIndexChanged);
@@ -144,9 +150,10 @@ namespace LED_Handheld_Project.Forms
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(32)))), ((int)(((byte)(74)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(16, 19);
+            this.label3.Location = new System.Drawing.Point(21, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 24);
+            this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Port Select :";
             // 
@@ -156,16 +163,18 @@ namespace LED_Handheld_Project.Forms
             this.panel3.Controls.Add(this.button_clear);
             this.panel3.Controls.Add(this.button_import);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(41, 167);
+            this.panel3.Location = new System.Drawing.Point(55, 206);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 167);
+            this.panel3.Size = new System.Drawing.Size(441, 206);
             this.panel3.TabIndex = 3;
             // 
             // button_import_clear
             // 
-            this.button_import_clear.Location = new System.Drawing.Point(221, 69);
+            this.button_import_clear.Location = new System.Drawing.Point(295, 85);
+            this.button_import_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_import_clear.Name = "button_import_clear";
-            this.button_import_clear.Size = new System.Drawing.Size(110, 70);
+            this.button_import_clear.Size = new System.Drawing.Size(147, 86);
             this.button_import_clear.TabIndex = 6;
             this.button_import_clear.Text = "Import and Clear";
             this.button_import_clear.UseVisualStyleBackColor = true;
@@ -173,9 +182,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // button_clear
             // 
-            this.button_clear.Location = new System.Drawing.Point(107, 69);
+            this.button_clear.Location = new System.Drawing.Point(143, 85);
+            this.button_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(110, 70);
+            this.button_clear.Size = new System.Drawing.Size(147, 86);
             this.button_clear.TabIndex = 5;
             this.button_clear.Text = "Clear data";
             this.button_clear.UseVisualStyleBackColor = true;
@@ -183,9 +193,10 @@ namespace LED_Handheld_Project.Forms
             // 
             // button_import
             // 
-            this.button_import.Location = new System.Drawing.Point(3, 68);
+            this.button_import.Location = new System.Drawing.Point(4, 84);
+            this.button_import.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_import.Name = "button_import";
-            this.button_import.Size = new System.Drawing.Size(100, 71);
+            this.button_import.Size = new System.Drawing.Size(133, 87);
             this.button_import.TabIndex = 4;
             this.button_import.Text = "Import Data";
             this.button_import.UseVisualStyleBackColor = true;
@@ -197,9 +208,10 @@ namespace LED_Handheld_Project.Forms
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(16, 18);
+            this.label1.Location = new System.Drawing.Point(21, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.Size = new System.Drawing.Size(78, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Action :";
             // 
@@ -209,9 +221,10 @@ namespace LED_Handheld_Project.Forms
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(23, 18);
+            this.label4.Location = new System.Drawing.Point(31, 22);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 31);
+            this.label4.Size = new System.Drawing.Size(379, 39);
             this.label4.TabIndex = 7;
             this.label4.Text = "Arduino SD Card Action";
             // 
@@ -219,16 +232,18 @@ namespace LED_Handheld_Project.Forms
             // 
             this.panel4.Controls.Add(this.record_10s);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(397, 372);
+            this.panel4.Location = new System.Drawing.Point(529, 458);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(354, 82);
+            this.panel4.Size = new System.Drawing.Size(472, 101);
             this.panel4.TabIndex = 10;
             // 
             // record_10s
             // 
-            this.record_10s.Location = new System.Drawing.Point(93, 8);
+            this.record_10s.Location = new System.Drawing.Point(124, 10);
+            this.record_10s.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.record_10s.Name = "record_10s";
-            this.record_10s.Size = new System.Drawing.Size(200, 71);
+            this.record_10s.Size = new System.Drawing.Size(267, 87);
             this.record_10s.TabIndex = 5;
             this.record_10s.Text = "Record 10 s";
             this.record_10s.UseVisualStyleBackColor = true;
@@ -240,23 +255,25 @@ namespace LED_Handheld_Project.Forms
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(13, 11);
+            this.label5.Location = new System.Drawing.Point(17, 14);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.Size = new System.Drawing.Size(77, 25);
             this.label5.TabIndex = 3;
             this.label5.Text = "Testing";
             // 
             // Device
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(812, 466);
+            this.ClientSize = new System.Drawing.Size(1083, 574);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Device";
             this.Text = "Device";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Device_FormClosing);
