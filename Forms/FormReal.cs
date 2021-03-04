@@ -263,6 +263,7 @@ namespace LED_Handheld_Project.Forms
                 btnHold.Enabled = true;
                 data_iter = 1;
                 openVisible();
+                GraphPicture.Visible = false;
             }
             catch (Exception error)
             {

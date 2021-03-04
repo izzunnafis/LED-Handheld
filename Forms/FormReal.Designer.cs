@@ -46,6 +46,7 @@ namespace LED_Handheld_Project.Forms
             System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReal));
             this.rtbSerialData = new System.Windows.Forms.RichTextBox();
             this.chartData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cbPort = new System.Windows.Forms.ComboBox();
@@ -102,12 +103,14 @@ namespace LED_Handheld_Project.Forms
             this.tbTemperature = new System.Windows.Forms.TextBox();
             this.lbHumidity = new System.Windows.Forms.TextBox();
             this.tbHumidity = new System.Windows.Forms.TextBox();
+            this.GraphPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).BeginInit();
             this.panel_header.SuspendLayout();
             this.panel_head_left.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_voltage.SuspendLayout();
             this.panel_graph.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GraphPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // rtbSerialData
@@ -140,6 +143,8 @@ namespace LED_Handheld_Project.Forms
             chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
             chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
             chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            chartArea1.BorderColor = System.Drawing.Color.White;
             chartArea1.Name = "ChartArea1";
             this.chartData.ChartAreas.Add(chartArea1);
             legend1.BackColor = System.Drawing.Color.Transparent;
@@ -932,6 +937,7 @@ namespace LED_Handheld_Project.Forms
             // 
             // panel_graph
             // 
+            this.panel_graph.Controls.Add(this.GraphPicture);
             this.panel_graph.Controls.Add(this.lbTemperature);
             this.panel_graph.Controls.Add(this.tbTemperature);
             this.panel_graph.Controls.Add(this.lbHumidity);
@@ -998,6 +1004,15 @@ namespace LED_Handheld_Project.Forms
             this.tbHumidity.TabIndex = 279;
             this.tbHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // GraphPicture
+            // 
+            this.GraphPicture.Image = ((System.Drawing.Image)(resources.GetObject("GraphPicture.Image")));
+            this.GraphPicture.Location = new System.Drawing.Point(4, 71);
+            this.GraphPicture.Name = "GraphPicture";
+            this.GraphPicture.Size = new System.Drawing.Size(1133, 291);
+            this.GraphPicture.TabIndex = 282;
+            this.GraphPicture.TabStop = false;
+            // 
             // FormReal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1024,6 +1039,7 @@ namespace LED_Handheld_Project.Forms
             this.panel_voltage.PerformLayout();
             this.panel_graph.ResumeLayout(false);
             this.panel_graph.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GraphPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1086,5 +1102,6 @@ namespace LED_Handheld_Project.Forms
         private System.Windows.Forms.TextBox tbTemperature;
         private System.Windows.Forms.TextBox lbHumidity;
         private System.Windows.Forms.TextBox tbHumidity;
+        private System.Windows.Forms.PictureBox GraphPicture;
     }
 }
