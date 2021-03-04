@@ -270,7 +270,7 @@ namespace LED_Handheld_Project.Forms
                     Temp = in_data_list[2];
                     Humid = in_data_list[3];
 
-                    for (int i = 0; i < in_data_list.Length-4; i++)
+                    for (int i = 0; i < 14; i++)
                     {
                         voltages[i] = in_data_list[i + 4];
                     }
