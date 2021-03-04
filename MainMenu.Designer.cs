@@ -30,6 +30,7 @@ namespace LED_Handheld_Project
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelShadow = new System.Windows.Forms.Panel();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
@@ -369,6 +370,7 @@ namespace LED_Handheld_Project
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
