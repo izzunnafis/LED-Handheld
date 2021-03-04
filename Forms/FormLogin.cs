@@ -75,7 +75,6 @@ namespace LED_Handheld_Project.Forms
             sqlcomm.ExecuteNonQuery();
             if (dtbl.Rows.Count > 0)
             {
-                UjicobaLogin UL = new UjicobaLogin();
                 this.Close();
                 DialogResult = DialogResult.OK;
             }

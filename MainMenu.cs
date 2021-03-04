@@ -18,12 +18,6 @@ namespace LED_Handheld_Project
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        private SerialPort myport; // untuk ports
-
-        //Form real_time_form = new Forms.FormReal();
-        //Form product_test_form = new Forms.ProductTest();
-        //Form realtime_form = new Forms.FormRealTime();
-        //Form device_form = new Forms.Device();
 
         //Constructor
         public MainMenu()
@@ -32,18 +26,11 @@ namespace LED_Handheld_Project
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
-            //Form
-            //this.Text = string.Empty;
-            //this.ControlBox = false;
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            string[] ports = SerialPort.GetPortNames(); //untuk ports
-            myport = new SerialPort();
-            myport.Close();
             timer1.Start();
-            //myport.BaudRate = 9600;
         }
 
         //Struct
@@ -79,7 +66,6 @@ namespace LED_Handheld_Project
                 //Icon Current Child Form
                 iconCurrentChildForm.IconChar = currentBtn.IconChar;
                 iconCurrentChildForm.IconColor = color;
-                myport.Close();//Tambahan
             }
         }
 
@@ -100,35 +86,18 @@ namespace LED_Handheld_Project
         {
             ActivatedButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormReal());
-            //OpenChildForm(real_time_form);
         }
 
         private void btnProductionTest_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color2);
             OpenChildForm(new Forms.ProductTest());
-            //OpenChildForm(product_test_form);
-        }
-
-        private void btnLoadData_Click(object sender, EventArgs e)
-        {
-            ActivatedButton(sender, RGBColors.color3);
-            OpenChildForm(new Forms.FormRealTime());
-            //OpenChildForm(realtime_form);
         }
 
         private void BtnDevice_Click(object sender, EventArgs e)
         {
             ActivatedButton(sender, RGBColors.color4);
-            //OpenChildForm(device_form);
             OpenChildForm(new Forms.Device());
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            ActivatedButton(sender, RGBColors.color5);
-            OpenChildForm(new Forms.FormProduct());
-            //OpenChildForm(product_test_form);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -144,7 +113,6 @@ namespace LED_Handheld_Project
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "Home";
-            //panelDesktop.Controls.Add(new MainMenu());
         }
 
         private void OpenChildForm(Form childForm)
@@ -168,10 +136,6 @@ namespace LED_Handheld_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbTime.Text = DateTime.Now.ToString("T");
-        }
-        private void btnUjiCoba_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormLogin());
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
