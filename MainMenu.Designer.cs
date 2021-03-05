@@ -304,11 +304,12 @@ namespace LED_Handheld_Project
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat ExtraBold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(235, 539);
+            this.label2.Location = new System.Drawing.Point(345, 532);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(775, 47);
+            this.label2.Size = new System.Drawing.Size(501, 47);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Interfacing for LED Handheld Application\r\n";
+            this.label2.Text = "LED Handheld Application\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainMenu
             // 
@@ -323,6 +324,7 @@ namespace LED_Handheld_Project
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1433, 849);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LED Handheld";
