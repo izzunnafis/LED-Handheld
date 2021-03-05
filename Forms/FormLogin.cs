@@ -92,8 +92,9 @@ namespace LED_Handheld_Project.Forms
         private void btnSignup_Click(object sender, EventArgs e)
         {
             FormSignUp fs = new FormSignUp();
-            this.Close();
-            fs.ShowDialog();
+            this.Hide();
+            if (fs.ShowDialog() == DialogResult.OK)
+                this.Show();
         }
     }
 }

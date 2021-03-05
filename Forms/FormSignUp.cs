@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using LED_Handheld_Project.Class;
+using System.IO;
 
 namespace LED_Handheld_Project.Forms
 {
@@ -69,9 +70,8 @@ namespace LED_Handheld_Project.Forms
                 MessageBox.Show("User " + tbUsername.Text + " is successfully registered");
                 sqlconn.Close();
                 this.Close();
-                FormLogin FL = new FormLogin();
-                FL.Show();
-                
+                DialogResult = DialogResult.OK;
+
                 //using (SqlConnection sqlcon = new SqlConnection(connection))
                 //{
                 //    sqlcon.Open();
