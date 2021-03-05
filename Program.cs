@@ -17,8 +17,13 @@ namespace LED_Handheld_Project
         {
             Application.SetCompatibleTextRenderingDefault(false);
             Application.EnableVisualStyles();
-            Application.Run(new MainMenu());
-            
+
+            Form flogin = new Forms.FormLogin();
+
+            if (flogin.ShowDialog() == DialogResult.OK)
+                Application.Run(new MainMenu());
+            else
+                Application.Exit();
         }
     }
 }

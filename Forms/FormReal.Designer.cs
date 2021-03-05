@@ -731,7 +731,7 @@ namespace LED_Handheld_Project.Forms
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(189, 25);
             this.textBox2.TabIndex = 278;
-            this.textBox2.Text = "Module ID";
+            this.textBox2.Text = "Model ID";
             // 
             // textBox3
             // 
