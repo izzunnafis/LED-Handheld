@@ -59,7 +59,7 @@ namespace LED_Handheld_Project.Forms
             this.panel1.Controls.Add(this.SD_space_button);
             this.panel1.Controls.Add(this.SD_space_progress_bar);
             this.panel1.Location = new System.Drawing.Point(529, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 313);
             this.panel1.TabIndex = 0;
@@ -81,7 +81,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.SD_space_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SD_space_button.Location = new System.Drawing.Point(194, 283);
-            this.SD_space_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SD_space_button.Margin = new System.Windows.Forms.Padding(4);
             this.SD_space_button.Name = "SD_space_button";
             this.SD_space_button.Size = new System.Drawing.Size(100, 28);
             this.SD_space_button.TabIndex = 1;
@@ -100,7 +100,7 @@ namespace LED_Handheld_Project.Forms
             this.SD_space_progress_bar.InnerMargin = 2;
             this.SD_space_progress_bar.InnerWidth = -1;
             this.SD_space_progress_bar.Location = new System.Drawing.Point(124, 39);
-            this.SD_space_progress_bar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SD_space_progress_bar.Margin = new System.Windows.Forms.Padding(4);
             this.SD_space_progress_bar.MarqueeAnimationSpeed = 2000;
             this.SD_space_progress_bar.Name = "SD_space_progress_bar";
             this.SD_space_progress_bar.OuterColor = System.Drawing.Color.Black;
@@ -128,7 +128,7 @@ namespace LED_Handheld_Project.Forms
             this.panel2.Controls.Add(this.cb_port_select);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(55, 105);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(441, 76);
             this.panel2.TabIndex = 2;
@@ -137,7 +137,7 @@ namespace LED_Handheld_Project.Forms
             // 
             this.cb_port_select.FormattingEnabled = true;
             this.cb_port_select.Location = new System.Drawing.Point(253, 27);
-            this.cb_port_select.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_port_select.Margin = new System.Windows.Forms.Padding(4);
             this.cb_port_select.Name = "cb_port_select";
             this.cb_port_select.Size = new System.Drawing.Size(160, 24);
             this.cb_port_select.TabIndex = 1;
@@ -164,7 +164,7 @@ namespace LED_Handheld_Project.Forms
             this.panel3.Controls.Add(this.button_import);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(55, 206);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(441, 206);
             this.panel3.TabIndex = 3;
@@ -172,18 +172,18 @@ namespace LED_Handheld_Project.Forms
             // button_import_clear
             // 
             this.button_import_clear.Location = new System.Drawing.Point(295, 85);
-            this.button_import_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_import_clear.Margin = new System.Windows.Forms.Padding(4);
             this.button_import_clear.Name = "button_import_clear";
             this.button_import_clear.Size = new System.Drawing.Size(147, 86);
             this.button_import_clear.TabIndex = 6;
-            this.button_import_clear.Text = "Import and Clear";
+            this.button_import_clear.Text = "Eksport and Clear";
             this.button_import_clear.UseVisualStyleBackColor = true;
             this.button_import_clear.Click += new System.EventHandler(this.button_import_clear_Click);
             // 
             // button_clear
             // 
             this.button_clear.Location = new System.Drawing.Point(143, 85);
-            this.button_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_clear.Margin = new System.Windows.Forms.Padding(4);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(147, 86);
             this.button_clear.TabIndex = 5;
@@ -194,11 +194,11 @@ namespace LED_Handheld_Project.Forms
             // button_import
             // 
             this.button_import.Location = new System.Drawing.Point(4, 84);
-            this.button_import.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_import.Margin = new System.Windows.Forms.Padding(4);
             this.button_import.Name = "button_import";
             this.button_import.Size = new System.Drawing.Size(133, 87);
             this.button_import.TabIndex = 4;
-            this.button_import.Text = "Import Data";
+            this.button_import.Text = "Eksport Data";
             this.button_import.UseVisualStyleBackColor = true;
             this.button_import.Click += new System.EventHandler(this.button_import_Click);
             // 
@@ -233,7 +233,7 @@ namespace LED_Handheld_Project.Forms
             this.panel4.Controls.Add(this.record_10s);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(529, 458);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(472, 101);
             this.panel4.TabIndex = 10;
@@ -241,7 +241,7 @@ namespace LED_Handheld_Project.Forms
             // record_10s
             // 
             this.record_10s.Location = new System.Drawing.Point(124, 10);
-            this.record_10s.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.record_10s.Margin = new System.Windows.Forms.Padding(4);
             this.record_10s.Name = "record_10s";
             this.record_10s.Size = new System.Drawing.Size(267, 87);
             this.record_10s.TabIndex = 5;
@@ -273,7 +273,7 @@ namespace LED_Handheld_Project.Forms
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Device";
             this.Text = "Device";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Device_FormClosing);
