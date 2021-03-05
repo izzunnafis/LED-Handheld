@@ -46,15 +46,14 @@ namespace LED_Handheld_Project
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnAbout = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.panel_clock.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,11 +89,11 @@ namespace LED_Handheld_Project
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Montserrat Black", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitleChildForm.Location = new System.Drawing.Point(72, 36);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(81, 29);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(94, 35);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -102,11 +101,11 @@ namespace LED_Handheld_Project
             // 
             this.lbTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.Color.White;
             this.lbTime.Location = new System.Drawing.Point(3, 30);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(50, 25);
+            this.lbTime.Size = new System.Drawing.Size(55, 27);
             this.lbTime.TabIndex = 0;
             this.lbTime.Text = "Jam";
             this.lbTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,7 +147,7 @@ namespace LED_Handheld_Project
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Montserrat Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
             this.btnHome.IconColor = System.Drawing.Color.White;
@@ -170,7 +169,7 @@ namespace LED_Handheld_Project
             this.btnRealTime.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRealTime.FlatAppearance.BorderSize = 0;
             this.btnRealTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRealTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRealTime.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRealTime.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRealTime.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
             this.btnRealTime.IconColor = System.Drawing.Color.Gainsboro;
@@ -194,7 +193,7 @@ namespace LED_Handheld_Project
             this.btnProductionTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProductionTest.FlatAppearance.BorderSize = 0;
             this.btnProductionTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductionTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductionTest.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductionTest.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProductionTest.IconChar = FontAwesome.Sharp.IconChar.Check;
             this.btnProductionTest.IconColor = System.Drawing.Color.Gainsboro;
@@ -218,7 +217,7 @@ namespace LED_Handheld_Project
             this.BtnDevice.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnDevice.FlatAppearance.BorderSize = 0;
             this.BtnDevice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDevice.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDevice.ForeColor = System.Drawing.Color.Gainsboro;
             this.BtnDevice.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
             this.BtnDevice.IconColor = System.Drawing.Color.Gainsboro;
@@ -257,7 +256,7 @@ namespace LED_Handheld_Project
             this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAbout.FlatAppearance.BorderSize = 0;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAbout.IconChar = FontAwesome.Sharp.IconChar.QuestionCircle;
             this.btnAbout.IconColor = System.Drawing.Color.Gainsboro;
@@ -279,8 +278,8 @@ namespace LED_Handheld_Project
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Controls.Add(this.pictureBox2);
-            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 89);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -288,25 +287,28 @@ namespace LED_Handheld_Project
             this.panelDesktop.Size = new System.Drawing.Size(1195, 713);
             this.panelDesktop.TabIndex = 3;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(132, 133);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(453, 499);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(172, 138);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(850, 481);
+            this.pictureBox2.Size = new System.Drawing.Size(824, 379);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat ExtraBold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(235, 539);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(775, 47);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Interfacing for LED Handheld Application\r\n";
             // 
             // MainMenu
             // 
@@ -333,7 +335,7 @@ namespace LED_Handheld_Project
             this.panelLogo.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelDesktop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -356,8 +358,8 @@ namespace LED_Handheld_Project
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panel_clock;
         private FontAwesome.Sharp.IconButton btnAbout;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
     }
 }
 

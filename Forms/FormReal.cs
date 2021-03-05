@@ -200,7 +200,7 @@ namespace LED_Handheld_Project.Forms
                 tbTemperature.Text = Temperature + " °C";
                 tbHumidity.Text = Humidity + " %";
                 string time = DateTime.Now.ToString("HH" + ':' + "mm" + ':' + "ss");
-                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + "," + time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] +"\r"); });
+                rtbSerialData.Invoke((MethodInvoker)delegate { rtbSerialData.AppendText(data_iter + "," + time + "," + Temperature + "," + Humidity + "," + voltages[0] + "," + voltages[1] + "," + voltages[2] + "," + voltages[3] + "," + voltages[4] + "," + voltages[5] + "," + voltages[6] + "," + voltages[7] + "," + voltages[8] + "," + voltages[9] + "," + voltages[10] + "," + voltages[11] + "," + voltages[12] + "," + voltages[13] + "\r"); });
                 data_iter++;
                 ProcessGraph();
             }
